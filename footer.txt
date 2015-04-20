@@ -37,12 +37,12 @@ styles:
 
 .footer-wrapper {
     background-color: black;
+    min-width: 600px;
 }
 
 .site-footer {
     padding: 2em;
     padding-bottom: 4em;
-    min-width: 600px;
 }
 
 .site-footer, .site-footer a {
