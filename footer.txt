@@ -71,6 +71,8 @@ styles:
 
     .footer-navigation a {
         text-decoration: none;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
     }
 
     .footer-navigation a:hover {
