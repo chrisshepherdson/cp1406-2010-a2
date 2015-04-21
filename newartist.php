@@ -20,7 +20,7 @@ include("dbconnect.php")
 
 <body>
 <h1>artist Database</h1>
-<form id="insert" name="insert" method="post" action="dbprocess.php">
+<form id="insert" name="insert" method="post" action="dbprocess.php" enctype="multipart/form-data">
 <fieldset class="subtleSet">
     <h2>Insert new artist:</h2>
     <p>
@@ -32,12 +32,16 @@ include("dbconnect.php")
       <input type="text" name="summary" id="summary">
     </p>
     <p>
-      <label for="imageUrl">Image Url:</label>
-      <input type="text" name="imageUrl" id="imageUrl">
-    </p>
-    <p>
       <label for="details">Details:</label>
       <input type="text" name="details" id="details">
+    </p>
+    <p>
+      <label for="webpage">Artist webpage:</label>
+      <input type="text" name="webpage" id="webpage">
+    </p>
+    <p>
+      <label for="fileToUpload">photo:</label>
+      <input type="file" name="fileToUpload" id="fileToUpload">
     </p>
     <p>
       <input type="submit" name="submit" id="submit" value="Insert Entry">

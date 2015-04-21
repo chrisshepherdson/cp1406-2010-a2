@@ -11,6 +11,7 @@ if ($_REQUEST['submit'] == "X")
 		header("Location: updateartist.php");
 }
 ?>
+
 <!doctype html>
 <html>
 <head>
@@ -21,6 +22,19 @@ if ($_REQUEST['submit'] == "X")
 <body>
 <h1>Results</h1>
 <?php
+$target_dir = "";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+//echo "$target_file";
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+    } else {
+        echo "Sorry, there was an error uploading your file.";
+    }
+
+?>
+<?php
 echo "<h2>Form Data</h2>";
 echo "<pre>";
 print_r($_REQUEST); // a useful debugging function to see everything in an array, best inside a <pre> element
@@ -28,7 +42,8 @@ echo "</pre>";
 // execute the appropriate query based on which submit button (insert, delete or update) was clicked
 if ($_REQUEST['submit'] == "Insert Entry")
 {
-	$sql = "INSERT INTO artists (name, summary, imageUrl, details) VALUES ('$_REQUEST[name]', '$_REQUEST[summary]', '$_REQUEST[imageUrl]', '$_REQUEST[details]')";
+    
+	$sql = "INSERT INTO artists (name, summary, imageUrl, details, webpage) VALUES ('$_REQUEST[name]', '$_REQUEST[summary]', '$target_file', '$_REQUEST[details]', '$_REQUEST[webpage]')";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Inserted $_REQUEST[name]";
@@ -46,7 +61,7 @@ else if ($_REQUEST['submit'] == "Delete Entry")
 }
 else if ($_REQUEST['submit'] == "Update Entry")
 {
-	$sql = "UPDATE artists SET name = '$_REQUEST[name]', summary = '$_REQUEST[summary]', imageUrl = '$_REQUEST[imageUrl]', details = '$_REQUEST[details]' WHERE id = '$_REQUEST[id]'";
+	$sql = "UPDATE artists SET name = '$_REQUEST[name]', summary = '$_REQUEST[summary]', imageUrl = '$target_file', details = '$_REQUEST[details]', webpage = '$_REQUEST[webpage]' WHERE id = '$_REQUEST[id]'";
 	echo "<p>Query: " . $sql . "</p>\n<p><strong>"; 
 	if ($dbh->exec($sql))
 		echo "Updated $_REQUEST[name]";

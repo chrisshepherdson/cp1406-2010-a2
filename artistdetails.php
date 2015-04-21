@@ -2,12 +2,11 @@
 include("dbconnect.php")
 
 ?>
-
 <!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>artist database</title>
+<title>artist details</title>
 <style type="text/css">
 .subtleSet {
 	border-radius:25px;
@@ -20,27 +19,27 @@ include("dbconnect.php")
 </head>
 
 <body>
-<h1>Artist Database</h1>
+
 
 <fieldset class="subtleSet">
-<h2>Current data:</h2>
+
 <?php
 // Display what's in the database at the moment.
-$sql = "SELECT * FROM artists";
+$sql = "SELECT * FROM artists WHERE id = '$_REQUEST[rowid]'";
+
 foreach ($dbh->query($sql) as $row)
 {
 ?>
 
 <?php
-    echo "ID: ";
-    echo "$row[id]";
-    echo "<a href='artistdetails.php?rowid=$row[id]'>\nname:\n";
-	echo "$row[name] summary: $row[summary]";
-    echo "<img src='$row[imageUrl]'>";
-    echo "<input type='hidden' name='id' value='$row[id]' /></a>";
-	
+   
+	echo "<h1>$row[name]:</h1>";
+    
+    echo "$row[details]";
+    echo "<a href=$row[webpage]>$row[webpage]</a>";
+    echo "<input type='hidden' name='id' value='$row[id]' />";
+	echo "<img src='$row[imageUrl]'>";
 ?>
-
 
 
 <?php
@@ -48,6 +47,6 @@ foreach ($dbh->query($sql) as $row)
 echo "</fieldset>\n";
 // close the database connection
 $dbh = null;
-?>  
+?>
 </body>
 </html>
