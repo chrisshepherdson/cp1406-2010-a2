@@ -311,7 +311,96 @@ img {
     border: solid 5px #FFF;
 }
 
+/* -------- About ---------- */
+.about-content {
+    margin-top: 4em;
+}
 
+    /* About intro */
+    .about-intro {
+        
+    }
+
+    .about-intro-image {
+        width: 254px;
+        height: 180px;
+        float: left;
+        margin-right: 2em;
+        margin-bottom: 4em
+    }
+
+    .about-intro-image img{
+        width: 254px;
+        height: 180px;
+        border: solid 5px darkgray;
+    }
+
+    /* About contact */
+    .about-contact {
+        clear: both;
+    }
+
+    .about-contact-info-1 {
+        width: 25em;
+        float: left
+    }
+
+    .about-contact-info-2 {
+        width: 35em;
+        float: left
+    }
+    
+    #info-contact-phone {
+        padding-left: 1.0em;
+    }
+
+    #info-contact-mobile {
+        padding-left: 0.8em;
+    }
+
+    #info-contact-email {
+        padding-left: 1.45em;
+    }
+
+    #info-contact-address1 {
+        padding-left: 6em;
+    }
+
+    #info-contact-address2 {
+        padding-left: 13.65em;
+    }
+
+    #info-contact-postal {
+        padding-left: 2.2em;
+    }
+
+    /* About Looking Back */
+    .about-lookingback-image {
+        width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-lookingback-image img {
+        width: 510px;
+        border: solid 5px darkgray;
+        margin-top: 4em;
+        margin-bottom: 1em;
+    }
+
+    /* About History */
+    .about-history {
+        margin-top: 4em;
+    }
+
+    .about-history-table th {
+        vertical-align: top;
+        padding-right: 2em;
+    }
+
+    .about-history-table th, td {
+        padding-bottom: 2em;
+    }
 
 
 /*------------------------------ Footer ------------------------------*/
