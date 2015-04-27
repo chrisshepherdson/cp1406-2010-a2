@@ -67,6 +67,13 @@ if (isset($row[phone]))
     echo "<td>$row[phone]</td>";
     echo "</tr>";
 }
+if (isset($row[mobile]))
+{
+    echo "<tr>";
+    echo "<td>Mobile:</td>";
+    echo "<td>$row[mobile]</td>";
+    echo "</tr>";
+}
 if (isset($row[fax]))
 {
     echo "<tr>";

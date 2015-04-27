@@ -12,7 +12,7 @@ if ($_REQUEST['submit'] == "X")
 }
 ?>
 <?php
-$target_dir = "/images";
+$target_dir = "";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -27,7 +27,7 @@ $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 if ($_REQUEST['submit'] == "Insert Entry")
 {
     
-	$sql = "INSERT INTO artists (name, summary, imageUrl, details, webpage) VALUES ('$_REQUEST[name]', '$_REQUEST[summary]', '$target_file', '$_REQUEST[details]', '$_REQUEST[webpage]')";
+	$sql = "INSERT INTO artists (name, summary, imageUrl, details, webpage, fax, phone, email, mobile) VALUES ('$_REQUEST[name]', '$_REQUEST[summary]', '$target_file', '$_REQUEST[details]', '$_REQUEST[webpage]', '$_REQUEST[fax]', '$_REQUEST[phone]', '$_REQUEST[email]', '$_REQUEST[mobile]')";
 	if ($dbh->exec($sql)) {
     		header("Location: displayArtitsList.php");
 }
@@ -43,7 +43,7 @@ else if ($_REQUEST['submit'] == "Delete Entry")
 }
 else if ($_REQUEST['submit'] == "Update Entry")
 {
-	$sql = "UPDATE artists SET name = '$_REQUEST[name]', summary = '$_REQUEST[summary]', imageUrl = '$target_file', details = '$_REQUEST[details]', webpage = '$_REQUEST[webpage]' WHERE id = '$_REQUEST[id]'";
+	$sql = "UPDATE artists SET name = '$_REQUEST[name]', summary = '$_REQUEST[summary]', imageUrl = '$target_file', details = '$_REQUEST[details]', webpage = '$_REQUEST[webpage]', fax = '$_REQUEST[fax]', phone = '$_REQUEST[phone]', email = '$_REQUEST[email]', mobile = '$_REQUEST[mobile]' WHERE id = '$_REQUEST[id]'";
 	if ($dbh->exec($sql)) {
     		header("Location: displayArtitsList.php");
 }
