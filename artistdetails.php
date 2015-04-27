@@ -35,8 +35,12 @@ foreach ($dbh->query($sql) as $row)
    
 	echo "<h1>$row[name]:</h1>";
     
-    echo "$row[details]";
-    echo "<a href=$row[webpage]>$row[webpage]</a>";
+    echo "$row[details]<br>";
+    echo "<a href=$row[webpage]>Webpage</a><br>";
+    echo "phone: $row[phone]<br>";
+    echo "mobile: $row[mobile]<br>";
+    echo "Fax: $row[fax]<br>";
+    echo "email: $row[email]<br>";
     echo "<input type='hidden' name='id' value='$row[id]' />";
 	echo "<img src='$row[imageUrl]'>";
 ?>

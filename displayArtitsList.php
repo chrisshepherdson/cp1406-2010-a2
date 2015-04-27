@@ -33,11 +33,15 @@ foreach ($dbh->query($sql) as $row)
 
 <?php
     echo "ID: ";
-    echo "$row[id]";
+    echo "$row[id]<br>";
     echo "<a href='artistdetails.php?rowid=$row[id]'>\nname:\n";
-	echo "$row[name] summary: $row[summary]";
-    echo "<img src='$row[imageUrl]'>";
-    echo "<input type='hidden' name='id' value='$row[id]' /></a>";
+	echo "$row[name]<br> summary: $row[summary]<br>";
+    echo "<img src='$row[imageUrl]'><br>";
+    echo "<input type='hidden' name='id' value='$row[id]' /></a><br>";
+    echo "<input type='hidden' name='email' value='$row[email]' /></a><br>";
+    echo "<input type='hidden' name='phone' value='$row[phone]' /></a><br>";
+    echo "<input type='hidden' name='fax' value='$row[fax]' /></a><br>";
+    
 	
 ?>
 

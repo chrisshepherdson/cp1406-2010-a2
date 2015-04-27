@@ -31,14 +31,15 @@ foreach ($dbh->query($sql) as $row)
 ?>
 <form id="deleteForm" name="deleteForm" method="post" action="dbprocess.php" enctype="multipart/form-data">
 <?php
-    
+    echo "ID: ";
+    echo "$row[id]";
     echo "\nname:\n";
-	echo "<input type='text' name='name' value='$row[name]' /> Summary: <input type='text' name='summary' value='$row[summary]' /> Details: <input type='text' name='details' value='$row[details]' /> Webpage: <input type='text' name='webpage' value='$row[webpage]' />\n";
+	echo "<input type='text' name='name' value='$row[name]' /> Summary: <input type='text' name='summary' value='$row[summary]' /> Details: <input type='text' name='details' value='$row[details]' /> Webpage: <input type='text' name='webpage' value='$row[webpage]' />  phone: <input type='text' name='phone' value='$row[phone]' />  fax: <input type='text' name='fax' value='$row[fax]' />  mobile: <input type='text' name='mobile' value='$row[mobile]' />   email: <input type='text' name='email' value='$row[email]' /> <input type='file' name='fileToUpload' id='fileToUpload' >\n";
     
     echo "<input type='hidden' name='id' value='$row[id]' />";
 	
 ?>
-<input type="file" name="fileToUpload" id="fileToUpload">
+
 <input type="submit" name="submit" value="Update Entry" />
 <input type="submit" name="submit" value="Delete Entry" class="deleteButton">
 <input type="submit" name="submit" value="X" class="deleteButton">
