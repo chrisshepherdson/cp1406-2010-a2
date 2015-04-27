@@ -1,3 +1,8 @@
+<?php
+include("dbconnect.php")
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,9 +31,9 @@
 <nav class="site-navigation primary-navigation clearfix">
 <div class="menu-all-pages-container">
 <ul class="nav-menu">
-<li class="current-menu-item"><a href="index.html">Home</a></li>
+<li><a href="index.html">Home</a></li>
 <li><a href="#">Events</a></li> <li><a href="#">Bulletin Board</a></li>
-<li><a href="#">Artists</a></li>
+<li class="current-menu-item"><a href="#">Artists</a></li>
 <li><a href="#">Members</a></li>
 <li><a href="#">About</a></li>
 <li><a href="#">Contact</a></li>
@@ -48,33 +53,40 @@
             
             </div>
             
-            
-            
             <ul class="artist-list">
-            
-                <li>
-                    <div class="artist-container">
-                        <div class="artist-image">IMAGE</div>
-                        <div class="artist-info">
-                            <h3 class="artist-info-name">ARTIST NAME</h2>
-                            <div class="artist-info-bio">artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, </div>
-                            <div class="artist-button"><a href="#" class="ui small button colored">Read More</a></div>
-                        </div>
-                    </div>
-                </li>
-                
-                <li>
-                    <div class="artist-container">
-                        <div class="artist-image">IMAGE</div>
-                        <div class="artist-info">
-                            <h3 class="artist-info-name">ARTIST NAME</h2>
-                            <div class="artist-info-bio">artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio, artist bio,</div>
-                            <div class="artist-button"><a href="#" class="ui small button colored">Read More</a></div>
-                        </div>
-                    </div>
-                </li>
+<?php
+// Display what's in the database at the moment.
+$sql = "SELECT * FROM artists";
+foreach ($dbh->query($sql) as $row)
+{
+?>
 
-            </ul>       
+<?php            
+echo              "<li>";
+echo                   "<div class='artist-container'>";
+echo                      "<div class='artist-image'><img src='$row[imageUrl]' alt='$row[name]'></div>";
+echo                       "<div class='artist-info'>";
+echo                           "<h3 class='artist-info-name'>$row[name]</h2>";
+echo                            "<div class='artist-info-bio'>$row[summary]</div>";
+echo                            "<div class='artist-button'><a href='artistdetailed.php?rowid=$row[id]' class='ui small button colored'>Read More</a></div>";
+    echo "<input type='hidden' name='email' value='$row[email]' /></a>";
+    echo "<input type='hidden' name='phone' value='$row[phone]' /></a>";
+    echo "<input type='hidden' name='fax' value='$row[fax]' /></a>";
+    echo "<input type='hidden' name='id' value='$row[id]' /></a>";
+echo                        "</div>";
+echo                    "</div>";
+echo                "</li>";
+?>
+
+<?php
+}
+echo "</fieldset>\n";
+// close the database connection
+$dbh = null;
+?> 
+            </ul>  
+            
+                 
         </section> 
 
 <div class="footer-wrapper">

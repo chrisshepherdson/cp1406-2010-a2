@@ -1,3 +1,8 @@
+<?php
+include("dbconnect.php")
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,9 +31,9 @@
 <nav class="site-navigation primary-navigation clearfix">
 <div class="menu-all-pages-container">
 <ul class="nav-menu">
-<li class="current-menu-item"><a href="index.html">Home</a></li>
+<li ><a href="index.html">Home</a></li>
 <li><a href="#">Events</a></li> <li><a href="#">Bulletin Board</a></li>
-<li><a href="#">Artists</a></li>
+<li class="current-menu-item"><a href="#">Artists</a></li>
 <li><a href="#">Members</a></li>
 <li><a href="#">About</a></li>
 <li><a href="#">Contact</a></li>
@@ -36,23 +41,60 @@
 </div>
 </nav>
 <!-- END Navigation -->
-    
-        
-<section class="artistdetailed">
-    <div class="artistdetailed-image">
-        <img src="images/Aquapella01.jpg" width="800" height="363" alt="image">
-    </div>
-    <h2 class="artistdetailed-name">Aquapella</h2>
-    <div class="artistdetailed-info">
-        <p>Aquapella are 50 singers from the Townsville area bringing you acappella world music at its very best: inspiring and uplifting harmonies from around the globe. A South African party song, a Hungarian love triangle, "The Lion Sleeps Tonight" in French - a sumptuous variety of different languages, stories, rhythms and moods to entertain and move you in the wonderful common language of music. Come along and travel the world by song!<br><br>
-Choir director Beat Lehmann was born in Switzerland where he first became involved in choir music by participating in classical productions like Handel's Messiah, Mozart's Mass in C minor etc. A study year abroad gave him the opportunity to sing with the Pontardullais Welsh Male Choir. After completing an M.A. in Social Anthropology he concentrated on his other passion, dance, directing a Modern Dance Company for several years. In 1986, Beat migrated to Australia where he completed a Ph.D. in Linguistics and involved himself in choir music again. For 12 years he conducted AkaBella, a well-known world music choir from Bellingen, NSW.<br><br>
-AkaBella participated in major festivals like the National Folk Festival in Canberra, the Bellingen Global Carnival and theWoodford Folk Festival where they featured in the ABC documentary Ã¬Festival on Fire and launched their first CD 'Mosaic'. Beat moved to Magnetic Island in 2003 and has established a similarly successful world music choir for the Townsville area. Beat's choirs focus on the rich musical heritage of cultures around the globe. A South African party song, a Hungarian love triangle, a Mexican lullaby, a French version of 'The Lion Sleeps Tonight' to delve into the incredible variety and depth of a cappella world music and the cultures it represents, is not only fun, but a very enriching and uplifting experience.<br><br>
-Aquapella won the ABC Choir of the Year competition for Queensland in 2006.<br><br>
-<a href="mailto:beatlehmann@iprimus.com.au" class="ui button colored">Email</a></p>
-    </div>        
-     
-</section> 
 
+
+<?php
+// Display what's in the database at the moment.
+$sql = "SELECT * FROM artists WHERE id = '$_REQUEST[rowid]'";
+foreach ($dbh->query($sql) as $row)
+{
+?>
+
+<?php   
+echo "<section class='artistdetailed'>";
+echo     "<div class='artistdetailed-image'>";
+echo        "<img src='$row[imageUrl]' width='800' height='363' alt='$row[name]'>";
+echo    "</div>";
+echo    "<h2 class='artistdetailed-name'>$row[name]</h2>";
+echo    "<div class='artistdetailed-info'>";
+echo        "<p>$row[details]</p>";
+echo "<h3>Contact information:</h3>";
+echo "<table class='contact-table'>";
+if (isset($row[phone]))
+{
+    echo "<tr>";
+    echo "<td>Phone:</td>";
+    echo "<td>$row[phone]</td>";
+    echo "</tr>";
+}
+if (isset($row[fax]))
+{
+    echo "<tr>";
+    echo "<td>Fax:</td>";
+    echo "<td>$row[fax]</td>";
+    echo "</tr>";
+}
+echo "</table>";
+if (isset($row[email])) 
+{
+    echo        "<a href='mailto:$row[email]' class='ui button colored'>Email</a>";
+}
+ if (isset($row[webpage])) 
+{
+    echo        " <a href='$row[webpage]' class='ui button colored'>Webpage</a>";
+}
+else {}
+echo    "</div> ";           
+echo "</section>";
+?>
+
+<?php
+}
+echo "</fieldset>\n";
+// close the database connection
+$dbh = null;
+?> 
+    
 <div class="footer-wrapper">
     <footer class="site-footer">
         
