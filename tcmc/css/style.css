@@ -1,5 +1,71 @@
 @charset "UTF-8";
 
+
+
+
+
+
+
+
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+    z-index: -1;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+
+	background: #333;
+	
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+
+
+
+
+
 /*------------------------------ Body ------------------------------*/
 .site-body {
     position: relative;
@@ -59,7 +125,8 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Oswald", Helvetica, Arial, sans-serif;
     font-weight: normal;
-    z-index: 100;
+    position: relative;
+    z-index: 0;
     margin: 0 0 10px;
     text-transform: uppercase;
 }
@@ -115,7 +182,7 @@ img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-    z-index: 100;
+    z-index: 1;
 }
 
 /*------------------------------ Page Layout -------------------------*/
@@ -129,7 +196,7 @@ img {
 /*------------------------------ Header ------------------------------*/
 .site-navigation {
     position: relative;
-    z-index: 100;
+    z-index: 1;
     -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .7);
        -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .7);
             box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .7);
@@ -497,7 +564,7 @@ img {
     background: #7E7E7E;
 }
 .rs_img {
-    z-index: 100;
+    z-index: 1;
 }
 
 .ui.button.colored {
@@ -509,6 +576,7 @@ img {
 
 .ui.button {
     font-size: 15px;
+ 
     font-weight: bold;
     padding: 15px 30px;
     letter-spacing: 1.2px;
@@ -526,7 +594,8 @@ img {
 
 /* Slider */
 .rsContent {
-    z-index: 100;
+    z-index: 1;
+ 
     float: left;
     color: #FFF;
 }
@@ -536,7 +605,7 @@ img {
     bottom: 240px;
     left: auto;
     display: block;
-    z-index: 100;
+    z-index: 1;
     text-align: center;
 }
 

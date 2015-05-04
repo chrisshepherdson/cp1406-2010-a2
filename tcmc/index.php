@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+include("dbconnect.php");
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -31,12 +39,32 @@
 <ul class="nav-menu">                      
 <li class="current-menu-item"><a href="index.html">Home</a></li>
 <li><a href="#">Events</a></li>                                         <li><a href="#">Bulletin Board</a></li>
-<li><a href="#">Artists</a></li>
+<li><a href="artists.php">Artists</a></li>
 <li><a href="#">Members</a></li>
 <li><a href="#">About</a></li>
 <li><a href="#">Contact</a></li>
+
+<?php
+
+    if (isset($_SESSION['username'])) {
+        echo "<li><a href='logout.php'>Logout</a></li>";
+    echo "<li>{$_SESSION['username']}</li>";
+    } else {
+        echo "<li><a href='#openModal'>Login</a></li>";
+}
+
+?>
+    <?php
+include("login.php");
+?>
 </ul>
 </div>
+
+            
+            
+</div>
+    
+    
 </nav>
 <!-- END Navigation -->
     
