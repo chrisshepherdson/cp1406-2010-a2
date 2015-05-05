@@ -37,7 +37,7 @@ include("dbconnect.php")
 <li><a href="#">Events</a></li> <li><a href="#">Bulletin Board</a></li>
 <li class="current-menu-item"><a href="#">Artists</a></li>
 <li><a href="#">Members</a></li>
-<li><a href="#">About</a></li>
+<li><a href="about.php">About</a></li>
 <li><a href="#">Contact</a></li>
     <?php
 

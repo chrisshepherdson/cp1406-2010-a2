@@ -37,11 +37,11 @@ include("dbconnect.php");
 <nav class="site-navigation primary-navigation clearfix">
 <div class="menu-all-pages-container">
 <ul class="nav-menu">                      
-<li class="current-menu-item"><a href="index.html">Home</a></li>
+<li class="current-menu-item"><a href="index.php">Home</a></li>
 <li><a href="#">Events</a></li>                                         <li><a href="#">Bulletin Board</a></li>
 <li><a href="artists.php">Artists</a></li>
 <li><a href="#">Members</a></li>
-<li><a href="#">About</a></li>
+<li><a href="about.php">About</a></li>
 <li><a href="#">Contact</a></li>
 
 <?php
