@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include("dbconnect.php")
+include("php/dbconnect.php")
 
 ?>
 
@@ -42,7 +42,7 @@ include("dbconnect.php")
     <?php
 
     if (isset($_SESSION['username'])) {
-        echo "<li><a href='logout.php'>Logout</a></li>";
+        echo "<li><a href='php/logout.php'>Logout</a></li>";
     echo "<li>{$_SESSION['username']}</li>";
     } else {
         echo "<li><a href='#openModal'>Login</a></li>";
@@ -50,7 +50,7 @@ include("dbconnect.php")
 
 ?>
     <?php
-include("login.php");
+include("php/login.php");
 ?>
 </ul>
 </div>
@@ -67,7 +67,7 @@ include("login.php");
                 or mail to: Townsville Community Music Centre, PO Box 1006, Townsville QLD, 4810</p>
             
             </div>
-            
+
             <ul class="artist-list">
 <?php
 // Display what's in the database at the moment.
@@ -100,9 +100,13 @@ echo "</fieldset>\n";
 $dbh = null;
 ?> 
             </ul>  
-            
-                 
-        </section> 
+                        <?php
+if (isset($_SESSION['username'])) {
+            echo                            "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
+include("php/addArtist.php");
+}
+               ?> 
+        </section>
 
 <div class="footer-wrapper">
     <footer class="site-footer">

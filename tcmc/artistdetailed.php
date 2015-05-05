@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("dbconnect.php")
+include("php/dbconnect.php")
 
 ?>
 
@@ -34,14 +34,14 @@ include("dbconnect.php")
 <ul class="nav-menu">
 <li ><a href="index.php">Home</a></li>
 <li><a href="#">Events</a></li> <li><a href="#">Bulletin Board</a></li>
-<li class="current-menu-item"><a href="#">Artists</a></li>
+<li class="current-menu-item"><a href="artists.php">Artists</a></li>
 <li><a href="#">Members</a></li>
 <li><a href="about.php">About</a></li>
 <li><a href="#">Contact</a></li>
     <?php
 
     if (isset($_SESSION['username'])) {
-        echo "<li><a href='logout.php'>Logout</a></li>";
+        echo "<li><a href='php/logout.php'>Logout</a></li>";
     echo "<li>{$_SESSION['username']}</li>";
     } else {
         echo "<li><a href='#openModal'>Login</a></li>";
@@ -49,7 +49,7 @@ include("dbconnect.php")
 
 ?>
     <?php
-include("login.php");
+include("php/login.php");
 ?>
 </ul>
 </div>
@@ -107,11 +107,18 @@ if (isset($row[email]))
 else {}
 echo    "</div> ";           
 echo "</section>";
+$hits = $row[hits] + 1;
 ?>
 
 <?php
 }
 echo "</fieldset>\n";
+
+//increments hits
+$sql = "UPDATE artists SET hits = '$hits' WHERE id = '$_REQUEST[rowid]'"; 
+$dbh->exec($sql);
+
+
 // close the database connection
 $dbh = null;
 ?> 

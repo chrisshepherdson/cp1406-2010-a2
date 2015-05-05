@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include("dbconnect.php");
+include("php/dbconnect.php");
 
 ?>
 
@@ -47,7 +47,7 @@ include("dbconnect.php");
 <?php
 
     if (isset($_SESSION['username'])) {
-        echo "<li><a href='logout.php'>Logout</a></li>";
+        echo "<li><a href='php/logout.php'>Logout</a></li>";
     echo "<li>{$_SESSION['username']}</li>";
     } else {
         echo "<li><a href='#openModal'>Login</a></li>";
@@ -55,7 +55,7 @@ include("dbconnect.php");
 
 ?>
     <?php
-include("login.php");
+include("php/login.php");
 ?>
 </ul>
 </div>
