@@ -469,6 +469,44 @@ img {
         
     }
 
+/* ---- Events ------ */
+
+    /* Event List */
+    .events-list li {
+        list-style: none;
+    }
+
+    .event-image {
+        width: 180px;
+        height: 180px;
+        float: left;
+        border: solid 5px darkgray;
+        margin-right: 3em;
+    }
+
+    .event-info-name {
+        margin-bottom: 0;
+    }
+
+    .event-info-text {
+        margin-bottom: 0.5em;
+    }
+
+    .event-container {
+        min-height: 180px;
+        min-width: 600px;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+
+    .event-info-details span:after {
+        content: " / ";
+    }
+
+    .event-info-details span:last-child:after {
+        content: " ";   
+    }
+
 
 /*------------------------------ Footer ------------------------------*/
 

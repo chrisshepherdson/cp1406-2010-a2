@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include("dbconnect.php");
+include("php/dbconnect.php");
 
 ?>
 
@@ -37,25 +37,17 @@ include("dbconnect.php");
 <nav class="site-navigation primary-navigation clearfix">
 <div class="menu-all-pages-container">
 <ul class="nav-menu">                      
-<li class="current-menu-item"><a href="index.html">Home</a></li>
-<<<<<<< HEAD:tcmc/index.html
-<li><a href="events.html">Events</a></li>                                         
-<li><a href="bulletinboard.html">Bulletin Board</a></li>
-<li><a href="artists.html">Artists</a></li>
-<li><a href="members.html">Members</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-=======
+<li class="current-menu-item"><a href="index.php">Home</a></li>
 <li><a href="#">Events</a></li>                                         <li><a href="#">Bulletin Board</a></li>
 <li><a href="artists.php">Artists</a></li>
 <li><a href="#">Members</a></li>
-<li><a href="#">About</a></li>
+<li><a href="about.php">About</a></li>
 <li><a href="#">Contact</a></li>
 
 <?php
 
     if (isset($_SESSION['username'])) {
-        echo "<li><a href='logout.php'>Logout</a></li>";
+        echo "<li><a href='php/logout.php'>Logout</a></li>";
     echo "<li>{$_SESSION['username']}</li>";
     } else {
         echo "<li><a href='#openModal'>Login</a></li>";
@@ -63,9 +55,8 @@ include("dbconnect.php");
 
 ?>
     <?php
-include("login.php");
+include("php/login.php");
 ?>
->>>>>>> origin/master:tcmc/index.php
 </ul>
 </div>
 

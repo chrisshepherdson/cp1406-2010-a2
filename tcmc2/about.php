@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+include("php/dbconnect.php");
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,13 +33,26 @@
 <nav class="site-navigation primary-navigation clearfix">
 <div class="menu-all-pages-container">
 <ul class="nav-menu">
-<li class="current-menu-item"><a href="index.html">Home</a></li>
-<li><a href="events.html">Events</a></li>                                         
-<li><a href="bulletinboard.html">Bulletin Board</a></li>
-<li><a href="artists.html">Artists</a></li>
-<li><a href="members.html">Members</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li ><a href="index.php">Home</a></li>
+<li><a href="#">Events</a></li> <li><a href="#">Bulletin Board</a></li>
+<li><a href="artists.php">Artists</a></li>
+<li><a href="#">Members</a></li>
+<li class="current-menu-item"><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+    
+<?php
+
+    if (isset($_SESSION['username'])) {
+        echo "<li><a href='php/logout.php'>Logout</a></li>";
+    echo "<li>{$_SESSION['username']}</li>";
+    } else {
+        echo "<li><a href='#openModal'>Login</a></li>";
+}
+
+?>
+    <?php
+include("php/login.php");
+?>
 </ul>
 </div>
 </nav>
@@ -123,10 +143,10 @@ by Jean Dartnall.</strong> (Copies available from the Music Centre)
         
         <div class="footer-logo"><img src="images/logo.png" width=147px height=98px alt="logo"></div>
         <ul class="footer-navigation">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Bulletin Board</a></li>
-            <li><a href="#">Artists</a></li>
+            <li><a href="artists.php">Artists</a></li>
             <li><a href="#">Members</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
@@ -138,7 +158,7 @@ by Jean Dartnall.</strong> (Copies available from the Music Centre)
                 </li>
             <li class="footer-contact-phone">Phone: 07 4724 2086</li>
         </ul>
-        <div class="footer-facebook"><a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534"><img src="images/facebook_logo_small.png" width=29px height=29px alt="facebook"></a></div>
+        <div class="footer-facebook"><a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534"><img src="images/FB-f-Logo__white_29.png" width=29px height=29px alt="facebook"></a></div>
         
     </footer>
 </div> 
