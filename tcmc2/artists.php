@@ -79,11 +79,11 @@ foreach ($dbh->query($sql) as $row)
 <?php            
 echo              "<li>";
 echo                   "<div class='artist-container'>";
-echo                      "<div class='artist-image'><img src='$row[imageUrl]' alt='$row[name]'></div>";
+echo                      "<div class='artist-image'><img src='$row[thumb]' alt='$row[name]'></div>";
 echo                       "<div class='artist-info'>";
 echo                           "<h3 class='artist-info-name'>$row[name]</h2>";
-echo                            "<div class='artist-info-bio'>$row[summary]</div>";
-echo                            "<div class='artist-button'><a href='artistdetailed.php?rowid=$row[id]' class='ui small button colored'>Read More</a></div>";
+echo                            "<div class='artist-info-bio'>$row[summary]";
+echo                            "<div class='artist-button'><a href='artistdetailed.php?rowid=$row[id]' class='ui small button colored'>Read More</a></div></div>";
     echo "<input type='hidden' name='email' value='$row[email]' /></a>";
     echo "<input type='hidden' name='phone' value='$row[phone]' /></a>";
     echo "<input type='hidden' name='fax' value='$row[fax]' /></a>";

@@ -335,7 +335,6 @@ img {
 
     .artist-image {
         width: 180px;
-        height: 180px;
         float: left;
         border: solid 5px darkgray;
         margin-right: 3em;
@@ -351,6 +350,7 @@ img {
 
     .artist-info-bio {
         margin-bottom: 0.5em;
+        margin-left: 17em;
     }
 
     .artist-container {

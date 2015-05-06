@@ -26,17 +26,7 @@ if ($_REQUEST['submit'] == "X")
 
 <?php
 
-// fix this
-
-$target_dir = "../";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$image_path = basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-
-    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    } else {
-    }
+include("upload_file.php");
 
 ?>
 <?php
@@ -44,11 +34,13 @@ $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 if ($_REQUEST['submit'] == "Add Artist")
 {
     
-	$sql = "INSERT INTO artists (name, summary, imageUrl, details, webpage, fax, phone, email, mobile, user) VALUES ('$_REQUEST[name]', '$_REQUEST[summary]', '$image_path', '$_REQUEST[details]', '$_REQUEST[webpage]', '$_REQUEST[fax]', '$_REQUEST[phone]', '$_REQUEST[email]', '$_REQUEST[mobile]', '$_SESSION[username]' )";
+	$sql = "INSERT INTO artists (name, summary, imageUrl, details, webpage, fax, phone, email, mobile, user, thumb) VALUES ('$_REQUEST[name]', '$_REQUEST[summary]', '$fullimage_path', '$_REQUEST[details]', '$_REQUEST[webpage]', '$_REQUEST[fax]', '$_REQUEST[phone]', '$_REQUEST[email]', '$_REQUEST[mobile]', '$_SESSION[username]', '$thumbpath' )";
 	if ($dbh->exec($sql)) {
     		header("Location: ../artists.php");
 }
-	else {}
+	else {
+    echo "<p>failed</p>";
+    }
 }
 else if ($_REQUEST['submit'] == "Delete Entry")
 {

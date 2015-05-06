@@ -34,8 +34,8 @@ echo        "<td><label class='faxLabel' for='fax'>Fax Number    </label></td>";
 echo        "<td><input name='fax' class='fax' type='tel' id='fax' placeholder='0749.....'></td>";
 echo "</tr>";
 echo    "<tr>";
-echo    "<td><label for='fileToUpload'>Photo *</label></td>";
-echo    "<td><input type='file' name='fileToUpload' id='fileToUpload'></td>";
+echo    "<td><label for='file'>Photo *</label></td>";
+echo    "<td> <input type='file' name='imagefile' id='imagefile' /> </td>";
 echo "</tr>";
 echo    "</table>";
 
