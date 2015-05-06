@@ -100,12 +100,12 @@ echo "</fieldset>\n";
 $dbh = null;
 ?> 
             </ul>  
-                        <?php
-if (isset($_SESSION['username'])) {
-            echo                            "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
-include("php/addArtist.php");
+<?php
+    if (isset($_SESSION['username'])) {
+        echo                            "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
+    include("php/addArtist.php");
 }
-               ?> 
+?> 
         </section>
 
 <div class="footer-wrapper">

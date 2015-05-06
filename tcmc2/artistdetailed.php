@@ -67,6 +67,7 @@ foreach ($dbh->query($sql) as $row)
 <?php   
 echo "<section class='artistdetailed'>";
 echo     "<div class='artistdetailed-image'>";
+    echo    "<h2 class='artistdetailed-name'>$row[name]</h2>";
 echo        "<img src='$row[imageUrl]' width='800' height='363' alt='$row[name]'>";
 echo    "</div>";
 echo    "<h2 class='artistdetailed-name'>$row[name]</h2>";
@@ -105,6 +106,14 @@ if (isset($row[email]))
     echo        " <a href='$row[webpage]' class='ui button colored'>Webpage</a>";
 }
 else {}
+    
+    if ($row[user] == $_SESSION['username'] or $_SESSION['username'] == 'Administrator') {
+        
+         echo        " <a href='#openModal3' class='ui button colored'>Update Details</a>";
+        include("php/updateDetails.php");
+    }
+    
+    
 echo    "</div> ";           
 echo "</section>";
 $hits = $row[hits] + 1;
