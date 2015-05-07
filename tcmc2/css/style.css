@@ -57,7 +57,7 @@
 }
 .site-body .container {
 	padding-bottom: 30px;
-	background: rgba(0, 0, 0, .95);
+	background: #212121;
 }
 body {
 	line-height: 1;
@@ -209,7 +209,7 @@ hr {
 	position: relative;
 	max-width: 1038px;
 	margin: 0 auto;
-	padding: 0 10px;
+
 }
 
 .content {
@@ -700,67 +700,76 @@ form label {
 /*------------------------------- Slider -----------------------------*/
 /* Button */
 .ui.button {
-	font-family: "Oswald", Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	font-weight: normal;
-	margin-bottom: 10px;
-	padding: .7em 1.2em;
-	letter-spacing: .7px;
-	text-transform: uppercase !important;
-	color: #FFF;
-	border-radius: 0;
-	background: #077cc1;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding: .7em 1.2em;
+    letter-spacing: .7px;
+    text-transform: uppercase !important;
+    color: #FFF;
+    border-radius: 0;
+    background: #7E7E7E;
 }
-<<<<<<< HEAD .ui.button:hover {
- color: #FFF;
- background: #7E7E7E;
+.rs_img {
+    z-index: 1;
 }
-.ui.button:focus {
-	color: #FFF;
-	box-shadow: none;
-======= .rs_img {
- z-index: 1;
->>>>>>> origin/master
+
+.ui.button.colored {
+    background: #077cc1;
 }
-.ui.button.coloured {
-	background: #077cc1;
+.ui.button.colored:hover {
+    background: #7E7E7E;
 }
-.ui.button.coloured:hover {
-	background: #7E7E7E;
+
+.ui.button {
+    font-size: 15px;
+ 
+    font-weight: bold;
+    padding: 15px 30px;
+    letter-spacing: 1.2px;
 }
-.ui.huge.button {
-	font-size: 15px;
-	font-weight: bold;
-	padding: 15px 30px;
-	letter-spacing: 1.2px;
+.ui.small.button {
+    font-size: 12px;
+    font-weight: bold;
+    background: #077cc1;
+    padding: 6px 20px;
+    letter-spacing: 1.3px;
 }
+.ui.small.button:hover {
+    background: #7E7E7E;
+}
+
 /* Slider */
 .rsContent {
-	z-index: 1;
-	float: left;
-	color: #FFF;
+    z-index: 1;
+ 
+    float: left;
+    color: #FFF;
 }
+
 .bContainer {
-	position: relative;
-	bottom: 240px;
-	left: auto;
-	display: block;
-	z-index: 1;
-	text-align: center;
+    position: relative;
+    bottom: 240px;
+    left: auto;
+    display: block;
+    z-index: 1;
+    text-align: center;
 }
+
 .rs_text_box span {
-	font-family: "Oswald", Helvetica, Arial, sans-serif;
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 50px;
-	display: inline-block;
-	margin-bottom: 10px;
-	padding: 5px 30px;
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	background: rgba(0, 0, 0, .7);
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, .7);
 }
 @media screen and (min-width: 790px) {
-.rs_text_box span {
-	font-size: 40px;
-}
+    .rs_text_box span {
+        font-size: 40px;
+    }

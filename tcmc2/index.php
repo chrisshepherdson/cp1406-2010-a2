@@ -23,52 +23,20 @@ include("php/dbconnect.php");
 
 <!-- START Logo -->    
 <body>
-<div class="container">
-<a href="index.html" rel="home">
-<br><img src="images/logo.png" alt="Townsville Community Music Centre Logo"></a><br/><br/>
-</div>
-<!-- END Logo -->
     
-<!-- WEBSITE LAYOUT Box -->
-<div id="boxed_content" class="boxed_content">
-<div class="inner">
-
-<!-- START Navigation -->          
-<nav class="site-navigation primary-navigation clearfix">
-<div class="menu-all-pages-container">
-<ul class="nav-menu">                      
-<li class="current-menu-item"><a href="index.php">Home</a></li>
-<li><a href="#">Events</a></li>                                         <li><a href="#">Bulletin Board</a></li>
-<li><a href="artists.php">Artists</a></li>
-<li><a href="#">Members</a></li>
-<li><a href="about.php">About</a></li>
-<li><a href="#">Contact</a></li>
-
+    <!---import headde--->
+    
 <?php
-
-    if (isset($_SESSION['username'])) {
-        echo "<li><a href='php/logout.php'>Logout</a></li>";
-  //  echo "<li>{$_SESSION['username']}</li>";
-    } else {
-        echo "<li><a href='#openModal'>Login</a></li>";
-}
-
+require("php/header.php");
 ?>
-    <?php
-include("php/login.php");
-?>
-</ul>
-</div>
 
-            
-            
-</div>
     
-    
-</nav>
+
 <!-- END Navigation -->
     
 <!-- START Slider -->
+    <div id="boxed_content" class="boxed_content">
+    <div class="inner">
 				<div id="home-slider-1" class="royalSlider rsMinW">
 				  <div class="rsContent slide2">
 				    <a class="rsImg" href="images/thumb/slider.jpg"></a>
@@ -83,7 +51,7 @@ include("php/login.php");
 				    </div>
 				  </div>
 				</div>
-                </div>
+                
 
 				<script id="addJS">
 				jQuery(document).ready(function($) {
@@ -108,7 +76,7 @@ include("php/login.php");
 				});
 				</script>
 <!-- END Slider -->  
-
+<div id="content" class="site-content">
 <div class="artist">
 <!-- MAIN Heading -->
 <site-body class="site-body">
@@ -154,20 +122,9 @@ include("php/login.php");
 </div>
 <!-- END Arist 1 -->
 
-        <footer class="site-footer">
-			<div class="container">
-                        <div class="column">
-                                <h4>Footer</h4>
-                                <div>
-                                    <p>Insert</p>
-<a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534" class="ui small button">Facebook</a>          
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</footer>
-	
+<?php
+require("php/footer.php");
+?>
 
 </body>
 </html>
