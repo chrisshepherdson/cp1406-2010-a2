@@ -48,7 +48,7 @@ include("php/dbconnect.php");
 
     if (isset($_SESSION['username'])) {
         echo "<li><a href='php/logout.php'>Logout</a></li>";
-    echo "<li>{$_SESSION['username']}</li>";
+  //  echo "<li>{$_SESSION['username']}</li>";
     } else {
         echo "<li><a href='#openModal'>Login</a></li>";
 }
