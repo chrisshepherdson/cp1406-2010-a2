@@ -3,6 +3,7 @@
 
 session_start();
 
+
 try {
     $dbh = new PDO("sqlite:../db/tcmc.sqlite"); 
 }
@@ -26,7 +27,7 @@ if ($_REQUEST['submit'] == "X")
 
 <?php
 
-include("upload_file.php");
+require("../php/upload_file.php");
 
 ?>
 <?php

@@ -86,7 +86,7 @@ textarea {
 html, body {
 	font-size: 13.5px;
 }
-body, button, input, select, textarea {
+body, button, select {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	line-height: 1.8;
 	color: #AAA;

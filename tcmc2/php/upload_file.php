@@ -1,4 +1,5 @@
 <?php
+
 /*
 PHP File uploading example for CP2010
 Lindsay Ward, 2014 (from various iterations over the years)
@@ -13,7 +14,7 @@ As usual, this is a basic demonstration that you can customise to suit your desi
 
 // include the image library for resizing
 // NOTE: Dreamweaver will not give you code completion for this library, but PHPStorm will.
-require("wideimage/WideImage.php");
+require("../php/wideimage/WideImage.php");
 
 // first just print the data we have for this image so you know what's available
 echo "<pre>";
