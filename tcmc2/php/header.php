@@ -11,7 +11,7 @@ $name = substr($filename, 0, strrpos($filename, ".")); ?>
     </a>
     <!-- END Logo --> 
 
-  
+  <div id="show-menu"><a href="#">Menu</a></div>
 
     <!-- START Navigation -->
     <nav class="site-navigation primary-navigation">
