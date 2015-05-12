@@ -769,7 +769,7 @@ form label {
     padding: 5px 30px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    background: rgba(0, 0, 0, .7);
+   
 }
 @media screen and (min-width: 790px) {
     .rs_text_box span {

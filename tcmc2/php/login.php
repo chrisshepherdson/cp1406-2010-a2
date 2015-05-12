@@ -27,7 +27,7 @@ echo            "</form>";
 if (isset($_POST['submit'])) 
 {
     
-    $sql = "SELECT * FROM users";
+    $sql = "SELECT * FROM users WHERE username = '{$_POST['username']}'";
     foreach ($dbh->query($sql) as $row) 
     {
         if ($row[username] == $_POST['username']) 
