@@ -20,7 +20,7 @@ $name = substr($filename, 0, strrpos($filename, ".")); ?>
           <li <?php if ($name == "index") echo 'class="current-menu-item"'; ?>><a href="index.php">Home</a></li>
           <li <?php if ($name == "events") echo 'class="current-menu-item"'; ?>><a href="events.php">Events</a></li>
           <li <?php if ($name == "bulletinboard") echo 'class="current-menu-item"'; ?>><a href="bulletinboard.php">Bulletin Board</a></li>
-          <li <?php if ($name == "artists") echo 'class="current-menu-item"'; ?>><a href="artists.php">Artists</a></li>
+          <li <?php if ($name == "artists" or $name == "artistdetailed") echo 'class="current-menu-item"'; ?>><a href="artists.php">Artists</a></li>
           <li <?php if ($name == "members") echo 'class="current-menu-item"'; ?>><a href="members.php">Members</a></li>
           <li <?php if ($name == "about") echo 'class="current-menu-item"'; ?>><a href="about.php">About</a></li>
           <li <?php if ($name == "contact") echo 'class="current-menu-item"'; ?>><a href="contact.php">Contact</a></li>
