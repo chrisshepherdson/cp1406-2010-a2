@@ -32,19 +32,11 @@ include("php/dbconnect.php")
     <div class="page-innter">
     <div class="">
         <header class="page-header">
-            <h1 class="page-title">Atists</h1>
+            <h1 class="page-title">Events</h1>
         </header>
     
         
         <div class="content">
-            
-            <div class="artists-intro">
-                
-                <p><strong>Free listing for Music Centre members! Publicise yourself, your band or organisation here!</strong></p>
-                <p>Send your information, photos, etc. to: <a href="mailto:admin@townsvillemusic.org.au">admin@townsvillemusic.org.au</a><br>
-                or mail to: Townsville Community Music Centre, PO Box 1006, Townsville QLD, 4810</p>
-            
-            </div>
 
             <ul class="artist-list">
 <?php

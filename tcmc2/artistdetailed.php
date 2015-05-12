@@ -19,44 +19,20 @@ include("php/dbconnect.php")
 </head>
 <!-- START Logo -->
 <body>
-<div class="container">
-<a href="index.html" rel="home">
-<br><img src="images/logo.png" alt="Townsville Community Music Centre Logo"></a><br/><br/>
-</div>
-<!-- END Logo -->
+<?php
+    require("php/header.php");
+?>
     
-<!-- WEBSITE LAYOUT Box -->
 <div id="boxed_content" class="boxed_content">
-<div class="inner">
-<!-- START Navigation -->
-<nav class="site-navigation primary-navigation clearfix">
-<div class="menu-all-pages-container">
-<ul class="nav-menu">
-<li ><a href="index.php">Home</a></li>
-<li><a href="#">Events</a></li> <li><a href="#">Bulletin Board</a></li>
-<li class="current-menu-item"><a href="artists.php">Artists</a></li>
-<li><a href="#">Members</a></li>
-<li><a href="about.php">About</a></li>
-<li><a href="#">Contact</a></li>
-    <?php
-
-    if (isset($_SESSION['username'])) {
-        echo "<li><a href='php/logout.php'>Logout</a></li>";
-    echo "<li>{$_SESSION['username']}</li>";
-    } else {
-        echo "<li><a href='#openModal'>Login</a></li>";
-}
-
-?>
-    <?php
-include("php/login.php");
-?>
-</ul>
-</div>
-</nav>
-<!-- END Navigation -->
-
-
+<div class="inner"> 
+  
+  <div id="content" class="site-content">
+    <div class="page-inner">
+      <div class="">
+        
+        
+      <div class="content">
+    
 <?php
 // Display what's in the database at the moment.
 $sql = "SELECT * FROM artists WHERE id = '$_REQUEST[rowid]'";
@@ -132,30 +108,15 @@ $dbh->exec($sql);
 $dbh = null;
 ?> 
     
-<div class="footer-wrapper">
-    <footer class="site-footer">
-        
-        <div class="footer-logo"><img src="images/logo.png" width=147px height=98px alt="logo"></div>
-        <ul class="footer-navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Bulletin Board</a></li>
-            <li><a href="#">Artists</a></li>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="footer-contact">
-            <li class="footer-contact-address">41 Boundary Street, Townsville</li>
-            <li class="footer-contact-email">
-                <a href="mailto:admin@townsvillemusic.org.au?Subject=Enquiry" target="_top">admin@townsvillemusic.org.au</a>
-                </li>
-            <li class="footer-contact-phone">Phone: 07 4724 2086</li>
-        </ul>
-        <div class="footer-facebook"><a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534"><img src="images/facebook_logo_small.png" width=29px height=29px alt="facebook"></a></div>
-        
-    </footer>
-</div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+<?php
+require("php/footer.php");
+?>
     
     
 </body>
