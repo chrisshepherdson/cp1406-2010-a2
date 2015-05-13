@@ -44,7 +44,7 @@ require("php/header.php");
             <ul class="horizontal-list">
               <li id="home_icon"> 41 Boundary Street, Townsville, Qld 4810</li>
               <li id="phone_icon"> (07) 4724 2086</li>
-              <li id="phone_icon"> (07) 4724 2086</li>
+              <li id="mobile_icon"> (07) 4724 2086</li>
               <li id="mail_icon"> admin@townsvillemusic.org.au</li>
             </ul>
             <br>

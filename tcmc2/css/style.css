@@ -571,19 +571,25 @@ header nav {
 	margin-bottom: 15px;
 }
 #home_icon {
-	background: url(http://openmbta.org/images/map/TrackingDot.png);
+	background: url(../images/icons/house.png);
 	background-repeat: no-repeat;
 	margin-left: 10px;
 	padding-left: 30px;
 }
 #phone_icon {
-	background: url(http://openmbta.org/images/map/TrackingDot.png) 0 0;
+	background: url(../images/icons/phone.png) 0 0;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	padding-left: 30px;
+}
+#mobile_icon {
+	background: url(../images/icons/mobile.png) 0 0;
 	background-repeat: no-repeat;
 	margin-left: 10px;
 	padding-left: 30px;
 }
 #mail_icon {
-	background: url(http://openmbta.org/images/map/TrackingDot.png) 0 0;
+	background: url(../images/icons/mail.png) 0 0;
 	background-repeat: no-repeat;
 	margin-left: 10px;
 	padding-left: 30px;
