@@ -32,11 +32,12 @@ if (isset($_POST['submit']))
     {
         if ($row[username] == $_POST['username']) 
         {
-            if ($row[password] == $_POST['password']) 
+            if ($row[password] == md5($_POST['password'])) 
             {
                 unset($_SESSION['error']);
                 $_SESSION['username'] = $_POST['username'];
-                $_SESSION['id'] = $row[id];
+                $_SESSION['id'] = $row[Id];
+                $_SESSION['paid'] = $row[paid];
                 header("Location:#close");
             } 
             else 

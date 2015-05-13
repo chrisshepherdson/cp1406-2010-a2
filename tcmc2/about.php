@@ -40,7 +40,7 @@ require("php/header.php");
     
     <section class="about-intro">
         <div class="about-intro-image">
-            <img src="images/CivicFront300_edit.jpg" width="244" height="170" alt="image">
+            <img src="images/CivicFront300.jpg" width="244" height="170" alt="image">
         </div>
         <div class="about-intro-text">
             <h3>Townsville Community Music Centre</h3>
@@ -71,7 +71,7 @@ require("php/header.php");
     
     <section class="about-lookingback">
         <div class="about-lookingback-image">
-            <img src="images/old-music_edit.jpg" width="500" height="161" alt="image">
+            <img src="images/old-music.jpg" width="500" height="161" alt="image">
         </div>
         <div class="about-lookingback-text">
             <h3>Looking Back - The First 30 Years</h3>

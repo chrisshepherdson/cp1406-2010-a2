@@ -79,7 +79,7 @@ $dbh = null;
 ?> 
             </ul>  
 <?php
-    if (isset($_SESSION['username'])) {
+if (isset($_SESSION['username']) and $_SESSION['paid'] == '1') {
         echo                            "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
     include("php/addArtist.php");
 }

@@ -9,7 +9,7 @@ include("php/dbconnect.php")
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Townsville Community Music Centre - Artists</title>
+<title>Townsville Community Music Centre - Events</title>
 <meta name="description" content="With the support of the Townsville City Council, we work from an office in the Civic ... All private schools and most government schools have music teachers.">
 <link rel="stylesheet" href="css/style.css">
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -41,7 +41,7 @@ include("php/dbconnect.php")
             <ul class="artist-list">
 <?php
 // Display what's in the database at the moment.
-$sql = "SELECT * FROM artists";
+$sql = "SELECT * FROM events";
 foreach ($dbh->query($sql) as $row)
 {
 ?>
@@ -54,10 +54,10 @@ echo                       "<div class='artist-info'>";
 echo                           "<h3 class='artist-info-name'>$row[name]</h2>";
 echo                            "<div class='artist-info-bio'>$row[summary]";
 echo                            "<div class='artist-button'><a href='artistdetailed.php?rowid=$row[id]' class='ui small button colored'>Read More</a></div></div>";
-    echo "<input type='hidden' name='email' value='$row[email]' /></a>";
-    echo "<input type='hidden' name='phone' value='$row[phone]' /></a>";
-    echo "<input type='hidden' name='fax' value='$row[fax]' /></a>";
-    echo "<input type='hidden' name='id' value='$row[id]' /></a>";
+//    echo "<input type='hidden' name='email' value='$row[email]' /></a>";
+//    echo "<input type='hidden' name='phone' value='$row[phone]' /></a>";
+//    echo "<input type='hidden' name='fax' value='$row[fax]' /></a>";
+//    echo "<input type='hidden' name='id' value='$row[id]' /></a>";
 echo                        "</div>";
 echo                    "</div>";
 echo                "</li>";
@@ -72,8 +72,10 @@ $dbh = null;
             </ul>  
 <?php
     if (isset($_SESSION['username'])) {
-        echo                            "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
-    include("php/addArtist.php");
+        if ($_SESSION['username'] == 'Administrator') {
+        echo                            "<div class='artist-button'><a href='#openModal4' class='ui small button colored'>Add new Event</a></div>";
+    include("php/addEvent.php");
+        }
 }
 ?> 
     
