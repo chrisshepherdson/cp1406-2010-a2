@@ -4,127 +4,183 @@ session_start();
 include("php/dbconnect.php");
 
 ?>
-
-
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">   
-<title>Townsville Community Music Centre</title> 
+<meta charset="utf-8">
+<title>Townsville Community Music Centre - Artists</title>
 <meta name="description" content="With the support of the Townsville City Council, we work from an office in the Civic ... All private schools and most government schools have music teachers.">
-<link rel="stylesheet" href="css/style.css">  
+<link rel="stylesheet" href="css/style.css">
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-
 <!-- JS -->
-<script src="js/jquery-1.11.1.min.js"></script>   
+<script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
 </head>
 
-<!-- START Logo -->    
 <body>
-    
-    <!---import headde--->
-    
+  
 <?php
 require("php/header.php");
 ?>
-
-    
-
-<!-- END Navigation -->
-    
-<!-- START Slider -->
-    <div id="boxed_content" class="boxed_content">
-    <div class="inner">
-				<div id="home-slider-1" class="royalSlider rsMinW">
-				  <div class="rsContent slide2">
-				    <a class="rsImg" href="images/thumb/slider.jpg"></a>
-				    <div class="bContainer">
-				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Artist</div>
-				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
-				    		<span>Insert Concert Title</span><br><br>
-				    	</div>
-				    	<div class="rsABlock" data-move-effect="bottom">
-				    		<a href="#" class="ui button colored">Insert Action</a>
-				    	</div>
-				    </div>
-				  </div>
-				</div>
+<!-- WEBSITE LAYOUT Box -->
+<div id="boxed_content" class="boxed_content">
+<div class="inner"> 
+  
+  <div id="content" class="site-content">
+    <div class="page-inner">
+      <div class="container">
+        </header>
+        <div class="content">
+        						
+      <a href="events.html" class="white"><h2>Upcoming Events</h2></a>
+      <section class="events">      
+            <ul class="events-list">
                 
+                <li>
+                    <div class="event-container">
+                        <div class="event-image"></div>
+                        <div class="event-info">
+                            <h3 class="event-info-name">EVENT ONE</h2>
+                            <div class="event-info-details">
+                                <span class="event-time">time</span>
+                                <span class="event-day">day</span>
+                                <span class="event-date">date</span>
+                                <span class="event-location">location</span>
+                            </div>
+                            <div class="event-info-text">
+                                event details, event details, event details, event details, event details, event details, event details, event details, event details,                       
+                            </div>
+                            <br>
+                            <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+                        </div>
+                   
+                </li>
+                            <li>
+                    <div class="event-container">
+                        <div class="event-image"></div>
+                        <div class="event-info">
+                            <h3 class="event-info-name">EVENT ONE</h2>
+                            <div class="event-info-details">
+                                <span class="event-time">time</span>
+                                <span class="event-day">day</span>
+                                <span class="event-date">date</span>
+                                <span class="event-location">location</span>
+                            </div>
+                            <div class="event-info-text">
+                                event details, event details, event details, event details, event details, event details, event details, event details, event details,                       
+                            </div>
+                            <br>
+                            <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>       
+        </section> 
+            <br>
+      <a href="bulletinboard.html" class="white"><h2>Bulletin Board Highlights</h2></a>
+      <section class="events">      
+            <ul class="events-list">
+                
+                <li>
+                    <div class="event-container">
+                        <div class="event-image"></div>
+                        <div class="event-info">
+                            <h3 class="event-info-name">EVENT ONE</h2>
+                            <div class="event-info-details">
+                                <span class="event-time">time</span>
+                                <span class="event-day">day</span>
+                                <span class="event-date">date</span>
+                                <span class="event-location">location</span>
+                            </div>
+                            <div class="event-info-text">
+                                event details, event details, event details, event details, event details, event details, event details, event details, event details,                       
+                            </div>
+                            <br>
+                            <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+                        </div>
+                </li>
+            </ul>       
+        </section> 
+            <br>
+                  <a href="artists.html" class="white"><h2>Popular Artists</h2></a>
+      <section class="events">      
+            <ul class="events-list">
+                
+                <li>
+                    <div class="event-container">
+                        <div class="event-image"></div>
+                        <div class="event-info">
+                            <h3 class="event-info-name">EVENT ONE</h2>
+                            <div class="event-info-details">
+                                <span class="event-time">time</span>
+                                <span class="event-day">day</span>
+                                <span class="event-date">date</span>
+                                <span class="event-location">location</span>
+                            </div>
+                            <div class="event-info-text">
+                                event details, event details, event details, event details, event details, event details, event details, event details, event details,                       
+                            </div>
+                            <br>
+                            <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+                        </div>
+                   
+                </li>
+                            <li>
+                    <div class="event-container">
+                        <div class="event-image"></div>
+                        <div class="event-info">
+                            <h3 class="event-info-name">EVENT ONE</h2>
+                            <div class="event-info-details">
+                                <span class="event-time">time</span>
+                                <span class="event-day">day</span>
+                                <span class="event-date">date</span>
+                                <span class="event-location">location</span>
+                            
+                            <div class="event-info-text">
+                                ...                
+                            </div>
+                            <br>
+                            <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>       
+        </section> 
+            <br>
+                  <a href="about.html" class="white"><h2>About Us</h2></a>
+      <section class="events">      
+            <ul class="events-list">
+                
+                <li>
+                    <div class="event-container">
+                        <div class="event-image"></div>
+                        <div class="event-info">
+                            <h3 class="event-info-name">Townsville Community Music Centre</h2>
+                            <div class="event-info-text">
+                                Based in Townsville, North Queensland, the Music Centre presnts concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists.                   
+                            </div>
+                            <br>
+                            <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+                        </div>
+                </li>
+            </ul>       
+        </section> 
+            <br />
 
-				<script id="addJS">
-				jQuery(document).ready(function($) {
-						jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
-							$('#home-slider-1').royalSlider({
-							arrowsNav: true,
-							arrowsNavAutoHide: true,
-							fadeinLoadedSlide: false,
-							controlNavigationSpacing: 0,
-							controlNavigation: 'bullets',
-							imageScaleMode: 'none',
-							imageAlignCenter:false,
-							blockLoop: true,
-							loop: true,
-							numImagesToPreload: 6,
-							transitionType: 'fade',
-							keyboardNavEnabled: true,
-							block: {
-								delay: 400
-							}
-						});
-				});
-				</script>
-<!-- END Slider -->  
-<div id="content" class="site-content">
-<div class="artist">
-<!-- MAIN Heading -->
-<site-body class="site-body">
-<div class="container"> 
-<h4>Artists</h4>
-<article class="post clearfix">
-<!-- IMAGE Artist 1 -->
-<!-- Duplicate this section till END Artist 1 and Paste Below for more Artists-->
-<div class="entry-thumb">
-<a href="#"><img src="images/thumb/Artists/artist1.jpg" alt="#"></img></a>
-</div>
-<!-- TEXT -->
-<div class="entry-detail">
-<div class="entry-header">
-<h2 class="entry-title"><a href="#">Insert Artist</a></h2>
-<div class="entry-meta">
-<span>Insert Sub-Title</span>
-<span><span class="sep">/</span>
-<a href="#">Insert Website or Link</a>
-</span>
-</div>
-<div class="entry-content">
-<h1>Heading One</h1>
-<p>Insert Description</p>
-<h2>Heading Two</h2>
-<p>Insert Description</p>
-<h3>Heading Three</h3>
-<p>Insert Description</p>
-<h4>Heading Four</h4>
-<p>Insert Description</p>
-<h5>Heading Five</h5>
-<p>Insert Description</p>
-<h6>Heading Six</h6>
-<p>Insert Description</p>
-</div>
-<div>
-<a href="#" class="ui small button">Insert Text</a>
-</div>
-</div>
-</div>
-</article>
-</site-body>
-</div>
-<!-- END Arist 1 -->
-
+          <section class="bottom-section">
+            <div class="bottom-featured-img"><a href="http://www.townsville.qld.gov.au/Pages/default.aspx"><img src="images/1a.jpg" /></a></div>
+            <div class="bottom-featured-img"><a href="https://www.qld.gov.au/"><img src="images/1b.jpg" /></a></div>
+          </section>
+          <br />
+          
+        <!-- END #primary --> 
+        
+      </div>
+    </div>
+    <!-- END .site-content --> 
 <?php
 require("php/footer.php");
 ?>
-
 </body>
 </html>
