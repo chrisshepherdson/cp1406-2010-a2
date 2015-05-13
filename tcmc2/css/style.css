@@ -95,6 +95,47 @@ body, button, select {
 body {
 	background: url("../images/bg.jpg") no-repeat top center fixed black;
 }
+
+/* ---- Events ------ */
+ 
+    /* Event List */
+    .events-list li {
+        list-style: none;
+    }
+ 
+    .event-image {
+        width: 180px;
+        height: 180px;
+        float: left;
+        border: solid 5px darkgray;
+        margin-right: 3em;
+    }
+ 
+    .event-info-name {
+        margin-bottom: 0;
+    }
+ 
+    .event-info-text {
+        margin-bottom: 0.5em;
+    }
+ 
+    .event-container {
+        min-height: 180px;
+        min-width: 600px;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+ 
+    .event-info-details span:after {
+        content: " / ";
+    }
+ 
+    .event-info-details span:last-child:after {
+        content: " ";   
+    }
+/*------------------------------ Links ------------------------------*/
+a.white {text-decoration: none; color:white;}
+a.white:hover {text-decoration: none; color:#077cc1;}
 /*------------------------------ Links ------------------------------*/
 a {
 	transition: opacity .25s ease 0s, background-color .25s ease 0s, color .25s ease 0s, background .25s ease 0s, box-shadow .25s ease 0s;
@@ -210,7 +251,7 @@ hr {
 	position: relative;
 	max-width: 1038px;
 	margin: 0 auto;
-
+    
 }
 
 .content {
@@ -227,13 +268,17 @@ header {
     padding: 2em 0 0;
     color: #fff;
     max-width: 1080px !important;
-    margin: 0 auto;
+ 
 }
 
 header::after {
     content: '';
     display: inline-block;
     width: 100%;
+}
+
+header.boxed_content {
+    margin: 30px auto auto;
 }
 
 header #show-menu {
@@ -385,6 +430,20 @@ header nav {
 .page-header .page-title {
 	padding-top: 0px;
 }
+
+ .bottom-section {
+  width: 100%;
+  text-align: center;
+}
+ 
+.bottom-section .bottom-featured-img{
+  width: 180px;
+  height: 180px;
+  border: 5px solid #A9A9A9;
+  display: inline-block;
+  margin: 5px 5%;
+}
+ 
 
 @media screen and (min-width: 790px) {
 #primary {
@@ -561,6 +620,9 @@ header nav {
 
 /* Contact
 ------------------------------*/
+.about-history-table th, td {
+   
+}
 .map-contact {
 	margin-bottom: 30px;
 	padding: 20px 20px 20px 20px;
@@ -717,7 +779,7 @@ form label {
     text-transform: uppercase !important;
     color: #FFF;
     border-radius: 0;
-    background: #7E7E7E;
+    background: #077cc1;
 }
 .rs_img {
     z-index: 1;
@@ -775,6 +837,7 @@ form label {
     padding: 5px 30px;
     letter-spacing: 3px;
     text-transform: uppercase;
+    background: rgba(0, 0, 0, .7);
    
 }
 @media screen and (min-width: 790px) {
