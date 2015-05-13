@@ -6,7 +6,7 @@
           <li><a href="index.php">Home</a></li>
           <li><a href="events.php">Events</a></li>
           <li><a href="bulletinboard.php">Bulletin Board</a></li>
-          <li><a href="arists.php">Artists</a></li>
+          <li><a href="artists.php">Artists</a></li>
           <li><a href="members.php">Members</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="contact.php">Contact</a></li>
