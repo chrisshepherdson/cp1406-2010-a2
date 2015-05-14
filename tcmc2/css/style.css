@@ -133,6 +133,61 @@ body {
     .event-info-details span:last-child:after {
         content: " ";   
     }
+    
+    /* ---- Bulletin Board ------ */
+.bulletinboard {
+    color: #FFF;
+}
+
+    /* bulletinboard List */
+    .bulletinboard-list li {
+        list-style: none;
+    }
+
+    .bulletin-image {
+        width: 180px;
+        height: 180px;
+        float: left;
+        border: solid 5px darkgray;
+        margin-right: 3em;
+    }
+
+    .bulletin-info-title {
+        margin-bottom: 0;
+    }
+
+    .bulletin-info-text {
+        margin-bottom: 0.5em;
+    }
+
+    .bulletin-container {
+        min-height: 213px;
+        min-width: 600px;
+        margin-bottom: 4em;
+        margin-top: 2em;
+    }
+
+    .bulletin-details-list {
+        border-top: solid 1px white;
+        margin-bottom: 0.5em;
+        margin-left: 0.1em;
+    }
+
+    .bulletin-details-list li {
+        float: left
+        list-style: none;
+        display: inline-block;
+        padding-right: 3em;
+    }
+
+    .bulletin-details-list li:last-child {
+        float: right
+    }
+
+    .bulletin-button-list li {
+        display:inline-block;
+    }
+    
 /*------------------------------ Links ------------------------------*/
 a.white {text-decoration: none; color:white;}
 a.white:hover {text-decoration: none; color:#077cc1;}
