@@ -48,32 +48,16 @@ require("php/header.php");
         </div>
     </section>
     
-    <section class="about-contact">
-        <h3>Contact Details</h3>
-        <div class="about-contact-info-container">
-            <div class="about-contact-info-1">
-                <p>
-                    <strong>Phone</strong> <span id="info-contact-phone">07 4724 2086</span><br>
-                    <strong>Mobile</strong> <span id="info-contact-mobile">0402 255 182</span><br>
-                    <strong>Email</strong> <span id="info-contact-email"><a href="mailto:admin@townsvillemusic.org.au?Subject=Enquiry" target="_top">admin@townsvillemusic.org.au</a></span>
-                </p>
-            </div>
-            <div class="about-contact-info-2">
-                <p>
-                    <strong>Street Address</strong> <span id="info-contact-address1">Townsville Civic Theatre, 41 Boundry Street,</span><br>
-                    <span id="info-contact-address2">Townsville, Qld 4810</span><br>
-                    <strong>Postal Address PO Box</strong> <span id="info-contact-postal">1006, Townsville, Qld 4810</span>
-                </p>
-            </div>
-        </div>
-    </section>
+    
     
     
     <section class="about-lookingback">
-        <div class="about-lookingback-image">
-            <img src="images/old-music.jpg" width="500" height="161" alt="image">
-        </div>
+        
         <div class="about-lookingback-text">
+            <br>
+            <br>
+            <br>
+            <br>
             <h3>Looking Back - The First 30 Years</h3>
             <p>
                 The Townsville Community Music Centre celebrated its 30th year in 2013.<br>
@@ -87,6 +71,9 @@ Also discovered in the old collection were some pieces relevant to North Queensl
     </section>
     
     <section class="about-history">
+        <div class="about-lookingback-image">
+            <img src="images/old-music.jpg" width="500" height="161" alt="image">
+        </div>
         <h3>A Brief History - By Jean Dartnall</h3>
         <table class="about-history-table">
             <tr><th>1983</th><td>The Townsville Community Music Centre was established at a public meeting on May 24th. Then Deputy Mayor, Ken McElligott, opened the meeting and presented a cheque for $50 from the City Council to cover initial petty cash, the Centre's first funds. At the meeting an executive committee was formed. Over the next few weeks that committee drafted a constitution which was endorsed at another public meeting on June 15th. Fred Thompson was Chairman from September 1983, with Gordon Dean as his Deputy and Jan Eagleton as Secretary.</td></tr>

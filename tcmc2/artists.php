@@ -41,8 +41,13 @@ include("php/dbconnect.php")
             <div class="artists-intro">
                 
                 <p><strong>Free listing for Music Centre members! Publicise yourself, your band or organisation here!</strong></p>
-                <p>Send your information, photos, etc. to: <a href="mailto:admin@townsvillemusic.org.au">admin@townsvillemusic.org.au</a><br>
-                or mail to: Townsville Community Music Centre, PO Box 1006, Townsville QLD, 4810</p>
+<?php
+                    if (isset($_SESSION['username']) and $_SESSION['paid'] == '1') {
+                    echo    "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
+                    
+}
+?> 
+               
             
             </div>
 
@@ -80,7 +85,6 @@ $dbh = null;
             </ul>  
 <?php
 if (isset($_SESSION['username']) and $_SESSION['paid'] == '1') {
-        echo                            "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
     include("php/addArtist.php");
 }
 ?> 
