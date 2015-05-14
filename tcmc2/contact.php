@@ -47,8 +47,8 @@ require("php/header.php");
               <li id="mail_icon"> admin@townsvillemusic.org.au</li>
             </ul>
             <br>
-            <h4>Insert Heading Here</h4>
-            <p>Insert text here...</p>
+            <h4>CONTACT US</h4>
+            <p>We would love to hear from you! Please let us know how we can be of service.</p>
             <form id="contact_form" name="contact_form" method="post" action="#">
               <div class="form-row field_text">
                 <label for="contact_name">Your Name </label>
@@ -76,7 +76,7 @@ require("php/header.php");
                 <textarea id="contact_message" class="input_textarea" type="text" value="" name ="contact_message"></textarea>
               </div>
               <div class="form-row field_submit">
-                <input type="submit" value="Submit" id="contact_submit" class="ui button coloured"></div>
+                <input type="submit" value="Submit" id="contact_submit" class="ui small button colored"></div>
               <div class="form-row notice_bar">
                 <p class="notice notice_ok hide">Thank you for contacting us. We will get back to you as soon as possible.</p>
                 <p class="notice notice_error hide">Due to an unknown error, your form was not submitted. Please resubmit it or try later.</p>
