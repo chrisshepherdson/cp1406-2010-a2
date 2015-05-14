@@ -32,9 +32,64 @@ include("php/dbconnect.php")
     <div class="page-innter">
     <div class="">
         <header class="page-header">
-            <h1 class="page-title">bulletin Board - Coming Soon :)</h1>
+            
         </header>
+        <section class="bulletinboard">
+        <h2>Bulletin Board</h2>
+        
+
+        <ul class="bulletinboard-list">
+            
+            <li>
+                <div class="bulletin-container">
+                    <div class="bulletin-details">
+                        <ul class="bulletin-details-list">
+                            <li><span class="bulletin-user">Username</span></li>
+                            <li><span class="bulletin-date">Date</span></li>
+                        </ul>
+                    </div>
+                    <div class="bulletin-image">IMAGE</div>
+                    <div class="bulletin-info">
+                        <h3 class="bulletin-info-title">BULLETIN ONE</h2>
+                        <div class="bulletin-info-text">
+                            insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, 
+                        </div>
+                        <ul class="bulletin-button-list">
+                            <li><div class="event-button"><a href="#" class="ui small button colored">Button 1</a></div></li>
+                            <li><div class="event-button"><a href="#" class="ui small button colored">Button 2</a></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            
+            <li>
+                <div class="bulletin-container">
+                    <div class="bulletin-details">
+                        <ul class="bulletin-details-list">
+                            <li><span class="bulletin-user">Groot</span></li>
+                            <li><span class="bulletin-date">06-08-1945</span></li>
+                        </ul>
+                    </div>
+                    <div class="bulletin-image">IMAGE</div>
+                    <div class="bulletin-info">
+                        <h3 class="bulletin-info-title">BULLETIN TWO</h2>
+                        <div class="bulletin-info-text">
+                            insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, 
+                        </div>
+                        <ul class="bulletin-button-list">
+                            <li><div class="event-button"><a href="#" class="ui small button colored">Facebook</a></div></li>
+                            <li><div class="event-button"><a href="#" class="ui small button colored">Email</a></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        
+        
+        </ul>
+        
+        
     
+    </section>
         
         
         </div>
