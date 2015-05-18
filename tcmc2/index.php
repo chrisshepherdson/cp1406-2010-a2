@@ -11,8 +11,8 @@ include("php/dbconnect.php");
 <title>Townsville Community Music Centre - Artists</title>
 <meta name="description" content="With the support of the Townsville City Council, we work from an office in the Civic ... All private schools and most government schools have music teachers.">
 <link rel="stylesheet" href="css/style.css">
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
 <!-- JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
@@ -29,7 +29,7 @@ require("php/header.php");
 				<div id="home-slider-1" class="royalSlider rsMinW">
 
 				  <div class="rsContent slide2">
-				    <a class="rsImg" href="../images/thumb/slider2.jpg"></a>
+				    <a class="rsImg" href="images/thumb/slider2.jpg"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -42,7 +42,7 @@ require("php/header.php");
 				  </div>
 
 				  <div class="rsContent slide1">
-				    <a class="rsImg" href="../images/thumb/slider1.jpg"></a>
+				    <a class="rsImg" href="images/thumb/slider1.jpg"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -55,7 +55,7 @@ require("php/header.php");
 				  </div>
 
 				  <div class="rsContent slide3">
-				    <a class="rsImg" href="../images/thumb/slider3.jpg"></a>
+				    <a class="rsImg" href="images/thumb/slider3.jpg"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -92,7 +92,7 @@ require("php/header.php");
 				</script>
 <div class="page-inner">
   <div class="container">
-    </header>
+  
     <div class="content"> <a href="about.php" class="white">
       <h2>About Us</h2>
       </a>
@@ -100,14 +100,15 @@ require("php/header.php");
         <ul class="events-list">
           <li>
             <div class="event-container">
-            <a href=about.php"><div class="event-image"></div></a>
+            <a href="about.php"> <div class="event-image"></div></a>
             <div class="event-info">
               <h3 class="event-info-name">Townsville Community Music Centre</h3>
               <div class="event-info-text"> Based in Townsville, North Queensland, the Music Centre presnts concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. </div>
               <br>
-              <div class="event-button"><a href="about.html" class="ui small button coloured">Read More</a></div>
+              <div class="event-button"><a href="about.php" class="ui small button coloured">Read More</a></div>
             </div>
-          </li>
+              </div>
+                </li>
         </ul>
       </section>
       <br />
@@ -125,7 +126,7 @@ require("php/header.php");
               <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
               <br>
               <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
-            </div>
+                </div> </div>
           </li>
           <li>
             <div class="event-container">
@@ -155,8 +156,8 @@ require("php/header.php");
               <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
               <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
               <br>
-              <div class="event-button"><a href="bulletinboard.html" class="ui small button coloured">Read More</a></div>
-            </div>
+              <div class="event-button"><a href="bulletinboard.php" class="ui small button coloured">Read More</a></div>
+                </div> </div>
           </li>
         </ul>
       </section>
@@ -175,7 +176,7 @@ require("php/header.php");
               <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
               <br>
               <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
-            </div>
+                </div> </div>
           </li>
           <li>
             <div class="event-container">
@@ -187,7 +188,7 @@ require("php/header.php");
                 <br>
                 <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
               </div>
-            </div>
+                </div> </div>
           </li>
         </ul>
       </section>
@@ -203,13 +204,13 @@ require("php/header.php");
       
                </div>
   </div>                                                                                                    
-  
+
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 
   <!-- END .site-content -->
   <?php
 require("php/footer.php");
 ?>
-                                                                        
+    </div></div></div></div>                                                                       
 </body>
 </html>
