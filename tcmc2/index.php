@@ -203,7 +203,7 @@ require("php/header.php");
       
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow86.js"></script>
 
   <!-- END .site-content -->
