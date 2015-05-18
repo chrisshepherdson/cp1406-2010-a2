@@ -26,6 +26,70 @@ require("php/header.php");
 <div id="boxed_content" class="boxed_content">
 <div class="inner">
 <div id="content" class="site-content">
+				<div id="home-slider-1" class="royalSlider rsMinW">
+
+				  <div class="rsContent slide2">
+				    <a class="rsImg" href="images/thumb/slider2.jpg"></a>
+				    <div class="bContainer">
+				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
+				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
+				    		<span>Insert Text</span>
+				    	</div>
+				    	<div class="rsABlock" data-move-effect="bottom">
+				    		<a href="#" class="ui huge button coloured">Insert Text</a>
+				    	</div>
+				    </div>
+				  </div>
+
+				  <div class="rsContent slide1">
+				    <a class="rsImg" href="images/thumb/slider1.jpg"></a>
+				    <div class="bContainer">
+				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
+				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
+				    		<span>Insert Text</span>
+				    	</div>
+				    	<div class="rsABlock" data-move-effect="bottom">
+				    		<a href="#" class="ui huge button coloured">Insert Text</a>
+				    	</div>
+				    </div>
+				  </div>
+
+				  <div class="rsContent slide3">
+				    <a class="rsImg" href="images/thumb/slider3.jpg"></a>
+				    <div class="bContainer">
+				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
+				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
+				    		<span>Insert Text</span>
+				    	</div>
+				    	<div class="rsABlock" data-move-effect="bottom">
+				    		<a href="#" class="ui huge button coloured">Insert Text</a>
+				    	</div>
+				    </div>
+				  </div>
+				  
+				</div> <!-- END royalSlider -->
+				<script id="addJS">
+				jQuery(document).ready(function($) {
+						jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+							$('#home-slider-1').royalSlider({
+							arrowsNav: true,
+							arrowsNavAutoHide: true,
+							fadeinLoadedSlide: false,
+							controlNavigationSpacing: 0,
+							controlNavigation: 'bullets',
+							imageScaleMode: 'none',
+							imageAlignCenter:false,
+							blockLoop: true,
+							loop: true,
+							numImagesToPreload: 6,
+							transitionType: 'fade',
+							keyboardNavEnabled: true,
+							block: {
+								delay: 400
+							}
+						});
+				});
+				</script>
 <div class="page-inner">
   <div class="container">
     </header>
@@ -41,7 +105,7 @@ require("php/header.php");
               <h3 class="event-info-name">Townsville Community Music Centre</h3>
               <div class="event-info-text"> Based in Townsville, North Queensland, the Music Centre presnts concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. </div>
               <br>
-              <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+              <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
             </div>
           </li>
         </ul>
@@ -60,7 +124,7 @@ require("php/header.php");
               <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
               <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
               <br>
-              <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+              <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
             </div>
           </li>
           <li>
@@ -71,7 +135,7 @@ require("php/header.php");
                 <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
                 <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
                 <br>
-                <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+                <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
               </div>
             </div>
           </li>
@@ -91,7 +155,7 @@ require("php/header.php");
               <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
               <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
               <br>
-              <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+              <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
             </div>
           </li>
         </ul>
@@ -110,7 +174,7 @@ require("php/header.php");
               <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
               <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
               <br>
-              <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+              <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
             </div>
           </li>
           <li>
@@ -121,7 +185,7 @@ require("php/header.php");
               <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span>
                 <div class="event-info-text"> ... </div>
                 <br>
-                <div class="event-button"><a href="#" class="ui small button colored">Read More</a></div>
+                <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
               </div>
             </div>
           </li>
@@ -139,6 +203,9 @@ require("php/header.php");
       
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow86.js"></script>
+
   <!-- END .site-content -->
   <?php
 require("php/footer.php");
