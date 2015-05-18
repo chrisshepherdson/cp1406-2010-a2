@@ -93,14 +93,14 @@ require("php/header.php");
 <div class="page-inner">
   <div class="container">
     </header>
-    <div class="content"> <a href="about.html" class="white">
+    <div class="content"> <a href="about.php" class="white">
       <h2>About Us</h2>
       </a>
       <section class="events">
         <ul class="events-list">
           <li>
             <div class="event-container">
-            <a href=about.html"><div class="event-image"></div></a>
+            <a href=about.php"><div class="event-image"></div></a>
             <div class="event-info">
               <h3 class="event-info-name">Townsville Community Music Centre</h3>
               <div class="event-info-text"> Based in Townsville, North Queensland, the Music Centre presnts concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. </div>
@@ -111,7 +111,7 @@ require("php/header.php");
         </ul>
       </section>
       <br />
-      <a href="events.html" class="white">
+      <a href="events.php" class="white">
       <h2>Upcoming Events</h2>
       </a>
       <section class="events">
@@ -142,7 +142,7 @@ require("php/header.php");
         </ul>
       </section>
       <br>
-      <a href="bulletinboard.html" class="white">
+      <a href="bulletinboard.php" class="white">
       <h2>Bulletin Board Highlights</h2>
       </a>
       <section class="events">
@@ -161,7 +161,7 @@ require("php/header.php");
         </ul>
       </section>
       <br>
-      <a href="artists.html" class="white">
+      <a href="artists.php" class="white">
       <h2>Popular Artists</h2>
       </a>
       <section class="events">
@@ -201,8 +201,8 @@ require("php/header.php");
       
       <!-- END #primary --> 
       
-    </div>
-  </div>
+               </div>
+  </div>                                                                                                    
   
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 
@@ -210,5 +210,6 @@ require("php/header.php");
   <?php
 require("php/footer.php");
 ?>
+                                                                        
 </body>
 </html>

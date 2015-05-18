@@ -17,6 +17,20 @@ include("php/dbconnect.php")
 <!-- JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+
+
+
+<script type="text/javascript">
+tinyMCE.init({
+    selector: "textarea",
+    menubar: false,
+     toolbar: false,
+    statusbar : false
+    
+    
+});
+</script>
 </head>
 <!-- START Logo -->
 <body>
