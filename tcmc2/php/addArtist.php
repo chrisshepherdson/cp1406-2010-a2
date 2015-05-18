@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-echo    "<div id='openModal2' class ='modalDialog'>";     
+echo    "<div id='openModal2' class ='addArtistDialog'>";     
 echo        "<div>";
 echo		"<a href='#close' title='Close' class='close'>X</a>";
 echo		"<h2>Add New Artist</h2>";
