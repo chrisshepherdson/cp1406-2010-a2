@@ -40,4 +40,5 @@ echo            "<input name='id' type='hidden' value='$_GET[rowid]'/>";
 echo            "<input name= 'submit' class='submit' type='submit' value='Update Artist' >";      
 echo            "<input type='submit' name='submit' value='Delete Artist' class='deleteButton'>";
 echo            "</form>";  
+
 ?>
