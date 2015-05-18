@@ -29,7 +29,7 @@ require("php/header.php");
 				<div id="home-slider-1" class="royalSlider rsMinW">
 
 				  <div class="rsContent slide2">
-				    <a class="rsImg" href="images/thumb/slider2.jpg"></a>
+				    <a class="rsImg" href="../images/thumb/slider2.jpg"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -42,7 +42,7 @@ require("php/header.php");
 				  </div>
 
 				  <div class="rsContent slide1">
-				    <a class="rsImg" href="images/thumb/slider1.jpg"></a>
+				    <a class="rsImg" href="../images/thumb/slider1.jpg"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -55,7 +55,7 @@ require("php/header.php");
 				  </div>
 
 				  <div class="rsContent slide3">
-				    <a class="rsImg" href="images/thumb/slider3.jpg"></a>
+				    <a class="rsImg" href="../images/thumb/slider3.jpg"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -204,7 +204,7 @@ require("php/header.php");
     </div>
   </div>
   
-<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow86.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 
   <!-- END .site-content -->
   <?php
