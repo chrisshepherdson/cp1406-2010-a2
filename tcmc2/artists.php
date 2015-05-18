@@ -32,14 +32,11 @@ include("php/dbconnect.php")
     <div class="page-innter">
     <div class="">
         <header class="page-header">
-            <h1 class="page-title">Atists</h1>
+            <h1 class="page-title">Artists</h1>
         </header>
-    
-        
+
         <div class="content">
-            
             <div class="artists-intro">
-                
                 <p><strong>Free listing for Music Centre members! Publicise yourself, your band or organisation here!</strong></p>
 <?php
                     if (isset($_SESSION['username']) and $_SESSION['paid'] == '1') {
