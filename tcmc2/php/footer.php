@@ -17,7 +17,7 @@
           <li class="footer-contact-phone">Phone: 07 4724 2086</li>
         </ul>
         <div class="footer-facebook">
-          <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534">
+          <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534" target="_blank">
             <div class="fb-icon"></div>
             <img src="images/fb2.png" style="display: none;">
           </a>
