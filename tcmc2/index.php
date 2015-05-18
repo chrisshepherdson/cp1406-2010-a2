@@ -165,34 +165,58 @@ require("php/header.php");
       <a href="artists.php" class="white">
       <h2>Popular Artists</h2>
       </a>
+        <!--artist start-->
       <section class="events">
         <ul class="events-list">
-          <li>
-            <div class="event-container">
-            <div class="event-image"></div>
-            <div class="event-info">
-              <h3 class="event-info-name">EVENT ONE</h3>
-              <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
-              <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
-              <br>
-              <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
-                </div> </div>
-          </li>
-          <li>
-            <div class="event-container">
-            <div class="event-image"></div>
-            <div class="event-info">
-              <h3 class="event-info-name">EVENT ONE</h3>
-              <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span>
-                <div class="event-info-text"> ... </div>
-                <br>
-                <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
-              </div>
-                </div> </div>
+            
+<?php
+    $mostvisited1 = 0;
+    $mostvisited2 = 0;
+    $sql = "SELECT * FROM artists";
+    foreach ($dbh->query($sql) as $row) {
+        if ($row[hits] >= $mostvisited1) {
+            $mostvisited2 = $mostvisited1;
+            $mostvisited1 = $row[id];
+        } elseif ($row[hits] >= $mostvisited2) {
+            $mostvisited2 = $row[id];
+        }
+    
+
+    }
+    $sql = "SELECT * FROM artists WHERE id = '$mostvisited1'";
+    foreach ($dbh->query($sql) as $artist1) {}
+    $sql = "SELECT * FROM artists WHERE id = '$mostvisited2'";
+    foreach ($dbh->query($sql) as $artist2) {}
+    
+    
+?>
+
+            <li>
+                <div class="event-container">
+                    <div class="artist-image"><img <?php echo "src='$artist1[thumb]'" ?> <?php echo "alt='$artist1[name]'" ?>></div>
+                    <div class="event-info">
+                    <h3 class="event-info-name"><?php echo "$artist1[name]" ?></h3>
+                    
+                    <div class="artist-info-bio"><?php echo "$artist1[summary]" ?> </div>
+                    <br>
+                    <div class="artist-button-homepage"><a <?php echo "href='artistdetailed.php?rowid=$artist1[id]'" ?> class="ui small button colored">Read More</a></div>
+                    </div> 
+                </div>
+            </li>
+            <li>
+                <div class="event-container">
+                    <div class="artist-image"><img <?php echo "src='$artist2[thumb]'" ?> <?php echo "alt='$artist2[name]'" ?>></div>
+                    <div class="event-info">
+                    <h3 class="event-info-name"><?php echo "$artist2[name]" ?></h3>
+                    <div class="artist-info-bio"><?php echo "$artist2[summary]" ?> </div>
+                    <br>
+                    <div class="artist-button-homepage"><a <?php echo "href='artistdetailed.php?rowid=$artist2[id]'" ?> class="ui small button coloured">Read More</a></div>
+                    </div>
+                </div>
           </li>
         </ul>
       </section>
-      <br>
+    <br>
       <section class="bottom-section">
         <h3>Sponsors</h3>
         <div class="bottom-featured-img"><a href="http://www.townsville.qld.gov.au/Pages/default.aspx" target="_blank"><img src="images/1a.jpg"></a></div>

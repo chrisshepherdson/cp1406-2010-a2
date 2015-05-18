@@ -570,6 +570,8 @@ header nav {
 	width: 222px;
 	margin-bottom: 0;
 }
+.artist-button-homepage {
+    margin-left: 16.5em;
 }
 .artist article .entry-thumb img {
 	max-width: 100%;
