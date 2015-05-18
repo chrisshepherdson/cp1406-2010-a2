@@ -100,12 +100,12 @@ require("php/header.php");
         <ul class="events-list">
           <li>
             <div class="event-container">
-            <div class="event-image"></div>
+            <a href=about.html"><div class="event-image"></div></a>
             <div class="event-info">
               <h3 class="event-info-name">Townsville Community Music Centre</h3>
               <div class="event-info-text"> Based in Townsville, North Queensland, the Music Centre presnts concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. </div>
               <br>
-              <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
+              <div class="event-button"><a href="about.html" class="ui small button coloured">Read More</a></div>
             </div>
           </li>
         </ul>
@@ -155,7 +155,7 @@ require("php/header.php");
               <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
               <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
               <br>
-              <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
+              <div class="event-button"><a href="bulletinboard.html" class="ui small button coloured">Read More</a></div>
             </div>
           </li>
         </ul>
@@ -194,8 +194,8 @@ require("php/header.php");
       <br>
       <section class="bottom-section">
         <h3>Sponsors</h3>
-        <div class="bottom-featured-img"><a href="http://www.townsville.qld.gov.au/Pages/default.aspx"><img src="images/1a.jpg"></a></div>
-        <div class="bottom-featured-img"><a href="https://www.qld.gov.au/"><img src="images/1b.jpg"></a></div>
+        <div class="bottom-featured-img"><a href="http://www.townsville.qld.gov.au/Pages/default.aspx" target="_blank"><img src="images/1a.jpg"></a></div>
+        <div class="bottom-featured-img"><a href="https://www.qld.gov.au/"><img src="images/1b.jpg" target="_blank"></a></div>
       </section>
       <br />
       
