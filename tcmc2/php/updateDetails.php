@@ -1,5 +1,7 @@
 <?php
 session_start();
+?>
+<?php
 echo    "<div id='openModal3' class ='modalDialog'>";     
 echo        "<div>";
 echo		"<a href='#close' title='Close' class='close'>X</a>";
@@ -32,13 +34,9 @@ echo    "<tr>";
 echo        "<td><label class='faxLabel' for='fax'>Fax Number    </label></td>";
 echo        "<td><input name='fax' class='fax' type='tel' id='fax' value='$row[fax]'></td>";
 echo "</tr>";
-echo    "<tr>";
-echo    "<td><label for='file'>Photo *</label></td>";
-echo    "<td> <input type='file' name='imagefile' id='imagefile' /> </td>";
-echo "</tr>";
 echo    "</table>";
 
-
+echo            "<input name='id' type='hidden' value='$_GET[rowid]'/>";
 echo            "<input name= 'submit' class='submit' type='submit' value='Update Artist' >";      
 echo            "<input type='submit' name='submit' value='Delete Artist' class='deleteButton'>";
 echo            "</form>";  
