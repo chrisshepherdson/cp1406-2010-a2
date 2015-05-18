@@ -38,50 +38,43 @@ include("php/dbconnect.php")
         
         <div class="content">
 
-            <ul class="artist-list">
-<?php
-// Display what's in the database at the moment.
+<section class="events">
+    <ul class="events-list">
+<?php 
 $sql = "SELECT * FROM events";
-foreach ($dbh->query($sql) as $row)
-{
+foreach ($dbh->query($sql) as $row) {
+    $artist;
+    $sql2 = "SELECT * FROM artists WHERE id='$row[artistId]'";
+    foreach ($dbh->query($sql2) as $art) {
+        $artist = $art;
+    }
+    if (time() < $row['time']) {
+       $date = date('l jS \of F Y h:i:s A', $row['time']);
+
 ?>
 
-<?php            
-echo              "<li>";
-echo                   "<div class='artist-container'>";
-echo                      "<div class='artist-image'><img src='$row[thumb]' alt='$row[name]'></div>";
-echo                       "<div class='artist-info'>";
-echo                           "<h3 class='artist-info-name'>$row[name]</h2>";
-echo                            "<div class='artist-info-bio'>$row[summary]";
-echo                            "<div class='artist-button'><a href='artistdetailed.php?rowid=$row[id]' class='ui small button colored'>Read More</a></div></div>";
-//    echo "<input type='hidden' name='email' value='$row[email]' /></a>";
-//    echo "<input type='hidden' name='phone' value='$row[phone]' /></a>";
-//    echo "<input type='hidden' name='fax' value='$row[fax]' /></a>";
-//    echo "<input type='hidden' name='id' value='$row[id]' /></a>";
-echo                        "</div>";
-echo                    "</div>";
-echo                "</li>";
-?>
 
+        <li>
+            <div class="event-container">
+                <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?>></img></div>
+                <div class="event-info">
+                    <h3 class="event-info-name"><?php echo "$row[name]"; ?></h3>
+                    <div class="event-info-details"> 
+                        <span class="event-time"><?php echo "$date"; ?></span>  
+                        <span class="event-location"> at the <?php echo "$row[location]"; ?></span>                         </div>
+                    <div class="event-info-text"><?php echo "$row[details]"; ?></div>
+                    <br>
+                    
+                </div> 
+            </div>
+        </li>
+                        
 <?php
+    }
 }
-echo "</fieldset>\n";
-// close the database connection
-$dbh = null;
-?> 
-            </ul>  
-<?php
-    if (isset($_SESSION['username'])) {
-        if ($_SESSION['username'] == 'Administrator') {
-        echo                            "<div class='artist-button'><a href='#openModal4' class='ui small button colored'>Add new Event</a></div>";
-    include("php/addEvent.php");
-        }
-}
-?> 
-    
-        </div>
-        </div>
-    </div>
+?>
+</ul>
+</section>
         </div>
 
 <?php
