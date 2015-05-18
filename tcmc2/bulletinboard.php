@@ -35,7 +35,7 @@ include("php/dbconnect.php")
             
         </header>
         <section class="bulletinboard">
-        <h2>Bulletin Board</h2>
+        <h1>Bulletin Board</h1>
         
 
         <ul class="bulletinboard-list">
