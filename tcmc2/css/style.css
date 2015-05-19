@@ -651,10 +651,7 @@ header nav {
 .ui.accordion, .ui.accordion .accordion {
     border-radius: 0;
 }
-.ui.accordion .accordion .title, .ui.accordion .title {
-    padding: .8em 0;
-    color: #FFF;
-}
+
 .about-content {
 	margin-top: 4em;
 }
@@ -764,6 +761,7 @@ header nav {
 }
 #mail_icon {
 	background: url(../images/icons/mail.png) 0 0;
+	text-decoration: none;
 	background-repeat: no-repeat;
 	margin-left: 10px;
 	padding-left: 30px;
@@ -880,6 +878,160 @@ form label {
 	opacity: 0.8;
 }
 /*------------------------------- Slider -----------------------------*/
+/* RoyalSlider: Animate Block : Home Slider 1
+------------------------------*/
+.royalSlider {
+    width: 100%;
+}
+
+#home-slider-1.royalSlider {
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .7);
+       -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .7);
+            box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .7);
+}
+
+.rsABlock {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: block;
+}
+
+.rsContent {
+    float: left;
+    color: #FFF;
+}
+
+.rsVideo .bContainer {
+    bottom: 200px;
+}
+.rsVideo .bContainer span {
+    background: red;
+}
+
+.bContainer {
+    position: relative;
+    bottom: 240px;
+    left: auto;
+    display: block;
+    text-align: center;
+}
+
+.rs_text {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+.rs_text_meta {
+    margin-bottom: 10px;
+}
+
+.rs_text_box span {
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, .7);
+}
+@media screen and (min-width: 790px) {
+    .rs_text_box span {
+        font-size: 40px;
+    }
+}
+
+/* Button Position */
+.rsMinW .rsArrowRight {
+    top: 50%;
+    right: 30px;
+    margin-top: -16px;
+}
+
+.rsMinW .rsArrowLeft {
+    top: 50%;
+    left: 30px;
+    margin-top: -16px;
+}
+
+.rsMinW .rsBullet {
+    padding: 6px 8px 6px 4px;
+}
+
+.rsMinW .rsBullets {
+    right: 50%;
+}
+/* Video Slider
+------------------------------*/
+.video_slider .widget-content {
+    border: 8px solid #212121;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+/* RoyalSlider: Videos
+------------------------------*/
+.rsVideos {
+    margin-bottom: 30px;
+    padding: 7px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    background: #222;
+}
+
+.video_wrapper {
+    margin-bottom: 30px;
+    padding: 7px 7px 0 7px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    background: #222;
+}
+
+.video_lightbox {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 7px 7px 7px 7px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    background: #222;
+}
+
+.video_lightbox:hover img {
+    opacity: .5;
+}
+
+.video_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin-top: -33px;
+    margin-left: -33px;
+    border: 2px solid #CCC;
+    -webkit-border-radius: 100px;
+       -moz-border-radius: 100px;
+            border-radius: 100px;
+    background: url("assets/images/rs-default.png") no-repeat scroll 0 -34px rgba(0, 0, 0, .75);
+}
+
+/* RoyalSlider: Gallery Slideshow
+------------------------------*/
+#gallery-slideshow {
+    width: 100%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+}
 /* Button */
 .ui.button {
     font-family: "Oswald", Helvetica, Arial, sans-serif;
@@ -956,3 +1108,8 @@ form label {
     .rs_text_box span {
         font-size: 40px;
     }
+/* Accordion */
+.ui.accordion .accordion .title, .ui.accordion .title {
+    padding: .8em 0;
+    color: #FFF;
+}
