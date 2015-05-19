@@ -104,7 +104,7 @@ if (isset($_SESSION['username']) and $_SESSION['paid'] == '1') {
         </div>
     </div>
         </div>
-
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 <?php
 require("php/footer.php");
 ?>

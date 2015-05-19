@@ -76,7 +76,7 @@ foreach ($dbh->query($sql) as $row) {
 </ul>
 </section>
         </div>
-
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 <?php
 require("php/footer.php");
 ?>

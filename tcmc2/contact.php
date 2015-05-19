@@ -44,7 +44,7 @@ require("php/header.php");
               <li id="home_icon"> 41 Boundary Street, Townsville, Qld 4810</li>
               <li id="phone_icon"> (07) 4724 2086</li>
               <li id="mobile_icon"> (07) 4724 2086</li>
-              <li id="mail_icon"> admin@townsvillemusic.org.au</li>
+              <li id="mail_icon"> <a href="mailto:"admin@townsvillemusic.org.au>admin@townsvillemusic.org.au</a></li>
             </ul>
             <br>
             <h4>CONTACT US</h4>
@@ -91,7 +91,7 @@ require("php/header.php");
       </div>
     </div>
     <!-- END .site-content --> 
-
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 <?php
 require("php/footer.php");
 ?>

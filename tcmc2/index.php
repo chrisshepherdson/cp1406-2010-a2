@@ -103,7 +103,7 @@ require("php/header.php");
             <a href="about.php"> <div class="event-image"></div></a>
             <div class="event-info">
               <h3 class="event-info-name">Townsville Community Music Centre</h3>
-              <div class="event-info-text"> Based in Townsville, North Queensland, the Music Centre presnts concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. </div>
+              <div class="event-info-text"> Based in Townsville, North Queensland, the Music Centre presents concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. </div>
               <br>
               <div class="event-button"><a href="about.php" class="ui small button coloured">Read More</a></div>
             </div>
