@@ -17,6 +17,18 @@ include("php/dbconnect.php")
 <!-- JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinyMCE.init({
+    selector: "textarea",
+    menubar: false,
+     toolbar: false,
+    statusbar : false
+    
+    
+});
+</script>
+
 </head>
 <!-- START Logo -->
 <body>
@@ -37,6 +49,14 @@ include("php/dbconnect.php")
     
         
         <div class="content">
+<?php
+    if ($_SESSION['username'] == "Administrator") {
+        echo    "<div class='artist-button'><a href='#addEvent' class='ui small button colored'>Add new Event</a></div>";
+        include("php/addEvent.php");
+
+}
+?> 
+
 
 <section class="events">
     <ul class="events-list">
@@ -60,7 +80,7 @@ foreach ($dbh->query($sql) as $row) {
                 <div class="event-info">
                     <h3 class="event-info-name"><?php echo "$row[name]"; ?></h3>
                     <div class="event-info-details"> 
-                        <span class="event-time"><?php echo "$date"; ?></span>  
+                        <span class="event-time"><strong><?php echo "$date"; ?></strong></span>  
                         <span class="event-location"> at the <?php echo "$row[location]"; ?></span>                         </div>
                     <div class="event-info-text"><?php echo "$row[details]"; ?></div>
                     <br>
@@ -77,6 +97,7 @@ foreach ($dbh->query($sql) as $row) {
 </section>
         </div>
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
+
 <?php
 require("php/footer.php");
 ?>

@@ -17,10 +17,7 @@ include("php/dbconnect.php")
 <!-- JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
-
-
-
+<script language="javascript" type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
 tinyMCE.init({
     selector: "textarea",
@@ -55,7 +52,7 @@ tinyMCE.init({
 <?php
                     if (isset($_SESSION['username']) and $_SESSION['paid'] == '1') {
                     echo    "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
-                    
+                        include("php/addArtist.php");                   
 }
 ?> 
                
@@ -93,13 +90,7 @@ echo "</fieldset>\n";
 // close the database connection
 $dbh = null;
 ?> 
-            </ul>  
-<?php
-if (isset($_SESSION['username']) and $_SESSION['paid'] == '1') {
-    include("php/addArtist.php");
-}
-?> 
-    
+            </ul>   
         </div>
         </div>
     </div>

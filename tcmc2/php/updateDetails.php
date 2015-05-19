@@ -2,7 +2,7 @@
 session_start();
 ?>
 <?php
-echo    "<div id='openModal3' class ='modalDialog'>";     
+echo    "<div id='openModal3' class ='addArtistDialog'>";     
 echo        "<div>";
 echo		"<a href='#close' title='Close' class='close'>X</a>";
 echo		"<h2>Update Artist's Details</h2>";
