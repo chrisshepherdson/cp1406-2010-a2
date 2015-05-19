@@ -9,9 +9,9 @@ echo		  "<form id='addartist' name='addartist' method='post' action='php/addarti
 echo            "<label class='nameLabel' for='name'>Artist Name *    </label>";
 echo            "<input name='name' class='name' type='text' id='name' placeholder='Artist Name' required><br>";
 echo            "<label class='summarylabel' for='summary'>Summary *<br></label>";
-echo            "<textarea name='summary' rows='3' cols='48' id='summary' required></textarea><br>";
+echo            "<textarea name='summary' rows='3' cols='48' id='summary' ></textarea><br>";
 echo            "<label for='details'>Details *</label><br>";
-echo            "<textarea name='details' rows='3' cols='48' id='details' required></textarea><br>";
+echo            "<textarea name='details' rows='3' cols='48' id='details' ></textarea><br>";
 echo            "<table style='width:1'>";
 echo                "<tr>";
 echo                    "<td><label class='webpageLabel' for='webpage'>Webpage URL</label></td>";

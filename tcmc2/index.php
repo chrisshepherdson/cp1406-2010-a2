@@ -115,29 +115,71 @@ require("php/header.php");
       <a href="events.php" class="white">
       <h2>Upcoming Events</h2>
       </a>
+        <!-- events start -->
       <section class="events">
         <ul class="events-list">
-          <li>
-            <div class="event-container">
-            <div class="event-image"></div>
-            <div class="event-info">
-              <h3 class="event-info-name">EVENT ONE</h3>
-              <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
-              <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
-              <br>
-              <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
-                </div> </div>
-          </li>
-          <li>
-            <div class="event-container">
-              <div class="event-image"></div>
-              <div class="event-info">
-                <h3 class="event-info-name">EVENT ONE</h3>
-                <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
-                <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
-                <br>
-                <div class="event-button"><a href="#" class="ui small button coloured">Read More</a></div>
-              </div>
+            
+<?php
+    $closest1 = INF;
+    $closest2 = INF;
+    $sql = "SELECT * FROM events";
+    foreach ($dbh->query($sql) as $row) {
+        if (time() < $row[time] and $row[time] <= $closest1 ) {
+            $closest2 = $closest1;
+            $closest1 = $row[time];
+        } elseif (time() < $row[time] and $row[time] <= $closest2 ) {
+            $closest2 = $row[time];
+        }
+    
+
+    }
+    $sql = "SELECT * FROM events WHERE time = '$closest1'";
+    foreach ($dbh->query($sql) as $event1) {}
+    $sql = "SELECT * FROM events WHERE time = '$closest2'";
+    foreach ($dbh->query($sql) as $event2) {}
+    
+
+    
+?>
+
+            <li>
+                <div class="event-container">
+                    <?php
+$sql = "SELECT thumb FROM artists WHERE id = '$event1[artistId]'";
+foreach ($dbh->query($sql) as $artist) {}
+$date = date('l jS \of F Y h:i:s A', $event1[time]);
+?>
+                <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?>></img></div>
+                <div class="event-info">
+                    <h3 class="event-info-name"><?php echo "$event1[name]"; ?></h3>
+                    <div class="event-info-details"> 
+                        <span class="event-time"><strong><?php echo "$date"; ?></strong></span>  
+                        <span class="event-location"> at the <?php echo "$event1[location]"; ?></span>                         
+                    </div>
+                    <div class="artist-info-bio"><?php echo "$event1[details]"; ?></div>
+                    <br>
+                    
+                </div> 
+            </div>
+            </li>
+            <li>
+                <div class="event-container">
+                    <?php
+$sql = "SELECT thumb FROM artists WHERE id = '$event2[artistId]'";
+foreach ($dbh->query($sql) as $artist) {}
+$date = date('l jS \of F Y h:i:s A', $event2[time]);
+?>
+                <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?>></img></div>
+                <div class="event-info">
+                    <h3 class="event-info-name"><?php echo "$event2[name]"; ?></h3>
+                    <div class="event-info-details"> 
+                        <span class="event-time"><strong><?php echo "$date"; ?></strong></span>  
+                        <span class="event-location"> at the <?php echo "$event2[location]"; ?></span>                         
+                    </div>
+                    <div class="artist-info-bio"><?php echo "$event2[details]"; ?></div>
+                    <br>
+                    
+                </div> 
             </div>
           </li>
         </ul>
