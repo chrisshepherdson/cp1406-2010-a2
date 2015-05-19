@@ -16,11 +16,11 @@ catch(PDOException $e)
     <div>
         <a href='#close' title='Close' class='close'>X</a>
         <h2>Add New Event</h2>
-        <form id='addevent' name='addevent' method='post' action='php/addEventProcess.php' enctype='multipart/form-data'>
+        <form id='addevent' name='addevent' method='post' action='php/addEventProcess.php' >
             <label class='nameLabel' for='name'>Event Name    </label>
             <input name='name' class='name' type='text' id='name' placeholder='Event Name' required><br>
             <label for='details'>Details:</label><br>
-            <textarea name='details' rows='3' cols='48' id='details' required ></textarea><br>
+            <textarea name='details' rows='3' cols='48' id='details' ></textarea><br>
             <table style='width:1'>
                 <tr>
                     <td><label class='artistlabel' for='artist'>Artist:</label></td>
@@ -49,7 +49,7 @@ foreach ($dbh->query($sql) as $row)
                     <td><input name='time' class='time' type='time' id='time' placeholder='HH:MM' required></td>
                 </tr>
             </table>
-            <input name= 'submit' class='submit' type='submit' value='Add Artist' >            
+            <input name= 'submit' class='submit' type='submit' value='Add Event' >            
          </form>  
     </div>
 </div>

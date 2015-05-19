@@ -1113,3 +1113,7 @@ form label {
     padding: .8em 0;
     color: #FFF;
 }
+    
+    select {
+        color: black;
+    }
