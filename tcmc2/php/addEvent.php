@@ -1,5 +1,14 @@
 <?php
-session_start()
+//session_start()
+
+try {
+    $dbh = new PDO("sqlite:db/tcmc.sqlite"); 
+}
+catch(PDOException $e)
+{
+    echo $e->getMessage();
+}
+
     //event Name / artist id / details / time / location
 ?>
 
@@ -7,12 +16,26 @@ session_start()
     <div>
         <a href='#close' title='Close' class='close'>X</a>
         <h2>Add New Event</h2>
-        <form id='addevent' name='addevent' method='post' action='php/addeventprocess.php' enctype='multipart/form-data'>
+        <form id='addevent' name='addevent' method='post' action='php/addEventProcess.php' enctype='multipart/form-data'>
             <label class='nameLabel' for='name'>Event Name    </label>
             <input name='name' class='name' type='text' id='name' placeholder='Event Name' required><br>
             <label for='details'>Details:</label><br>
             <textarea name='details' rows='3' cols='48' id='details' required ></textarea><br>
             <table style='width:1'>
+                <tr>
+                    <td><label class='artistlabel' for='artist'>Artist:</label></td>
+                    <td><select name='artist' class='artistssel' id'artist'>
+                        
+<?php
+$sql = "SELECT * FROM artists";
+foreach ($dbh->query($sql) as $row)
+{
+    echo                    "<option value='$row[id]'>$row[name]</option>";
+}
+?>
+                        
+                        </select></td>
+                </tr>
                 <tr>
                     <td><label class='webpageLabel' for='location'>Location:</label></td>
                     <td><input name='location' class='location' type='text' id='location' placeholder='Location' required></td>
