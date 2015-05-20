@@ -647,11 +647,6 @@ header nav {
 	border: solid 5px #FFF;
 }
 /* -------- About ---------- */
-/* Accordion */
-.ui.accordion, .ui.accordion .accordion {
-    border-radius: 0;
-}
-
 .about-content {
 	margin-top: 4em;
 }
@@ -734,12 +729,6 @@ header nav {
 }
 .map-contact iframe {
 	margin-bottom: 15px;
-}
-#accordion_icon {
-	background: url(../images/icons/accordion.png);
-	background-repeat: no-repeat;
-	margin-left: 10px;
-	padding-left: 30px;
 }
 #home_icon {
 	background: url(../images/icons/house.png);
@@ -1107,13 +1096,4 @@ form label {
 @media screen and (min-width: 790px) {
     .rs_text_box span {
         font-size: 40px;
-    }
-/* Accordion */
-.ui.accordion .accordion .title, .ui.accordion .title {
-    padding: .8em 0;
-    color: #FFF;
-}
-    
-    select {
-        color: black;
     }
