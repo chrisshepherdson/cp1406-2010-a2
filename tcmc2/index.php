@@ -23,6 +23,8 @@ include("php/dbconnect.php");
 require("php/header.php");
 ?>
 <!-- WEBSITE LAYOUT Box -->
+    <div class="page-inner">
+  <div class="container">
 <div id="boxed_content" class="boxed_content">
 <div class="inner">
 <div id="content" class="site-content">
@@ -90,8 +92,7 @@ require("php/header.php");
 						});
 				});
 				</script>
-<div class="page-inner">
-  <div class="container">
+
   
     <div class="content"> <a href="about.php" class="white">
       <h2>About Us</h2>
