@@ -262,11 +262,9 @@ $date = date('l jS \of F Y h:i:s A', $event2[time]);
     <br>
       <section class="bottom-section">
         <h3>Sponsors</h3>
-        <div class="bottom-featured-img"><a href="http://www.townsville.qld.gov.au/Pages/default.aspx" target="_blank"><img src="images/1a.jpg"></a></div>
-        <p>The Council's Partnerships and Sponsorships scheme provides vital core funding which enables us to maintain the administrative base for all our other activities, and also provides the premises which house our office space. 
-The Council also assists with the performance venues for our concerts and workshops. </p>
-		<div class="bottom-featured-img"><a href="https://www.qld.gov.au/"><img src="images/1b.jpg" target="_blank"></a></div>
-		<p>The Gambling Community Benefit Fund has assisted us to obtain office equipment and sound and lighting equipment for our productions.</p>
+        <div class="bottom-featured-img"><a href="http://www.townsville.qld.gov.au/Pages/default.aspx" target="_blank" class="tooltip-top" data-tooltip="The Council's Partnerships and Sponsorships scheme provides vital core funding which enables us to maintain the administrative base for all our other activities, and also provides the premises which house our office space. 
+The Council also assists with the performance venues for our concerts and workshops."><img src="images/1a.jpg"></a></div>
+		<div class="bottom-featured-img"><a href="https://www.qld.gov.au/"><img src="images/1b.jpg" target="_blank" class="tooltip-top" data-tooltip="The Gambling Community Benefit Fund has assisted us to obtain office equipment and sound and lighting equipment for our productions."></a></div>
       </section>
       <br />
       
