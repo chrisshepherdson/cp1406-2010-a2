@@ -791,6 +791,87 @@ form label {
 #contact_form .notice_ok {
 	color: green;
 }
+
+/* -------- Townsville Feeder ---------- */
+
+.townsville-content {
+margin-top: 4em;
+}
+/* Townsville intro */
+.townsville-intro {
+}
+
+.townsville-intro-image {
+width: 260px;
+height: 198px;
+float: left;
+margin-right: 2em;
+margin-bottom: 0em;
+}
+
+.townsville-intro-image img {
+width: 250px;
+height: 188px;
+border: solid 5px darkgray;
+}
+
+.townsville-to-do {
+}
+
+.townsville-to-do ul li {
+	padding-bottom: 10px;
+}
+
+.townsville-links {
+}
+
+.townsville-links ul li {
+	padding-bottom: 10px;
+}
+
+.townsville-links a{
+	color: #FFFFFF;
+	text-decoration:underline;
+}
+
+.townsville-links a:visited{
+	color: #999999;
+}
+
+/* -------- Registration and Signup ---------- */
+.members-registration-form label {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	text-transform:none;
+
+}
+
+.members-login-form {
+}
+
+.members-login-form div{
+padding-bottom: 10px;
+}
+
+.members-login-form input {
+width: 20em;	
+}
+
+.members-registration-form {
+
+}
+
+.members-registration-form div{
+padding-bottom: 10px;
+}
+
+.members-registration-form input {
+width: 20em;	
+}
+
+#terms {
+	width: 20px;
+}
 /*------------------------------ Footer ------------------------------*/
 
 .footer-wrapper {
