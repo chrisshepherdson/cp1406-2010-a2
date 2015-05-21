@@ -1110,11 +1110,10 @@ html {
 }
 
 body {
-  margin: 64px auto;
-  text-align: center;
+    text-align: justify;
   font-size: 100%;
-  max-width: 640px;
-  width: 94%;
+ 
+  
 }
 
 a:hover {
@@ -1124,7 +1123,7 @@ a:hover {
 header,
 .demo,
 .demo p {
-  margin: 4em 0;
+ 
   text-align: center;
 }
 
