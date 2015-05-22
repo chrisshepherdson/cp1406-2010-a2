@@ -34,10 +34,10 @@ $name = substr($filename, 0, strrpos($filename, ".")); ?>
 }
 
 ?>
-    <?php
-include("php/login.php");
-?>
         </ul>
+        <?php
+          include("php/login.php");
+        ?>
       </div>
     </nav>
     <!-- END Navigation -->

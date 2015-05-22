@@ -31,7 +31,7 @@ require("php/header.php");
 				<div id="home-slider-1" class="royalSlider rsMinW">
 
 				  <div class="rsContent slide2">
-				    <a class="rsImg" href="images/thumb/slider1.jpg" alt="Grayscale image of crowd with hands in the air with a band on stage"></a>
+				    <a class="rsImg" href="images/thumb/slider1.jpg"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Join the TCMC Team</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -44,7 +44,7 @@ require("php/header.php");
 				  </div>
 
 				  <div class="rsContent slide2">
-				    <a class="rsImg" href="images/thumb/slider2.jpg" alt="Grayscale image of crowd and band on stage"></a>
+				    <a class="rsImg" href="images/thumb/slider2.jpg" ></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Never Miss An Event Again</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -57,7 +57,7 @@ require("php/header.php");
 				  </div>
 
 				  <div class="rsContent slide3">
-				    <a class="rsImg" href="images/thumb/slider3.jpg" alt="A team of people with their hands stacked"></a>
+				    <a class="rsImg" href="images/thumb/slider3.jpg"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Join the Experience</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -150,7 +150,7 @@ $sql = "SELECT thumb FROM artists WHERE id = '$event1[artistId]'";
 foreach ($dbh->query($sql) as $artist) {}
 $date = date('l jS \of F Y h:i:s A', $event1[time]);
 ?>
-                <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?>></img></div>
+                <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?>/></div>
                 <div class="event-info">
                     <h3 class="event-info-name"><?php echo "$event1[name]"; ?></h3>
                     <div class="event-info-details"> 
@@ -170,7 +170,7 @@ $sql = "SELECT thumb FROM artists WHERE id = '$event2[artistId]'";
 foreach ($dbh->query($sql) as $artist) {}
 $date = date('l jS \of F Y h:i:s A', $event2[time]);
 ?>
-                <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?>></img></div>
+                <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?>/></div>
                 <div class="event-info">
                     <h3 class="event-info-name"><?php echo "$event2[name]"; ?></h3>
                     <div class="event-info-details"> 
@@ -279,6 +279,6 @@ The Council also assists with the performance venues for our concerts and worksh
   <?php
 require("php/footer.php");
 ?>
-    </div></div></div></div>                                                                       
+    </div></div>                                                                       
 </body>
 </html>

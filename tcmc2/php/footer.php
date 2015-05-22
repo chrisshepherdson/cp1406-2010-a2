@@ -1,7 +1,7 @@
     <div class="footer-wrapper ">
       <footer class="site-footer container">
       <div class="content">
-        <div class="footer-logo"><a href="index.php"><img src="images/logo.png" width=147px height=98px alt="logo"></a></div>
+        <div class="footer-logo"><a href="index.php"><img src="images/logo.png" width="147px" height="98px" alt="logo" /></a></div>
         <ul class="footer-navigation">
           <li><a href="index.php">Home</a></li>
           <li><a href="events.php">Events</a></li>
@@ -19,7 +19,7 @@
         <div class="footer-facebook">
           <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534" target="_blank">
             <div class="fb-icon"></div>
-            <img src="images/fb2.png" style="display: none;">
+            <img src="images/fb2.png" style="display: none;" />
           </a>
         </div>
       </footer>
