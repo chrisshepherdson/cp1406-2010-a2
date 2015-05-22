@@ -31,7 +31,7 @@ require("php/header.php");
 				<div id="home-slider-1" class="royalSlider rsMinW">
 
 				  <div class="rsContent slide2">
-				    <a class="rsImg" href="images/thumb/slider1.jpg"></a>
+				    <a class="rsImg" href="images/thumb/slider1.jpg" alt="Grayscale image of crowd with hands in the air with a band on stage"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Join the TCMC Team</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -44,7 +44,7 @@ require("php/header.php");
 				  </div>
 
 				  <div class="rsContent slide2">
-				    <a class="rsImg" href="images/thumb/slider2.jpg"></a>
+				    <a class="rsImg" href="images/thumb/slider2.jpg" alt="Grayscale image of crowd and band on stage"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Never Miss An Event Again</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -57,7 +57,7 @@ require("php/header.php");
 				  </div>
 
 				  <div class="rsContent slide3">
-				    <a class="rsImg" href="images/thumb/slider3.jpg"></a>
+				    <a class="rsImg" href="images/thumb/slider3.jpg" alt="A team of people with their hands stacked"></a>
 				    <div class="bContainer">
 				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Join the Experience</div>
 				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
@@ -101,7 +101,7 @@ require("php/header.php");
         <ul class="events-list">
           <li>
             <div class="event-container">
-            <a href="about.php"> <div class="event-image"><img src="images/CivicFront300.jpg" width="244" height="170" alt="image"></div></a>
+            <a href="about.php"> <div class="event-image"><img src="images/CivicFront300.jpg" width="244" height="170" alt="The Townsville Community Music Centre"></div></a>
             <div class="event-info">
               <h3 class="event-info-name">Townsville Community Music Centre</h3>
               <div class="event-info-text"> Based in Townsville, North Queensland, the Music Centre presents concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. </div>
@@ -263,8 +263,8 @@ $date = date('l jS \of F Y h:i:s A', $event2[time]);
       <section class="bottom-section">
         <h3>Sponsors</h3>
         <div class="bottom-featured-img"><a href="http://www.townsville.qld.gov.au/Pages/default.aspx" target="_blank" class="tooltip-top" data-tooltip="The Council's Partnerships and Sponsorships scheme provides vital core funding which enables us to maintain the administrative base for all our other activities, and also provides the premises which house our office space. 
-The Council also assists with the performance venues for our concerts and workshops."><img src="images/1a.jpg"></a></div>
-		<div class="bottom-featured-img"><a href="https://www.qld.gov.au/"><img src="images/1b.jpg" target="_blank" class="tooltip-top" data-tooltip="The Gambling Community Benefit Fund has assisted us to obtain office equipment and sound and lighting equipment for our productions."></a></div>
+The Council also assists with the performance venues for our concerts and workshops."><img src="images/sponsor-townsville.jpg" alt="City of Townsville logo"></a></div>
+		<div class="bottom-featured-img"><a href="https://www.qld.gov.au/" target="_blank" class="tooltip-top" data-tooltip="The Gambling Community Benefit Fund has assisted us to obtain office equipment and sound and lighting equipment for our productions."><img src="images/sponsor-qld-gov.jpg" alt="The Queensland Government logo"></a></div>
       </section>
       <br />
       

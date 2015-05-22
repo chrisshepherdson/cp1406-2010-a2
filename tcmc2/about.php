@@ -59,7 +59,6 @@ require("php/header.php");
             <br>
             <br>
             <br>
-            <br>
             <h3>Looking Back - The First 30 Years</h3>
             <p>
                 The Townsville Community Music Centre celebrated its 30th year in 2013.<br>
@@ -73,8 +72,9 @@ The National Library of Australia has an online catalogue (TROVE) that lists not
     
     <section class="about-history">
         <div class="about-lookingback-image">
-            <img src="images/old-music.jpg" width="500" height="161" alt="image">
+            <img src="images/old-music.jpg" width="500" height="161" alt="A collection of old sheet music from past performers.">
         </div>
+		<br>
         <h3>A Brief History - By Jean Dartnall</h3>
 		
 		<div class="accordion-demo">

@@ -666,8 +666,15 @@ header nav {
 	border: solid 5px darkgray;
 }
 /* About contact */
-.about-contact {
+}.about-contact {
 	clear: both;
+}
+.about-contact li {
+	list-style: none;
+	padding: 0.2em;
+}
+.about-contact-email a:hover {
+	color: #077cc1;
 }
 .about-contact-info-1 {
 	width: 25em;
