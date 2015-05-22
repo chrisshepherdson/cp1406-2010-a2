@@ -6,11 +6,10 @@
 .modalDialog {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
-
 	top: 0;
 	right: 0;
     max-height: 100%;
-overflow-y: scroll;
+	overflow-y: scroll;
 	bottom: 0;
 	left: 0;
 	background: rgba(0,0,0,0.8);
@@ -408,7 +407,7 @@ header nav {
 
 .site-navigation {
 	position: relative;
-	z-index: 1;
+	z-index: 100;
 	/*
 	float: right !important;
 	max-width: 80%; */
@@ -983,7 +982,7 @@ width: 20em;
     bottom: 200px;
 }
 .rsVideo .bContainer span {
-    background: red;
+    background: #077cc1;
 }
 
 .bContainer {
@@ -1022,7 +1021,6 @@ width: 20em;
         font-size: 40px;
     }
 }
-
 /* Button Position */
 .rsMinW .rsArrowRight {
     top: 50%;
@@ -1042,72 +1040,6 @@ width: 20em;
 
 .rsMinW .rsBullets {
     right: 50%;
-}
-/* Video Slider
-------------------------------*/
-.video_slider .widget-content {
-    border: 8px solid #212121;
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-}
-/* RoyalSlider: Videos
-------------------------------*/
-.rsVideos {
-    margin-bottom: 30px;
-    padding: 7px;
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-    background: #222;
-}
-
-.video_wrapper {
-    margin-bottom: 30px;
-    padding: 7px 7px 0 7px;
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-    background: #222;
-}
-
-.video_lightbox {
-    position: relative;
-    margin-bottom: 30px;
-    padding: 7px 7px 7px 7px;
-    -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-    background: #222;
-}
-
-.video_lightbox:hover img {
-    opacity: .5;
-}
-
-.video_button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: 64px;
-    height: 64px;
-    margin-top: -33px;
-    margin-left: -33px;
-    border: 2px solid #CCC;
-    -webkit-border-radius: 100px;
-       -moz-border-radius: 100px;
-            border-radius: 100px;
-    background: url("assets/images/rs-default.png") no-repeat scroll 0 -34px rgba(0, 0, 0, .75);
-}
-
-/* RoyalSlider: Gallery Slideshow
-------------------------------*/
-#gallery-slideshow {
-    width: 100%;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
 }
 /* Button */
 .ui.button {
@@ -1135,7 +1067,6 @@ width: 20em;
 
 .ui.button {
     font-size: 15px;
- 
     font-weight: bold;
     padding: 15px 30px;
     letter-spacing: 1.2px;
@@ -1153,8 +1084,6 @@ width: 20em;
 
 /* Slider */
 .rsContent {
-    z-index: 1;
- 
     float: left;
     color: #FFF;
 }
@@ -1164,7 +1093,6 @@ width: 20em;
     bottom: 240px;
     left: auto;
     display: block;
-    z-index: 1;
     text-align: center;
 }
 
