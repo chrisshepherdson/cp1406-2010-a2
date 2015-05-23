@@ -10,11 +10,13 @@ include("php/dbconnect.php");
 <meta charset="utf-8">
 <title>Townsville Community Music Centre - Artists</title>
 <meta name="description" content="With the support of the Townsville City Council, we work from an office in the Civic ... All private schools and most government schools have music teachers.">
+<link rel="stylesheet" href="css/royalslider.css">
 <link rel="stylesheet" href="css/style.css">
 <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
 <!-- JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/global.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
 </head>
 
@@ -28,6 +30,72 @@ require("php/header.php");
 <div id="boxed_content" class="boxed_content">
 <div class="inner">
 <div id="content" class="site-content">
+        <div id="home-slider-1" class="royalSlider rsMinW">
+
+          <div class="rsContent slide1">
+            <a class="rsImg" href="thumb/slider1.jpg"></a>
+            <div class="bContainer">
+              <div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
+              <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                <span>Insert Text</span>
+              </div>
+              <div class="rsABlock" data-move-effect="bottom">
+                <a href="#" class="ui huge button colored">Insert Text</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rsContent slide2">
+            <a class="rsImg" href="thumb/slider2.jpg"></a>
+            <div class="bContainer">
+              <div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
+              <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                <span>Insert Text</span>
+              </div>
+              <div class="rsABlock" data-move-effect="bottom">
+                <a href="#" class="ui huge button colored">Insert Text</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rsContent slide3">
+            <a class="rsImg" href="thumb/slider3.jpg"></a>
+            <div class="bContainer">
+              <div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Insert Text</div>
+              <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                <span>Insert Text</span>
+              </div>
+              <div class="rsABlock" data-move-effect="bottom">
+                <a href="#" class="ui huge button colored">Insert Text</a>
+              </div>
+            </div>
+          </div>
+          
+        </div> <!-- END royalSlider -->
+        <script id="addJS">
+        jQuery(document).ready(function($) {
+            jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+              $('#home-slider-1').royalSlider({
+              arrowsNav: true,
+              arrowsNavAutoHide: true,
+              fadeinLoadedSlide: false,
+              controlNavigationSpacing: 0,
+              controlNavigation: 'bullets',
+              imageScaleMode: 'none',
+              imageAlignCenter:false,
+              blockLoop: true,
+              loop: true,
+              numImagesToPreload: 3,
+              transitionType: 'fade',
+              keyboardNavEnabled: true,
+              block: {
+                delay: 400
+              }
+            });
+        });
+        </script>
+
+
 				<div id="home-slider-1" class="royalSlider rsMinW">
 
 				  <div class="rsContent slide2">
@@ -280,27 +348,6 @@ The Council also assists with the performance venues for our concerts and worksh
 require("php/footer.php");
 ?>
     </div></div> 
-    <script type="text/javascipt">
-      $(document).ready(function(){
-        $('#home-slider-1').royalSlider({
-          numImagesToPreload: 1,
-          keyboardNavEnabled: true,
-          imageScaleMode: 'none',
-          arrowsNav: true,
-          arrowsNavAutoHide: true,
-          loop: true,
-          
-          navigateByClick: true,
-          transitionType:'slide',
-
-          autoPlay: {
-            enabled: true,
-            pauseOnHover: true,
-            delay: 10000,
-            stopAtAction: false
-          }
-        });
-      });
-    </script>                                                                 
+                                                                   
 </body>
 </html>

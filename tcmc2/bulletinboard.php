@@ -50,7 +50,7 @@ include("php/dbconnect.php")
                     </div>
                     <div class="bulletin-image">IMAGE</div>
                     <div class="bulletin-info">
-                        <h3 class="bulletin-info-title">BULLETIN ONE</h2>
+                        <h2 class="bulletin-info-title">BULLETIN ONE</h2>
                         <div class="bulletin-info-text">
                             insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, 
                         </div>
@@ -72,7 +72,7 @@ include("php/dbconnect.php")
                     </div>
                     <div class="bulletin-image">IMAGE</div>
                     <div class="bulletin-info">
-                        <h3 class="bulletin-info-title">BULLETIN TWO</h2>
+                        <h2 class="bulletin-info-title">BULLETIN TWO</h2>
                         <div class="bulletin-info-text">
                             insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, 
                         </div>

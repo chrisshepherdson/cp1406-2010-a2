@@ -21,7 +21,7 @@ include("php/dbconnect.php");
 
 <body>
     
-<!---import common navigation--->
+<!-- import common navigation -->
     
 <?php
 require("php/header.php");
@@ -39,7 +39,7 @@ require("php/header.php");
         </header>
         
       <div class="content">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7532.384701246679!2d146.80352171666456!3d-19.273999680314027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bd5f92267e9596d%3A0x58cd8e35887d45e0!2sTownsville+Civic+Theatre!5e0!3m2!1sen!2sau!4v1430780295606" width="100%" height="250" frameborder="0" style="border:0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7532.384701246679!2d146.80352171666456!3d-19.273999680314027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bd5f92267e9596d%3A0x58cd8e35887d45e0!2sTownsville+Civic+Theatre!5e0!3m2!1sen!2sau!4v1430780295606" style="width: 100%; border:0;" height="250" ></iframe>
             <ul class="horizontal-list">
               <li id="home_icon"> 41 Boundary Street, Townsville, Qld 4810</li>
               <li id="phone_icon"> (07) 4724 2086</li>
@@ -73,7 +73,7 @@ require("php/header.php");
               <div class="form-row field_textarea">
                 <label for="contact_message">Message: </label>
                 <br>
-                <textarea id="contact_message" class="input_textarea" type="text" value="" name ="contact_message" required></textarea>
+                <textarea id="contact_message" class="input_textarea" name ="contact_message" required></textarea>
               </div>
               <div class="form-row field_submit">
                 <input type="submit" value="Submit" id="contact_submit" class="ui small button coloured"></div>

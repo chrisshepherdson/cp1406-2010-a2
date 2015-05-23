@@ -50,9 +50,6 @@ require("php/header.php");
 		</div>
     </section>
     
-    
-    
-    
     <section class="about-lookingback">
         
         <div class="about-lookingback-text">
@@ -99,7 +96,7 @@ The National Library of Australia has an online catalogue (TROVE) that lists not
 <div class="accordion_in">
 <div class="acc_head">1985</div>
 <div class="acc_content">
-<p>Kirsty Veron was appointed as the first Director. Kirsty was very interested in teaching music to children and had worked with Mira in the 1983 classes. She held this position until 1988 leading the new organisation into a strong position in the Townsville arts community.</p></p>
+<p>Kirsty Veron was appointed as the first Director. Kirsty was very interested in teaching music to children and had worked with Mira in the 1983 classes. She held this position until 1988 leading the new organisation into a strong position in the Townsville arts community.</p>
 </div>
 </div>
 
@@ -176,8 +173,10 @@ The National Library of Australia has an online catalogue (TROVE) that lists not
         </div>
       </div>
     </div>
-    </div>
-    </div>
+    <?php
+    require("php/footer.php");
+    ?>
+
         
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/smk-accordion.js"></script><script type="text/javascript">
@@ -193,9 +192,7 @@ slideSpeed: 200 // the speed of slide animation.
 });
 </script>
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
-<?php
-require("php/footer.php");
-?>
+
     
     
 </body>

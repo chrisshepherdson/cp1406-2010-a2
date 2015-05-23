@@ -101,7 +101,9 @@ foreach ($dbh->query($sql) as $row) {
 <?php
 require("php/footer.php");
 ?>
-    
+    </div>
+</div>
+</div>
     
 </body>
 </html>

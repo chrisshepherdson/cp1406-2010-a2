@@ -17,7 +17,7 @@ include("php/dbconnect.php")
 <!-- JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
-<script language="javascript" type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
 tinyMCE.init({
     selector: "textarea",
@@ -61,6 +61,7 @@ tinyMCE.init({
 
             <ul class="artist-list">
 <?php
+echo "<fieldset>"
 // Display what's in the database at the moment.
 $sql = "SELECT * FROM artists";
 foreach ($dbh->query($sql) as $row)
@@ -70,15 +71,15 @@ foreach ($dbh->query($sql) as $row)
 <?php            
 echo              "<li>";
 echo                   "<div class='artist-container'>";
-echo                      "<div class='artist-image'><img src='$row[thumb]' alt='$row[name]'></div>";
+echo                      "<div class='artist-image'><img src='$row[thumb]' alt='$row[name]' /></div>";
 echo                       "<div class='artist-info'>";
-echo                           "<h3 class='artist-info-name'>$row[name]</h2>";
+echo                           "<h2 class='artist-info-name'>$row[name]</h2>";
 echo                            "<div class='artist-info-bio'>$row[summary]";
 echo                            "<div class='artist-button'><a href='artistdetailed.php?rowid=$row[id]' class='ui small button colored'>Read More</a></div></div>";
-    echo "<input type='hidden' name='email' value='$row[email]' /></a>";
-    echo "<input type='hidden' name='phone' value='$row[phone]' /></a>";
-    echo "<input type='hidden' name='fax' value='$row[fax]' /></a>";
-    echo "<input type='hidden' name='id' value='$row[id]' /></a>";
+                                    echo "<input type='hidden' name='email' value='$row[email]' /></a>";
+                                    echo "<input type='hidden' name='phone' value='$row[phone]' /></a>";
+                                    echo "<input type='hidden' name='fax' value='$row[fax]' /></a>";
+                                    echo "<input type='hidden' name='id' value='$row[id]' /></a>";
 echo                        "</div>";
 echo                    "</div>";
 echo                "</li>";
