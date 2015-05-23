@@ -143,13 +143,18 @@ body {
         list-style: none;
     }
  
-    .event-image {
-        width: 180px;
-        height: 180px;
-        float: left;
-        border: solid 5px darkgray;
-        margin-right: 3em;
+	.event-image {
+		width: 254px;
+		height: 180px;
+		float: left;
+		margin-right: 2em;
+		margin-bottom: 4em
     }
+	.event-image img {
+		width: 254px;
+		height: 180px;
+		border: solid 5px darkgray;
+    }	
  
     .event-info-name {
         margin-bottom: 0;
@@ -658,7 +663,7 @@ header nav {
 	float: left;
 	margin-right: 2em;
 	margin-bottom: 4em
-}
+}	
 .about-intro-image img {
 	width: 254px;
 	height: 180px;
