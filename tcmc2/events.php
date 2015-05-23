@@ -17,7 +17,7 @@ include("php/dbconnect.php")
 <!-- JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
-<script language="javascript" type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
 tinyMCE.init({
     selector: "textarea",
@@ -76,7 +76,7 @@ foreach ($dbh->query($sql) as $row) {
 
         <li>
             <div class="event-container">
-                <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?>></img></div>
+                <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?> /></div>
                 <div class="event-info">
                     <h3 class="event-info-name"><?php echo "$row[name]"; ?></h3>
                     <div class="event-info-details"> 
