@@ -61,7 +61,7 @@ tinyMCE.init({
 
             <ul class="artist-list">
 <?php
-echo "<fieldset>"
+echo "<fieldset>";
 // Display what's in the database at the moment.
 $sql = "SELECT * FROM artists";
 foreach ($dbh->query($sql) as $row)
@@ -76,10 +76,10 @@ echo                       "<div class='artist-info'>";
 echo                           "<h2 class='artist-info-name'>$row[name]</h2>";
 echo                            "<div class='artist-info-bio'>$row[summary]";
 echo                            "<div class='artist-button'><a href='artistdetailed.php?rowid=$row[id]' class='ui small button colored'>Read More</a></div></div>";
-                                    echo "<input type='hidden' name='email' value='$row[email]' /></a>";
-                                    echo "<input type='hidden' name='phone' value='$row[phone]' /></a>";
-                                    echo "<input type='hidden' name='fax' value='$row[fax]' /></a>";
-                                    echo "<input type='hidden' name='id' value='$row[id]' /></a>";
+                                    echo "<input type='hidden' name='email' value='$row[email]' />";
+                                    echo "<input type='hidden' name='phone' value='$row[phone]' />";
+                                    echo "<input type='hidden' name='fax' value='$row[fax]' />";
+                                    echo "<input type='hidden' name='id' value='$row[id]' />";
 echo                        "</div>";
 echo                    "</div>";
 echo                "</li>";

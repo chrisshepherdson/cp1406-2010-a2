@@ -68,6 +68,10 @@ The National Library of Australia has an online catalogue (TROVE) that lists not
     </section>
     
     <section class="about-history">
+        <div class="about-lookingback-image">
+            <img src="images/old-music.jpg" width="500" height="161" alt="A collection of old sheet music from past performers.">
+        </div>
+		<br>
         <h3>A Brief History - By Jean Dartnall</h3>
 		
 		<div class="accordion-demo">
@@ -169,9 +173,10 @@ The National Library of Australia has an online catalogue (TROVE) that lists not
         </div>
       </div>
     </div>
-    <?php
-    require("php/footer.php");
-    ?>
+</div>
+<?php
+require("php/footer.php");
+?>
 
         
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

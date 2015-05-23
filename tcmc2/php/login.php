@@ -11,7 +11,7 @@ echo		  "<h2>Login</h2>";
                if (isset($_SESSION['error']))
                     echo "<h3>$error</h3>";
 
-echo		    "<form id='login' name='login' method='post' action='php/login.php' >";
+echo		    "<form id='login' name='login' method='post' action='$_SERVER['PHP_SELF'])' >";
     echo            "<table>";
     echo                "<tr>";
     echo                    "<td><label class='loginlabel' for='username'>Username</label></td>";

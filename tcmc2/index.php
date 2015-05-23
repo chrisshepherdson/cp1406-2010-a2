@@ -10,12 +10,13 @@ include("php/dbconnect.php");
 <meta charset="utf-8">
 <title>Townsville Community Music Centre - Artists</title>
 <meta name="description" content="With the support of the Townsville City Council, we work from an office in the Civic ... All private schools and most government schools have music teachers.">
+<link rel="stylesheet" href="css/royalslider.css">
 <link rel="stylesheet" href="css/style.css">
 <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
 <!-- JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/jquery.royalslider.min.js"></script>
+
 </head>
 
 <body>
@@ -28,71 +29,48 @@ require("php/header.php");
 <div id="boxed_content" class="boxed_content">
 <div class="inner">
 <div id="content" class="site-content">
-				<div id="home-slider-1" class="royalSlider rsMinW">
+        <div id="home-slider-1" class="royalSlider rsMinW">
 
-				  <div class="rsContent slide2">
-				    <a class="rsImg" href="images/thumb/slider1.jpg"></a>
-				    <div class="bContainer">
-				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Join the TCMC Team</div>
-				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
-				    		<span>Become a Member</span>
-				    	</div>
-				    	<div class="rsABlock" data-move-effect="bottom">
-				    		<a href="members.php" class="ui huge button coloured">Join Now</a>
-				    	</div>
-				    </div>
-				  </div>
+          <div class="rsContent slide2">
+            <a class="rsImg" href="images/thumb/slider1.jpg"></a>
+            <div class="bContainer">
+              <div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Join the TCMC Team</div>
+              <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                <span>Become a Member</span>
+              </div>
+              <div class="rsABlock" data-move-effect="bottom">
+                <a href="members.php" class="ui huge button coloured">Join Now</a>
+              </div>
+            </div>
+          </div>
 
-				  <div class="rsContent slide2">
-				    <a class="rsImg" href="images/thumb/slider2.jpg" ></a>
-				    <div class="bContainer">
-				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Never Miss An Event Again</div>
-				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
-				    		<span>Explore Upcoming Events</span>
-				    	</div>
-				    	<div class="rsABlock" data-move-effect="bottom">
-				    		<a href="events.php" class="ui huge button coloured">View Events</a>
-				    	</div>
-				    </div>
-				  </div>
+          <div class="rsContent slide2">
+            <a class="rsImg" href="images/thumb/slider2.jpg" ></a>
+            <div class="bContainer">
+              <div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Never Miss An Event Again</div>
+              <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                <span>Explore Upcoming Events</span>
+              </div>
+              <div class="rsABlock" data-move-effect="bottom">
+                <a href="events.php" class="ui huge button coloured">View Events</a>
+              </div>
+            </div>
+          </div>
 
-				  <div class="rsContent slide3">
-				    <a class="rsImg" href="images/thumb/slider3.jpg"></a>
-				    <div class="bContainer">
-				    	<div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Join the Experience</div>
-				    	<div class="rsABlock rs_text_box" data-move-effect="bottom">
-				    		<span>Volunteer at Events</span>
-				    	</div>
-				    	<div class="rsABlock" data-move-effect="bottom">
-				    		<a href="members.php" class="ui huge button coloured">Sign Up</a>
-				    	</div>
-				    </div>
-				  </div>
-				  
-				</div> <!-- END royalSlider -->
-				<script id="addJS">
-				jQuery(document).ready(function($) {
-						jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
-							$('#home-slider-1').royalSlider({
-							arrowsNav: true,
-							arrowsNavAutoHide: true,
-							fadeinLoadedSlide: false,
-							controlNavigationSpacing: 0,
-							controlNavigation: 'bullets',
-							imageScaleMode: 'none',
-							imageAlignCenter:false,
-							blockLoop: true,
-							loop: true,
-							numImagesToPreload: 6,
-							transitionType: 'fade',
-							keyboardNavEnabled: true,
-							block: {
-								delay: 400
-							}
-						});
-				});
-				</script>
-
+          <div class="rsContent slide3">
+            <a class="rsImg" href="images/thumb/slider3.jpg"></a>
+            <div class="bContainer">
+              <div class="rsABlock rs_text rs_text_meta" data-move-effect="top">Join the Experience</div>
+              <div class="rsABlock rs_text_box" data-move-effect="bottom">
+                <span>Volunteer at Events</span>
+              </div>
+              <div class="rsABlock" data-move-effect="bottom">
+                <a href="members.php" class="ui huge button coloured">Sign Up</a>
+              </div>
+            </div>
+          </div>
+          
+        </div> <!-- END royalSlider -->
   
     <div class="content"> <a href="about.php" class="white">
       <h2>About Us</h2>
@@ -264,7 +242,7 @@ $date = date('l jS \of F Y h:i:s A', $event2[time]);
         <h3>Sponsors</h3>
         <div class="bottom-featured-img"><a href="http://www.townsville.qld.gov.au/Pages/default.aspx" target="_blank" class="tooltip-top" data-tooltip="The Council's Partnerships and Sponsorships scheme provides vital core funding which enables us to maintain the administrative base for all our other activities, and also provides the premises which house our office space. 
 The Council also assists with the performance venues for our concerts and workshops."><img src="images/sponsor-townsville.jpg" alt="City of Townsville logo"></a></div>
-		<div class="bottom-featured-img"><a href="https://www.qld.gov.au/" target="_blank" class="tooltip-top" data-tooltip="The Gambling Community Benefit Fund has assisted us to obtain office equipment and sound and lighting equipment for our productions."><img src="images/sponsor-qld-gov.jpg" alt="The Queensland Government logo"></a></div>
+    <div class="bottom-featured-img"><a href="https://www.qld.gov.au/" target="_blank" class="tooltip-top" data-tooltip="The Gambling Community Benefit Fund has assisted us to obtain office equipment and sound and lighting equipment for our productions."><img src="images/sponsor-qld-gov.jpg" alt="The Queensland Government logo"></a></div>
       </section>
       <br />
       
@@ -280,27 +258,29 @@ The Council also assists with the performance venues for our concerts and worksh
 require("php/footer.php");
 ?>
     </div></div> 
-    <script type="text/javascipt">
-      $(document).ready(function(){
-        $('#home-slider-1').royalSlider({
-          numImagesToPreload: 1,
-          keyboardNavEnabled: true,
-          imageScaleMode: 'none',
-          arrowsNav: true,
-          arrowsNavAutoHide: true,
-          loop: true,
-          
-          navigateByClick: true,
-          transitionType:'slide',
-
-          autoPlay: {
-            enabled: true,
-            pauseOnHover: true,
-            delay: 10000,
-            stopAtAction: false
-          }
-        });
+    <script id="addJS">
+      jQuery(document).ready(function($) {
+          jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+            $('#home-slider-1').royalSlider({
+            arrowsNav: true,
+            arrowsNavAutoHide: true,
+            fadeinLoadedSlide: false,
+            controlNavigationSpacing: 0,
+            controlNavigation: 'bullets',
+            imageScaleMode: 'none',
+            imageAlignCenter:false,
+            blockLoop: true,
+            loop: true,
+            numImagesToPreload: 3,
+            transitionType: 'fade',
+            keyboardNavEnabled: true,
+            block: {
+              delay: 400
+            }
+          });
       });
-    </script>                                                                 
+    </script>
+    <script src="js/global.js"></script>
+    <script src="js/jquery.royalslider.min.js"></script>                                                            
 </body>
 </html>

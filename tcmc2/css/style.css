@@ -143,18 +143,13 @@ body {
         list-style: none;
     }
  
-	.event-image {
-		width: 254px;
-		height: 180px;
-		float: left;
-		margin-right: 2em;
-		margin-bottom: 4em
+    .event-image {
+        width: 180px;
+        height: 180px;
+        float: left;
+        border: solid 5px darkgray;
+        margin-right: 3em;
     }
-	.event-image img {
-		width: 254px;
-		height: 180px;
-		border: solid 5px darkgray;
-    }	
  
     .event-info-name {
         margin-bottom: 0;
@@ -663,7 +658,7 @@ header nav {
 	float: left;
 	margin-right: 2em;
 	margin-bottom: 4em
-}	
+}
 .about-intro-image img {
 	width: 254px;
 	height: 180px;
@@ -706,6 +701,15 @@ header nav {
 #info-contact-postal {
 	padding-left: 2.2em;
 }
+
+.about-contact-email a{
+	color: #fff;
+}
+
+.about-contact-email a:hover {
+	color: #077cc1;
+}
+
 /* About Looking Back */
 .about-lookingback-image {
 	width: 510px;

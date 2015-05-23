@@ -58,7 +58,7 @@ require("php/header.php");
               <div class="form-row field_text">
                 <label for="contact_phone">Your Phone Number </label>
                 <em>(optional)</em><br>
-                <input id="contact_phone" class="input_text" type="number" value="" name ="contact_phone" required>
+                <input id="contact_phone" class="input_text" type="tel" value="" name ="contact_phone" required>
               </div>
               <div class="form-row field_text">
                 <label for="contact_email">Your E-Mail Address </label>
