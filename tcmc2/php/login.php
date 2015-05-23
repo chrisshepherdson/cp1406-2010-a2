@@ -1,7 +1,8 @@
 <?php
 
-if (isset($_SESSION['error']))
+if (isset($_SESSION['error'])) {
     $error = $_SESSION['error'];
+}
 
 
 echo    "<div id='openModal' class ='modalDialog'>";     
@@ -9,8 +10,9 @@ echo        "<div>";
 echo		"<a href='#close' title='Close' class='close'>X</a>";
 echo		"<h2>Login</h2>";
 
-if (isset($_SESSION['error']))
+if (isset($_SESSION['error'])) {
     echo        "<h3>$error</h3>";
+}
 
 echo		"<form id='login' name='login' method='post' action='' >";
 echo        "<table>";
@@ -25,7 +27,7 @@ echo            "</tr>";
 echo            "</table>";
 echo            "<input name= 'submit' class='submit' type='submit' value='Login' >";            
 echo            "</form>";  
-echo      "</div>"
+echo      "</div>";
     
             
 
