@@ -178,7 +178,7 @@ foreach ($dbh->query($sql) as $row) {
 ?>            
           <li>
             <div class="event-container">
-            <div class="event-image"><img <?php echo "src='$row[thumb]' alt='$row[name]'";?>/></div>
+            <div class="artist-image"><img <?php echo "src='$row[thumb]' alt='$row[name]'";?>/></div>
             <div class="event-info">
               <h3 class="event-info-name"><?php echo "$row[name]"; ?></h3>
               <div class="event-info-details"> <span class="event-time"><?php  echo "$row[user]"; ?></span> <span class="event-day"><?php  echo "$date"; ?></span></div>
@@ -204,12 +204,11 @@ foreach ($dbh->query($sql) as $row) {
 <?php
     $mostvisited1 = 0;
     $mostvisited2 = 0;
-    $sql = "SELECT * FROM artists";
+    $sql = "SELECT * FROM artists ORDER BY hits DESC LIMIT 2";
     foreach ($dbh->query($sql) as $row) {
-        if ($row[hits] >= $mostvisited1) {
-            $mostvisited2 = $mostvisited1;
+        if ($mostvisited1 == 0) {
             $mostvisited1 = $row[id];
-        } elseif ($row[hits] >= $mostvisited2) {
+        }else {
             $mostvisited2 = $row[id];
         }
     
