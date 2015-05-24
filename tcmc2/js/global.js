@@ -7,11 +7,6 @@ jQuery(document).ready(function() {
     var $ = jQuery,
     html = $('html');
 
-    // IE<8 Warning
-    if (html.hasClass("ie6") || html.hasClass("ie7")) {
-        $("body").empty().html('UPDATE YOUR BROWSER');
-    }
-
     // Enable menu toggle for small screens.
     ( function() {
         var nav = $( '#primary-navigation' ), button, menu;
@@ -35,63 +30,6 @@ jQuery(document).ready(function() {
             nav.toggleClass( 'toggled-on' );
         } );
     } )();
-
-    // Search
-    $('.search-toggle').click(function(e){
-        e.preventDefault();
-
-        if($('.search-box-wrapper').height() == "0"){
-            $("html, body").animate({ scrollTop: 0 },{duration: 500, queue: false});
-            $('.search-box-wrapper input[type="search"]').focus();
-            $('.search-box-wrapper').animate({height:"52px"});
-        } else {
-            $('.search-box-wrapper').animate({height:"0"});
-        }
-        
-    });
-
-    // Popup
-    $('.popup')
-      .popup()
-    ;
-
-    // magnific popup
-    $('.popup-vimeo').magnificPopup({
-        type:'iframe'
-    });
-
-    $('.popup-image').magnificPopup({
-        type:'image'
-    });
-
-    $('.ui.accordion')
-      .accordion()
-    ;
-
-    // Event Countdown
-    $('.event_countdown').countdown({ 
-        until: new Date(2015, 1 - 1, 25), timezone: +10,
-        labels: ['Years', 'Months', 'Weeks', 'Days', 'Hr', 'Min', 'Second']
-    });
-
-    // Isotope
-    var $container = $('.gallery-filterable');
-    $container.isotope({
-        filter: '*'
-    });
- 
-    $('.filterable-menu a').click(function(){
-        $('.filterable-menu .colored').removeClass('colored');
-        $(this).addClass('colored');
- 
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector
-         });
-         return false;
-    }); 
-
-});
 
 // Contact Form
 function Contact_Form(){

@@ -971,9 +971,7 @@ width: 20em;
 }
 
 #home-slider-1.royalSlider {
-    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .7);
-       -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .7);
-            box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .7);
+
 }
 
 .rsABlock {
@@ -981,6 +979,10 @@ width: 20em;
     top: auto;
     left: auto;
     display: block;
+}
+
+.rsABlock a.button {
+	margin-top: 10px;
 }
 
 .rsContent {
@@ -1008,6 +1010,9 @@ width: 20em;
     font-weight: 600;
     letter-spacing: .8px;
     text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%;
+	margin: 0px auto;
+	max-width: 35%;
 }
 
 .rs_text_meta {
@@ -1050,7 +1055,8 @@ width: 20em;
 }
 
 .rsMinW .rsBullets {
-    right: 50%;
+    right: 45%;
+	width: 10%;
 }
 /* Video Slider
 ------------------------------*/

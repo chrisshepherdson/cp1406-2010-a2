@@ -59,7 +59,7 @@ tinyMCE.init({
                         </div>
                         <ul class="artist-list">
 <?php
-echo "<fieldset>";
+
 // Display what's in the database at the moment.
 $sql = "SELECT * FROM artists WHERE hidden=0";
 foreach ($dbh->query($sql) as $row)
@@ -85,16 +85,12 @@ echo                "</li>";
 
 <?php
 }
-echo "</fieldset>";
+
 // close the database connection
 $dbh = null;
 ?> 
             </ul>   
         </div>
-        </div>
-    </div>
-        </div>
-    </div>
     </div>
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 <?php

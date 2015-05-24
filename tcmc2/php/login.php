@@ -6,7 +6,7 @@ echo    "<div id='openModal' class='modalDialog'>";
 echo        "<div>";
 echo		    "<a href='#close' title='Close' class='close'>X</a>";
 echo		    "<h2>Login</h2>";
-echo		    "<form id='login' name='login' method='post' action='' >";
+echo		    "<form id='login' name='login' method='post' action='#' >";
 echo                "<table>";
 echo                    "<tr>";
 echo                        "<td><label class='loginlabel' for='username'>Username</label></td>";
