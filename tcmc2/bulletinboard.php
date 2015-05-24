@@ -54,7 +54,7 @@ foreach ($dbh->query($sql) as $row) {
                             <li><span class="bulletin-date"><?php  echo "$date"; ?></span></li>
                         </ul>
                     </div>
-                    <div class="bulletin-image"><img <?php echo "src='$row[thumb]' alt='$row[name]'";?>/></div>
+                    <div class="artist-image"><img <?php echo "src='$row[thumb]' alt='$row[name]'";?>/></div>
                     <div class="bulletin-info">
                         <h2 class="bulletin-info-title"><?php echo "$row[name]"; ?></h2>
                         <div class="bulletin-info-text">
