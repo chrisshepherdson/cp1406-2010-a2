@@ -23,6 +23,7 @@ include("php/dbconnect.php");
 <?php
 require("php/header.php");
 ?>
+    
 <!-- WEBSITE LAYOUT Box -->
     <div class="page-inner">
   <div class="container">
