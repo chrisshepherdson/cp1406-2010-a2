@@ -23,10 +23,7 @@ echo "</pre>\n";
 
 // check to see if the image is valid
 // check MIME type (GIF or JPEG) and maximum upload size - see phpinfo() for the server's restriction
-if ((($_FILES["imagefile"]["type"] == "image/gif")
-|| ($_FILES["imagefile"]["type"] == "image/jpeg")
-|| ($_FILES["imagefile"]["type"] == "image/pjpeg"))
-&& ($_FILES["imagefile"]["size"] < 2000000))
+if ($_FILES["imagefile"]["size"] < 2000000)
 {
     // check for any error code in the data
 	if ($_FILES["imagefile"]["error"] > 0)

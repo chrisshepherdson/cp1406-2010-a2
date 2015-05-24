@@ -81,5 +81,5 @@ foreach ($dbh->query($sql) as $row)
 
 // close the database connection 
 $dbh = null;
-header("Location: ../artists.php");
+//header("Location: ../artists.php");
 ?>

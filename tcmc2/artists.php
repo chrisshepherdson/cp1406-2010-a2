@@ -39,16 +39,15 @@ tinyMCE.init({
 <!-- WEBSITE LAYOUT Box -->
 <div id="boxed_content" class="boxed_content">
     <div class="inner">
-<div class="content">
-    <div class="page-innter">
-    <div class="">
-        <header class="page-header">
-            <h1 class="page-title">Artists</h1>
-        </header>
-
         <div class="content">
-            <div class="artists-intro">
-                <p><strong>Free listing for Music Centre members! Publicise yourself, your band or organisation here!</strong></p>
+            <div class="page-innter">
+                <div class="">
+                    <header class="page-header">
+                        <h1 class="page-title">Artists</h1>
+                    </header>
+                    <div class="content">
+                        <div class="artists-intro">
+                            <p><strong>Free listing for Music Centre members! Publicise yourself, your band or organisation here!</strong></p>
 <?php
                     if (isset($_SESSION['username']) and $_SESSION['paid'] == '1') {
                     echo    "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
@@ -57,13 +56,12 @@ tinyMCE.init({
 ?> 
                
             
-            </div>
-
-            <ul class="artist-list">
+                        </div>
+                        <ul class="artist-list">
 <?php
 echo "<fieldset>";
 // Display what's in the database at the moment.
-$sql = "SELECT * FROM artists";
+$sql = "SELECT * FROM artists WHERE hidden=0";
 foreach ($dbh->query($sql) as $row)
 {
 ?>
@@ -87,7 +85,7 @@ echo                "</li>";
 
 <?php
 }
-echo "</fieldset>\n";
+echo "</fieldset>";
 // close the database connection
 $dbh = null;
 ?> 
@@ -96,6 +94,8 @@ $dbh = null;
         </div>
     </div>
         </div>
+    </div>
+    </div>
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 <?php
 require("php/footer.php");

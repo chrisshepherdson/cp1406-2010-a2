@@ -625,9 +625,9 @@ header nav {
     margin-left: 16.3em;
 }
 .artist-container {
-	height: 180px;
+	
 	min-width: 600px;
-	margin-bottom: 2em;
+	margin-bottom: 5em;
 	margin-top: 2em;
 }
 /* --- Artist Detailed --- */

@@ -61,7 +61,7 @@ tinyMCE.init({
 <section class="events">
     <ul class="events-list">
 <?php 
-$sql = "SELECT * FROM events";
+$sql = "SELECT * FROM events ORDER BY time";
 foreach ($dbh->query($sql) as $row) {
     $artist;
     $sql2 = "SELECT * FROM artists WHERE id='$row[artistId]'";
