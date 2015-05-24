@@ -856,6 +856,7 @@ border: solid 5px darkgray;
 /* -------- Registration and Signup ---------- */
 .members-registration-form label {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    align-content: center;
 	font-size:14px;
 	text-transform:none;
 
@@ -1434,4 +1435,20 @@ header,
 .tooltip-right:after {
   margin-left: 0;
   margin-bottom: -16px;
+}
+    
+    
+    
+.add-user-table {
+    word-wrap: break-word;
+    width: 37em;
+    text-align: end;
+}
+    
+.label-left {
+    text-align: left;
+}
+    
+.add-user-button {
+    width: 37.5em;
 }

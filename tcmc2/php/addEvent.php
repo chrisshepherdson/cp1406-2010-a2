@@ -24,7 +24,7 @@ catch(PDOException $e)
             <table style='width:1'>
                 <tr>
                     <td><label class='artistlabel' for='artist'>Artist:</label></td>
-                    <td><select name='artist' class='artistssel' id'artist'>
+                    <td><select name='artist' class='artistssel' id='artist'>
                         
 <?php
 $sql = "SELECT * FROM artists";
