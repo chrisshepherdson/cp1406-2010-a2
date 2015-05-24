@@ -40,55 +40,39 @@ include("php/dbconnect.php")
 
         <ul class="bulletinboard-list">
             
+<?php
+$sql = "SELECT * FROM bullitens ORDER BY date";
+foreach ($bdh->query($sql) as $row) {
+    if (time() < $row['expire']) {
+        $date = date('l jS \of F Y h:i:s A', $row['date']);
+?>            
             <li>
                 <div class="bulletin-container">
                     <div class="bulletin-details">
                         <ul class="bulletin-details-list">
-                            <li><span class="bulletin-user">Username</span></li>
-                            <li><span class="bulletin-date">Date</span></li>
+                            <li><span class="bulletin-user"><?php echo "$row[user]"; ?></span></li>
+                            <li><span class="bulletin-date"><?php echo "$date"; ?></span></li>
                         </ul>
                     </div>
-                    <div class="bulletin-image">IMAGE</div>
+                    <div class="bulletin-image"><img <?php echo "src='$row[thumb]' alt='$row[name]'";?></div>
                     <div class="bulletin-info">
-                        <h2 class="bulletin-info-title">BULLETIN ONE</h2>
+                        <h2 class="bulletin-info-title"><?php echo "$row[name]"; ?></h2>
                         <div class="bulletin-info-text">
-                            insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, 
+                            <?php echo "$row[details]"; ?>
                         </div>
                         <ul class="bulletin-button-list">
-                            <li><div class="event-button"><a href="#" class="ui small button colored">Button 1</a></div></li>
-                            <li><div class="event-button"><a href="#" class="ui small button colored">Button 2</a></div></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            
-            <li>
-                <div class="bulletin-container">
-                    <div class="bulletin-details">
-                        <ul class="bulletin-details-list">
-                            <li><span class="bulletin-user">Groot</span></li>
-                            <li><span class="bulletin-date">06-08-1945</span></li>
-                        </ul>
-                    </div>
-                    <div class="bulletin-image">IMAGE</div>
-                    <div class="bulletin-info">
-                        <h2 class="bulletin-info-title">BULLETIN TWO</h2>
-                        <div class="bulletin-info-text">
-                            insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, insert bulletin here, 
-                        </div>
-                        <ul class="bulletin-button-list">
-                            <li><div class="event-button"><a href="#" class="ui small button colored">Facebook</a></div></li>
-                            <li><div class="event-button"><a href="#" class="ui small button colored">Email</a></div></li>
+                            <li><div class="event-button"><a href="#" class="ui small button colored">if link exists</a></div></li>
+                            <li><div class="event-button"><a href="#" class="ui small button colored">user edit</a></div></li>
                         </ul>
                     </div>
                 </div>
             </li>
         
-        
-        </ul>
-        
-        
-    
+<?php
+    }
+}
+?>
+       </ul> 
     </section>
         
         
