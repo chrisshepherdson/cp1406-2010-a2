@@ -61,7 +61,13 @@ require("php/header.php");
 <li>Always be respectful of others.</li>
 <li>Have FUN!</li>
     </ul>
+    <?php
+if (!isset($_SESSION[username])) {
+    ?>
     <a href="#addUser" class="ui huge button coloured">Sign Up</a>
+    <?php
+}
+?>
 
 
 </section>

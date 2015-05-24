@@ -2,7 +2,13 @@
 $filename = substr(strrchr($_SERVER['SCRIPT_NAME'], "/"), 1); // missing '' around index - notice error
 $name = substr($filename, 0, strrpos($filename, ".")); ?>
 
-
+<?php
+if ($_SESSION[username] == "Administrator") {
+    ?>
+<a class="adminlink" href="php/adminpage.php">Administrator Page</a>
+<?php
+}
+?>
 
   <header class="boxed_content">
     <!-- START Logo -->
@@ -10,7 +16,6 @@ $name = substr($filename, 0, strrpos($filename, ".")); ?>
       <img src="images/logo.png" id="logo" alt="Townsville Community Music Centre Logo" />
     </a>
     <!-- END Logo --> 
-
   <div id="show-menu"><a href="#">Menu</a></div>
 
     <!-- START Navigation -->

@@ -1452,3 +1452,7 @@ header,
 .add-user-button {
     width: 37.5em;
 }
+    
+.adminlink {
+    float:left;
+}
