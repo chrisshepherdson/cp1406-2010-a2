@@ -170,17 +170,27 @@ $date = date('l jS \of F Y h:i:s A', $event2[time]);
       </a>
       <section class="events">
         <ul class="events-list">
+            <?php
+$sql = "SELECT * FROM bullitens ORDER BY date LIMIT 1";
+foreach ($dbh->query($sql) as $row) {
+    if (time() < $row['expire']) {
+        $date = date('l jS \of F Y h:i:s A', $row['date']);
+?>            
           <li>
             <div class="event-container">
-            <div class="event-image"></div>
+            <div class="event-image"><img <?php echo "src='$row[thumb]' alt='$row[name]'";?>/></div>
             <div class="event-info">
-              <h3 class="event-info-name">EVENT ONE</h3>
-              <div class="event-info-details"> <span class="event-time">time</span> <span class="event-day">day</span> <span class="event-date">date</span> <span class="event-location">location</span> </div>
-              <div class="event-info-text"> event details, event details, event details, event details, event details, event details, event details, event details, event details, </div>
+              <h3 class="event-info-name"><?php echo "$row[name]"; ?></h3>
+              <div class="event-info-details"> <span class="event-time"><?php  echo "$row[user]"; ?></span> <span class="event-day"><?php  echo "$date"; ?></span></div>
+              <div class="event-info-text"> 
+                  <?php echo "$row[details]"; ?> </div>
               <br>
-              <div class="event-button"><a href="bulletinboard.php" class="ui small button coloured">Read More</a></div>
-                </div> </div>
+              </div>
           </li>
+              <?php
+    }
+}
+?>
         </ul>
       </section>
       <br>
