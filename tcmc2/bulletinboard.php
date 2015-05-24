@@ -42,7 +42,7 @@ include("php/dbconnect.php")
             
 <?php
 $sql = "SELECT * FROM bullitens ORDER BY date";
-foreach ($bdh->query($sql) as $row) {
+foreach ($dbh->query($sql) as $row) {
     if (time() < $row['expire']) {
         $date = date('l jS \of F Y h:i:s A', $row['date']);
 ?>            
@@ -50,21 +50,26 @@ foreach ($bdh->query($sql) as $row) {
                 <div class="bulletin-container">
                     <div class="bulletin-details">
                         <ul class="bulletin-details-list">
-                            <li><span class="bulletin-user"><?php echo "$row[user]"; ?></span></li>
-                            <li><span class="bulletin-date"><?php echo "$date"; ?></span></li>
+                            <li><span class="bulletin-user"><?php  echo "$row[user]"; ?></span></li>
+                            <li><span class="bulletin-date"><?php  echo "$date"; ?></span></li>
                         </ul>
                     </div>
-                    <div class="bulletin-image"><img <?php echo "src='$row[thumb]' alt='$row[name]'";?></div>
+                    <div class="bulletin-image"><img <?php echo "src='$row[thumb]' alt='$row[name]'";?>/></div>
                     <div class="bulletin-info">
                         <h2 class="bulletin-info-title"><?php echo "$row[name]"; ?></h2>
                         <div class="bulletin-info-text">
                             <?php echo "$row[details]"; ?>
                         </div>
                         <ul class="bulletin-button-list">
-                            <li><div class="event-button"><a href="#" class="ui small button colored">if link exists</a></div></li>
-                            <li><div class="event-button"><a href="#" class="ui small button colored">user edit</a></div></li>
+                            <?php if ($row[link] != "") { ?>
+                            <li>
+                                <div class="event-button"><a href="<?php echo "$row[link]"; ?>" class="ui small button colored">Webpage</a></div></li> <?php } 
+        if ($row[user] == $_SESSION[username]) { ?>
+                            <li>
+                                <div class="event-button"><a href="#editBulliten" class="ui small button colored">user edit</a></div></li> <?php } ?>
                         </ul>
                     </div>
+                </div>
                 </div>
             </li>
         
