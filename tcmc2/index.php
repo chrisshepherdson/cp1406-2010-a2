@@ -144,11 +144,11 @@ $date = date('l jS \of F Y h:i:s A', $event1[time]);
             </li>
             <li>
                 <div class="event-container">
-                    <?php
-$sql = "SELECT thumb FROM artists WHERE id = '$event2[artistId]'";
-foreach ($dbh->query($sql) as $artist) {}
-$date = date('l jS \of F Y h:i:s A', $event2[time]);
-?>
+                                        <?php
+                    $sql = "SELECT thumb FROM artists WHERE id = '$event2[artistId]'";
+                    foreach ($dbh->query($sql) as $artist) {}
+                    $date = date('l jS \of F Y h:i:s A', $event2[time]);
+                    ?>
                 <div class="artist-image"><img <?php echo "src='$artist[thumb]' alt='$artist[name]'";?>/></div>
                 <div class="event-info">
                     <h3 class="event-info-name"><?php echo "$event2[name]"; ?></h3>
@@ -183,9 +183,11 @@ foreach ($dbh->query($sql) as $row) {
               <h3 class="event-info-name"><?php echo "$row[name]"; ?></h3>
               <div class="event-info-details"> <span class="event-time"><?php  echo "$row[user]"; ?></span> <span class="event-day"><?php  echo "$date"; ?></span></div>
               <div class="event-info-text"> 
-                  <?php echo "$row[details]"; ?> </div>
+                  <?php echo "$row[details]"; ?> 
+                </div>
               <br>
               </div>
+            </div>
           </li>
               <?php
     }

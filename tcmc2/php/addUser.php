@@ -20,6 +20,7 @@ catch(PDOException $e)
 
 
 <section class="members-registration-form">
+    <h2 style="display:none;">Membership Registration</h2>
 <form method="post" action="php/registerUser.php" id="registration">
     <table class="add-user-table">
    	    <tr>
@@ -40,7 +41,7 @@ catch(PDOException $e)
         </tr>
         <tr>
             <td class="label-right"><label for="password">Password: </label></td>
-            <td class="label-left"><input type="password" name="password" placeholder="*********" id="password" required/></td>
+            <td class="label-left"><input type="password" name="password" placeholder="*********" id="password_reg" required/></td>
         </tr>
         <tr>
             <td class="label-right"><label for="comments">We value your comments and suggestions: </label> </td>
@@ -61,12 +62,13 @@ catch(PDOException $e)
 
     
     <section class="payment-options">
+        <h2 style="display:none">Payment Options</h2>
     <div>
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="GCRJ28AFLXURQ" />
                     <input type="image" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" name="submit" alt="PayPal � The safer, easier way to pay online." />
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+                    <img alt="" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
                      Individual membership $25 per year:  
                     </form>
                     
@@ -77,7 +79,7 @@ catch(PDOException $e)
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="67K2M93WVJM2L" />
                     <input type="image" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" name="submit" alt="PayPal � The safer, easier way to pay online." />
-                    <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
+                    <img alt="" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
                                        &nbsp;&nbsp;&nbsp;Tax-deductible donation:  
                     </form>
                    </div>

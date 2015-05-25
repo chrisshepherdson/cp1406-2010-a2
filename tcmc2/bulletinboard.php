@@ -76,7 +76,6 @@ foreach ($dbh->query($sql) as $row) {
                         </ul>
                     </div>
                 </div>
-                </div>
             </li>
         
 <?php

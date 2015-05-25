@@ -92,6 +92,8 @@ $dbh = null;
             </ul>   
         </div>
     </div>
+</div>
+</div>
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 <?php
 require("php/footer.php");
