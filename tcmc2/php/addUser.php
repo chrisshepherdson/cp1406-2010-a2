@@ -22,23 +22,23 @@ catch(PDOException $e)
 <form method="post" action="php/registerUser.php" id="registration">
     <table class="add-user-table">
    	    <tr>
-            <td class="label-right"><label for="name">Name:</label></td>
+            <td class="label-right"><label for="name">*Name:</label></td>
             <td class="label-left"><input type="text" name="name" placeholder="Your name here" id="name" required/></td>
         </tr>
         <tr>
-            <td class="label-right"><label for="address">Postal Address: </label></td>
+            <td class="label-right"><label for="address">*Postal Address: </label></td>
             <td class="label-left"><textarea name="address" id="address" cols="40" rows="4" form="registration" required></textarea></td>
         </tr>
         <tr>
-            <td class="label-right"><label for="number">Phone Number: </label></td>
+            <td class="label-right"><label for="number">*Phone Number: </label></td>
             <td class="label-left"><input type="number" name="number" placeholder="Phone Number" id="number" required /></td>
         </tr>
         <tr>
-            <td class="label-right"><label for="email">Email Address: </label></td>
+            <td class="label-right"><label for="email">*Email Address: </label></td>
             <td class="label-left"><input type="email" name="email" placeholder="example@gmail.com" id="email" required/></td>
         </tr>
         <tr>
-            <td class="label-right"><label for="password">Password: </label></td>
+            <td class="label-right"><label for="password">*Password: </label></td>
             <td class="label-left"><input type="password" name="password" placeholder="*********" id="password_reg" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{8,}"/></td>
         </tr>
         <tr>
@@ -49,7 +49,7 @@ catch(PDOException $e)
             <td class="label-left"><textarea name="comments" id="comments" cols="40" rows="4" form="registration"></textarea></td>
         </tr>
         <tr>
-            <td class="label-right"><label for="terms">I have read and agree to the Membership Guidelines</label> </td>
+            <td class="label-right"><label for="terms">*I have read and agree to the Membership Guidelines</label> </td>
             <td class="label-left"><input type="checkbox" name="terms" id="terms" required/></td>
         </tr>
         <tr>
