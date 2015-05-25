@@ -901,6 +901,11 @@ width: 20em;
 #terms {
 	width: 20px;
 }
+
+
+#password-explanation{
+    font-size: 10px;
+}
 /*------------------------------ Footer ------------------------------*/
 
 .footer-wrapper {
