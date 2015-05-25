@@ -253,8 +253,8 @@ foreach ($dbh->query($sql) as $row) {
       <section class="bottom-section">
         <h3>Sponsors</h3>
         <div class="bottom-featured-img"><a href="http://www.townsville.qld.gov.au/Pages/default.aspx" target="_blank" class="tooltip-top" data-tooltip="The Council's Partnerships and Sponsorships scheme provides vital core funding which enables us to maintain the administrative base for all our other activities, and also provides the premises which house our office space. 
-The Council also assists with the performance venues for our concerts and workshops."><img src="images/sponsor-townsville.jpg" alt="City of Townsville logo"></a></div>
-    <div class="bottom-featured-img"><a href="https://www.qld.gov.au/" target="_blank" class="tooltip-top" data-tooltip="The Gambling Community Benefit Fund has assisted us to obtain office equipment and sound and lighting equipment for our productions."><img src="images/sponsor-qld-gov.jpg" alt="The Queensland Government logo"></a></div>
+The Council also assists with the performance venues for our concerts and workshops."><img src="images/sponsor-townsville.jpg" alt="City of Townsville logo" width="210px" height="210px"></a></div>
+    <div class="bottom-featured-img"><a href="https://www.qld.gov.au/" target="_blank" class="tooltip-top" data-tooltip="The Gambling Community Benefit Fund has assisted us to obtain office equipment and sound and lighting equipment for our productions."><img src="images/sponsor-qld-gov.jpg" alt="The Queensland Government logo" width="210px" height="210px"></a></div>
       </section>
       <br />
       
