@@ -68,7 +68,7 @@ catch(PDOException $e)
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="GCRJ28AFLXURQ" />
-                    <input type="image" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" name="submit" alt="PayPal � The safer, easier way to pay online." />
+                    <input type="image" src="images/pp-logo-110px.png" name="submit" alt="PayPal � The safer, easier way to pay online." />
                     <img alt="" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
                      Individual membership $25 per year:  
                     </form>
@@ -79,7 +79,7 @@ catch(PDOException $e)
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="67K2M93WVJM2L" />
-                    <input type="image" src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" name="submit" alt="PayPal � The safer, easier way to pay online." />
+                    <input type="image" src="images/pp-logo-110px.png" name="submit" alt="PayPal � The safer, easier way to pay online." />
                     <img alt="" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1" />
                                        &nbsp;&nbsp;&nbsp;Tax-deductible donation:  
                     </form>
