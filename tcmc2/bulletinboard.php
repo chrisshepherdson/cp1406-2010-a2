@@ -34,6 +34,7 @@ include("php/dbconnect.php")
         <header class="page-header">
             <h1 class="page-title">Bulletin Board</h1>
         </header>
+        
         <section class="bulletinboard">
         
         
@@ -44,6 +45,7 @@ include("php/dbconnect.php")
 
 }
 ?>
+        <section class="bulletinboard">
         <ul class="bulletinboard-list">
             
 <?php
@@ -72,7 +74,10 @@ foreach ($dbh->query($sql) as $row) {
                                 <div class="event-button"><a href="<?php echo "$row[link]"; ?>" class="ui small button colored">Webpage</a></div></li> <?php } 
         if ($row[user] == $_SESSION[username]) { ?>
                             <li>
-                                <div class="event-button"><a href="#editBulliten" class="ui small button colored">user edit</a></div></li> <?php } ?>
+                                <div class="event-button"><a href="?name=<?php echo"$row[name]"; ?>#editbulletin" class="ui small button colored">user edit</a></div></li> <?php 
+                    include("php/editbullet.php");
+                                               } 
+                            ?>
                         </ul>
                     </div>
                 </div>
