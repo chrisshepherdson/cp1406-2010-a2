@@ -1,5 +1,17 @@
 <?php
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $subject = $_POST['contact_subject'];
+
+  $name = 'Name: '.$_POST['contact_name']."\r\n<br />";
+  $email = 'Email: '.$_POST['contact_email']."\r\n<br />";
+  $phone = 'Phone: '.$_POST['contact_phone']."\r\n<br />";
+
+  $message = $name.$email.$phone.'Message: '.wordwrap($_POST['contact_message'], 70, "\r\n");
+            //to ,subject, message
+  $success = mail('admin@townsvillemusic.org.au', $subject, $message);
+}
+
 session_start();
 include("php/dbconnect.php");
 
@@ -46,40 +58,58 @@ require("php/header.php");
               <li id="mobile_icon"> (07) 4724 2086</li>
               <li class="about-contact-email" id="mail_icon"> <a href="mailto:admin@townsvillemusic.org.au?Subject=Enquiry" target="_top">admin@townsvillemusic.org.au</a></li>
             </ul>
-            <br>
+            <br />
+            <div class="form-row notice_bar">
+              <?php 
+                if(isset($success)){
+                  if ($success) { //if message successfully send
+                    echo '<p class="notice notice_ok">Thank you for contacting us. We will get back to you as soon as possible.</p>';
+                  } else {
+                    echo '<p class="notice notice_error">Due to an unknown error, your form was not submitted. Please resubmit it or try later.</p>';
+                  }
+                  ?>
+                    <script type="text/javascript">
+                      $(document).ready(function(){  
+                        $('html, body').animate({
+                          scrollTop: $(".notice_bar").offset().top
+                        }, 1200);
+                      });
+                    </script>
+                  <?php
+                }
+              ?>
+            </div>
+            <br />
             <h4>CONTACT US</h4>
             <p>We would love to hear from you! Please let us know how we can be of service.</p>
             <form id="contact_form" name="contact_form" method="post" action="#">
               <div class="form-row field_text">
                 <label for="contact_name">Your Name </label>
                 <em>(required)</em><br>
-                <input id="contact_name" class="input_text required" type="text" value="" name ="contact_name" required>
+                <input id="contact_name" class="input_text required" type="text" value="" name="contact_name" required>
               </div>
               <div class="form-row field_text">
                 <label for="contact_phone">Your Phone Number </label>
                 <em>(optional)</em><br>
-                <input id="contact_phone" class="input_text" type="tel" value="" name ="contact_phone" required>
+                <input id="contact_phone" class="input_text" type="tel" value="" name="contact_phone" required>
               </div>
               <div class="form-row field_text">
                 <label for="contact_email">Your E-Mail Address </label>
                 <em>(required)</em><br>
-                <input id="contact_email" class="input_text required" type="email" value="" name ="contact_email" required>
+                <input id="contact_email" class="input_text required" type="email" value="" name="contact_email" required>
               </div>
               <div class="form-row field_text">
                 <label for="contact_subject">Subject </label>
                 <em>(required)</em><br>
-                <input id="contact_subject" class="input_text required" type="text" value="" name ="contact_subject" required>
+                <input id="contact_subject" class="input_text required" type="text" value="" name="contact_subject" required>
               </div>
               <div class="form-row field_textarea">
                 <label for="contact_message">Message: </label>
                 <br>
-                <textarea id="contact_message" class="input_textarea" name ="contact_message" required></textarea>
+                <textarea id="contact_message" class="input_textarea" name="contact_message" required></textarea>
               </div>
               <div class="form-row field_submit">
-                <input type="submit" value="Submit" id="contact_submit" class="ui small button coloured"></div>
-              <div class="form-row notice_bar">
-                <p class="notice notice_ok hide">Thank you for contacting us. We will get back to you as soon as possible.</p>
-                <p class="notice notice_error hide">Due to an unknown error, your form was not submitted. Please resubmit it or try later.</p>
+                <input type="submit" value="Submit" id="contact_submit" class="ui small button coloured">
               </div>
             </form>
             <!-- END #contact_form --> 
