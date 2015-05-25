@@ -25,6 +25,14 @@ catch(PDOException $e)
                      <td><input name='webpage' class='webpage' type='text' id='webpage' placeholder='http://...com'></td>
                  </tr>
                  <tr>
+                     <td><label class='webpageLabel' for='email'>Email</label></td>
+                     <td><input name='email' class='email' type='email' id='email' placeholder='....@...com'></td>
+                 </tr>
+                 <tr>
+                     <td><label class='webpageLabel' for='number'>phone number</label></td>
+                     <td><input name='number' class='number' type='number' id='number' placeholder='07...'></td>
+                 </tr>
+                 <tr>
                      <td><label class='webpageLabel' for='expire'>expire (YYYY-MM-DD): </label></td>
                      <td><input name='expire' class='expire' type='expire' id='expire' placeholder='YYYY-MM-DD' required> </td> </tr>
                  <tr>

@@ -31,6 +31,14 @@ foreach ($dbh->query($sql) as $row) {
                      <td><input name='webpage' class='webpage' type='text' id='webpage' value='<?php echo "$row[link]"; ?>'</input></td>
                  </tr>
                  <tr>
+                     <td><label class='webpageLabel' for='email'>Email</label></td>
+                     <td><input name='email' class='email' type='email' id='email'value='<?php echo "$row[email]"; ?>'></td>
+                 </tr>
+                 <tr>
+                     <td><label class='webpageLabel' for='number'>phone number</label></td>
+                     <td><input name='number' class='number' type='number' id='number' value='<?php echo "$row[number]"; ?>'></td>
+                 </tr>
+                 <tr>
                      <td><label class='webpageLabel' for='expire'>expire (YYYY-MM-DD): </label></td>
                      <td><input name='expire' class='expire' type='expire' id='expire' value='<?php echo date("Y-m-d",$row[expire]); ?>' required> </td> </tr>
              </table>

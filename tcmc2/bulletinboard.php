@@ -17,6 +17,17 @@ include("php/dbconnect.php")
 <!-- JS -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.royalslider.min.js"></script>
+<script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinyMCE.init({
+    selector: "textarea",
+    menubar: false,
+     toolbar: false,
+    statusbar : false
+    
+    
+});
+</script>
 </head>
 <!-- START Logo -->
 <body>
@@ -71,7 +82,12 @@ foreach ($dbh->query($sql) as $row) {
                         <ul class="bulletin-button-list">
                             <?php if ($row[link] != "") { ?>
                             <li>
-                                <div class="event-button"><a href="<?php echo "$row[link]"; ?>" class="ui small button colored">Webpage</a></div></li> <?php } 
+                                <div class="event-button"><a href="<?php echo "$row[link]"; ?>" class="ui small button colored">Webpage</a></div></li>
+                            <?php } if ($row[email] != "") { ?>
+                            <li>
+                                <div class="event-button"><a href="mailto:<?php echo "$row[email]"; ?>" class="ui small button colored">Email</a></div></li><?php } if ($row[number] != "") { ?>
+                            <li>
+                                <div class="event-button"><?php echo "$row[number]"; ?></div></li><?php } 
         if ($row[user] == $_SESSION[username]) { ?>
                             <li>
                                 <div class="event-button"><a href="?name=<?php echo"$row[name]"; ?>#editbulletin" class="ui small button colored">user edit</a></div></li> <?php 
@@ -85,6 +101,7 @@ foreach ($dbh->query($sql) as $row) {
         
 <?php
     }
+    
 }
 ?>
        </ul> 

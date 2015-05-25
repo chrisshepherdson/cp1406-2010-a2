@@ -42,8 +42,8 @@ echo  "$date";
 
 if ($_REQUEST['submit'] == "post bulletin") {
     
-	$sql = "INSERT INTO bullitens (expire, user, name, date, image, thumb, details, link) VALUES ('$expire',
-        '$_SESSION[username]', '$_REQUEST[name]', '$date', '$fullimage_path', '$thumbpath', '$_REQUEST[details]', '$_REQUEST[webpage]')";
+	$sql = "INSERT INTO bullitens (expire, user, name, date, image, thumb, details, link, number, email) VALUES ('$expire',
+        '$_SESSION[username]', '$_REQUEST[name]', '$date', '$fullimage_path', '$thumbpath', '$_REQUEST[details]', '$_REQUEST[webpage]', '$_REQUEST[number]', '$_REQUEST[email]')";
 	if ($dbh->exec($sql)) {
         header("Location: ../bulletinboard.php");
     }
@@ -59,7 +59,7 @@ if ($_REQUEST['submit'] == "post bulletin") {
     }
 } else if ($_REQUEST['submit'] == "Update bulletin") {
     echo "<p>Here I am</p>";
-	$sql = "UPDATE bullitens SET name = '$_REQUEST[name]', expire = '$expire', details = '$_REQUEST[details]', link ='$_REQUEST[webpage]'";
+	$sql = "UPDATE bullitens SET name = '$_REQUEST[name]', expire = '$expire', details = '$_REQUEST[details]', link ='$_REQUEST[webpage]', number = '$_REQUEST[number]', email = '$_REQUEST[email]'";
 	if ($dbh->exec($sql)) {
     		header("Location: ../bulletinboard.php");
     } else {
