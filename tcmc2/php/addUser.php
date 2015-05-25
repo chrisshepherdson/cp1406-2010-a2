@@ -1,6 +1,5 @@
 <?php
 //session_start()
-
 try {
     $dbh = new PDO("sqlite:db/tcmc.sqlite"); 
 }
@@ -8,7 +7,6 @@ catch(PDOException $e)
 {
     echo $e->getMessage();
 }
-
     //event Name / artist id / details / time / location
 ?>
 
@@ -41,14 +39,17 @@ catch(PDOException $e)
         </tr>
         <tr>
             <td class="label-right"><label for="password">Password: </label></td>
-            <td class="label-left"><input type="password" name="password" placeholder="*********" id="password_reg" required/></td>
+            <td class="label-left"><input type="password" name="password" placeholder="*********" id="password_reg" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{8,}"/></td>
+        </tr>
+        <tr>
+            <td id="password-explanation">*Password must be greater than 8 characters, have a mix of uppercase and lower case and cannot contain spaces.</td>
         </tr>
         <tr>
             <td class="label-right"><label for="comments">We value your comments and suggestions: </label> </td>
             <td class="label-left"><textarea name="comments" id="comments" cols="40" rows="4" form="registration"></textarea></td>
         </tr>
         <tr>
-            <td class="label-right"><label for="terms">I have read and agree to the Membership Guidelines as stated above.</label> </td>
+            <td class="label-right"><label for="terms">I have read and agree to the Membership Guidelines</label> </td>
             <td class="label-left"><input type="checkbox" name="terms" id="terms" required/></td>
         </tr>
         <tr>
