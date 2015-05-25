@@ -86,22 +86,22 @@ require("php/header.php");
               <div class="form-row field_text">
                 <label for="contact_name">Your Name </label>
                 <em>(required)</em><br>
-                <input id="contact_name" class="input_text required" type="text" value="" name="contact_name" required>
+                <input id="contact_name" class="input_text required" type="text" value="" name="contact_name" placeholder="e.g. John Doe" required>
               </div>
               <div class="form-row field_text">
                 <label for="contact_phone">Your Phone Number </label>
                 <em>(optional)</em><br>
-                <input id="contact_phone" class="input_text" type="tel" value="" name="contact_phone" required>
+                <input id="contact_phone" class="input_text" type="tel" value="" name="contact_phone" placeholder="e.g. 0412345678 or 12345678" required>
               </div>
               <div class="form-row field_text">
                 <label for="contact_email">Your E-Mail Address </label>
                 <em>(required)</em><br>
-                <input id="contact_email" class="input_text required" type="email" value="" name="contact_email" required>
+                <input id="contact_email" class="input_text required" type="email" value="" name="contact_email" placeholder="e.g. name@domain.com" required>
               </div>
               <div class="form-row field_text">
                 <label for="contact_subject">Subject </label>
                 <em>(required)</em><br>
-                <input id="contact_subject" class="input_text required" type="text" value="" name="contact_subject" required>
+                <input id="contact_subject" class="input_text required" type="text" value="" name="contact_subject" placeholder="e.g. Enquiry" required>
               </div>
               <div class="form-row field_textarea">
                 <label for="contact_message">Message: </label>
