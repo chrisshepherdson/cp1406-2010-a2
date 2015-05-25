@@ -9,7 +9,7 @@ include("php/dbconnect.php")
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Townsville Community Music Centre - bulletin Board</title>
+<title>Townsville Community Music Centre - Bulletin Board</title>
 <meta name="description" content="With the support of the Townsville City Council, we work from an office in the Civic ... All private schools and most government schools have music teachers.">
 <link rel="stylesheet" href="css/style.css">
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>

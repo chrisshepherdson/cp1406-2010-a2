@@ -8,7 +8,7 @@ include("php/dbconnect.php");
 <html>
 <head>
 <meta charset="utf-8">
-<title>Townsville Community Music Centre - Artists</title>
+<title>Townsville Community Music Centre - Home</title>
 <meta name="description" content="With the support of the Townsville City Council, we work from an office in the Civic ... All private schools and most government schools have music teachers.">
 <link rel="stylesheet" href="css/royalslider.css">
 <link rel="stylesheet" href="css/style.css">
