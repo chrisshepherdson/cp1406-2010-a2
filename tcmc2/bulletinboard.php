@@ -32,12 +32,18 @@ include("php/dbconnect.php")
     <div class="page-innter">
     <div class="">
         <header class="page-header">
-            
+            <h1 class="page-title">Bulletin Board</h1>
         </header>
         <section class="bulletinboard">
-        <h1>Bulletin Board</h1>
         
+        
+<?php
+    if (isset($_SESSION[username])) {
+        echo    "<div class='artist-button'><a href='#postbulliten' class='ui small button colored'>Post Bulliten</a></div>";
+        include("php/addBullet.php");
 
+}
+?>
         <ul class="bulletinboard-list">
             
 <?php
