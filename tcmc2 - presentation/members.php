@@ -33,12 +33,13 @@ require("php/header.php");
 <section class="members-about">
 <div class="members-about-intro">
 <h3>Information about Membership</h3>
+<p>If you want to volunteer to help at events or on the administrative side of the Townsville Community Music Centre, simply sign up for membership and respond to the various different positions as they appear on the Bulletin Board.</p>
 <p>There are two different types of membership: Registered Members and Paid Members. Paid membership is $25 a year and has many benefits.
 <p>Features of being a registered user are:
 <ul>
 <li>Receive information about artists and events</li>
 <li>Get mailed or emailed the Newsletter</li>
-<li>Ability to post and edit ont the bulletin board.</li>
+<li>Post and edit on the bulletin board.</li>
 </ul>
 
 <p>Benefits of Paid Memebership include:</p>

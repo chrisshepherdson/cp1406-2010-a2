@@ -206,7 +206,7 @@ body {
 
     .bulletin-container {
         min-height: 213px;
-        min-width: 600px;
+        min-width: 320px;
         margin-bottom: 4em;
         margin-top: 2em;
     }
@@ -221,7 +221,7 @@ body {
         float: left;
         list-style: none;
         display: inline-block;
-        padding-right: 3em;
+        padding: 5px 10px;
     }
 
     .bulletin-details-list li:last-child {
