@@ -16,7 +16,7 @@ catch(PDOException $e)
  		  <h2>Post Bulliten</h2>
  		  <form id='addartist' name='addartist' method='post' action='php/bulletprocess.php' enctype='multipart/form-data'>
              <label class='nameLabel' for='name'>Name    </label>
-             <input name='name' class='name' type='text' id='name' placeholder=' Name' required><br>
+             <input name='name' class='name' type='text' id='name' placeholder='Name' required><br>
              <label for='details'>Details *</label><br>
              <textarea name='details' rows='3' cols='48' id='details' ></textarea><br>
              <table style='width:1'>

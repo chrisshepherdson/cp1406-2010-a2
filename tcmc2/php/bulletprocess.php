@@ -32,37 +32,34 @@ if (preg_match("/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/", $_REQU
     header("Location: ../bulletinboard.php#postbulliten");
 }
 
-$expire = $_REQUEST[expire];
-$expire = strtotime($expire);
-$date  = $time();
-echo = "$expire";
-echo = "$date";
+$exp = $_REQUEST[expire]."00:00:00";
+$expire = strtotime($exp);
+$date  = time();
+echo  "$expire";
+echo  "$date";
 
 
 
 if ($_REQUEST['submit'] == "post bulletin") {
     
-	$sql = "INSERT INTO bullitens (expire, user, name, date, image, thumb, details, link) VALUES ('$_REQUEST[name]',
-        '$_REQUEST[summary]', '$fullimage_path', '$_REQUEST[details]', '$_REQUEST[webpage]', '$_REQUEST[fax]', '$_REQUEST[phone]', '$_REQUEST[email]',
-        '$_REQUEST[mobile]', '$_SESSION[username]', '$thumbpath' )";
+	$sql = "INSERT INTO bullitens (expire, user, name, date, image, thumb, details, link) VALUES ('$expire',
+        '$_SESSION[username]', '$_REQUEST[name]', '$date', '$fullimage_path', '$thumbpath', '$_REQUEST[details]', '$_REQUEST[webpage]')";
 	if ($dbh->exec($sql)) {
         header("Location: ../bulletinboard.php");
     }
 	else {
         echo "<p>failed</p>";
     }
-} else if ($_REQUEST['submit'] == "Delete Artist") {
-	$sql = "DELETE FROM artists WHERE id = '$_REQUEST[id]'";
+} else if ($_REQUEST['submit'] == "Delete bulletin") {
+	$sql = "DELETE FROM bullitens WHERE name = '$_REQUEST[name]'";
 	if ($dbh->exec($sql)) {
         header("Location: ../bulletinboard.php");
     } else {
         echo "<p>failed</p>";
     }
-} else if ($_REQUEST['submit'] == "Update Artist") {
+} else if ($_REQUEST['submit'] == "Update bulletin") {
     echo "<p>Here I am</p>";
-	$sql = "UPDATE artists SET name = '$_REQUEST[name]', summary = '$_REQUEST[summary]', details = '$_REQUEST[details]',
-    webpage ='$_REQUEST[webpage]', fax = '$_REQUEST[fax]', phone = '$_REQUEST[phone]', email = '$_REQUEST[email]', mobile = '$_REQUEST[mobile]' 
-    WHERE id = '$_REQUEST[id]'";
+	$sql = "UPDATE bullitens SET name = '$_REQUEST[name]', expire = '$expire', details = '$_REQUEST[details]', link ='$_REQUEST[webpage]'";
 	if ($dbh->exec($sql)) {
     		header("Location: ../bulletinboard.php");
     } else {
@@ -73,7 +70,7 @@ else {
 echo "<p>Failed</P>";
 }
 
-$sql = "SELECT * FROM artists";
+$sql = "SELECT * FROM bullitens";
 $result = $dbh->query($sql);
 $resultCopy = $result;
 
