@@ -80,7 +80,7 @@ require("php/header.php");
         <ul class="events-list">
           <li>
             <div class="event-container">
-            <a href="about.php"> <div class="event-image"><img src="images/CivicFront300.jpg" width="244" height="170" alt="The Townsville Community Music Centre"></div></a>
+            <a href="about.php"> <div class="artist-image"><img src="images/CivicFront300.jpg" width="244" height="170" alt="The Townsville Community Music Centre"></div></a>
             <div class="event-info">
               <h3 class="event-info-name">Townsville Community Music Centre</h3>
               <div class="event-info-text"> Based in Townsville, North Queensland, the Music Centre presents concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists. </div>
