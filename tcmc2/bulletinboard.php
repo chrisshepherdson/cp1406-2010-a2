@@ -40,7 +40,7 @@ include("php/dbconnect.php")
 <?php
     if (isset($_SESSION[username])) {
         echo    "<div class='artist-button'><a href='#postbulliten' class='ui small button colored'>Post Bulliten</a></div>";
-        include("php/addBullet.php");
+        include("php/addbullet.php");
 
 }
 ?>
