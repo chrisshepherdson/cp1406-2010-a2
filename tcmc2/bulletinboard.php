@@ -46,7 +46,7 @@ tinyMCE.init({
             <h1 class="page-title">Bulletin Board</h1>
         </header>
         
-        <section class="bulletinboard">
+     
         
         
 <?php
@@ -110,6 +110,8 @@ foreach ($dbh->query($sql) as $row) {
         
         </div>
     </div>
+        </div>
+        </div>
         </div>
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 <?php
