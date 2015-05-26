@@ -55,7 +55,7 @@ require("php/header.php");
             <ul class="horizontal-list">
               <li id="home_icon"> 41 Boundary Street, Townsville, Qld 4810</li>
               <li id="phone_icon"> (07) 4724 2086</li>
-              <li id="mobile_icon"> (07) 4724 2086</li>
+              <li id="mobile_icon"> 0402 255 182</li>
               <li class="about-contact-email" id="mail_icon"> <a href="mailto:admin@townsvillemusic.org.au?Subject=Enquiry" target="_top">admin@townsvillemusic.org.au</a></li>
             </ul>
             <br />
