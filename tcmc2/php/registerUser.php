@@ -10,6 +10,11 @@ catch(PDOException $e)
 {
     echo $e->getMessage();
 }
+$_REQUEST[name] = SQLite3::escapeString($_REQUEST[name]);
+$_REQUEST[address] = SQLite3::escapeString($_REQUEST[address]);
+$_REQUEST[comments] = SQLite3::escapeString($_REQUEST[comments]);
+
+
 echo "{$_REQUEST[name]}";
 echo "{$_REQUEST[number]}";
 echo "{$_REQUEST[email]}";

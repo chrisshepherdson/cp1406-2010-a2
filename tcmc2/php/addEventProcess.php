@@ -11,6 +11,9 @@ catch(PDOException $e)
     echo $e->getMessage();
 }
 
+
+
+
 // form validation
 if (preg_match("/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/", $_REQUEST[date])) {  
 } else {
@@ -21,6 +24,9 @@ if (preg_match('#^([01]?[0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9])?$#', $_REQUEST[tim
     header("Location: ../events.php#addEvent");
 }
 
+$_REQUEST[name] = SQLite3::escapeString($_REQUEST[name]);
+$_REQUEST[details] = SQLite3::escapeString($_REQUEST[details]);
+$_REQUEST[location] = SQLite3::escapeString($_REQUEST[location]);
 
 echo "$_REQUEST[name]<br>";
 echo "$_REQUEST[details]<br>";

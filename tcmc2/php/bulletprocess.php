@@ -38,6 +38,9 @@ $date  = time();
 echo  "$expire";
 echo  "$date";
 
+$_REQUEST[name] = SQLite3::escapeString($_REQUEST[name]);
+$_REQUEST[details] = SQLite3::escapeString($_REQUEST[details]);
+
 
 
 if ($_REQUEST['submit'] == "post bulletin") {

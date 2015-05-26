@@ -32,6 +32,12 @@ require("../php/upload_file.php");
 ?>
 <?php
 
+$_REQUEST[name] = SQLite3::escapeString($_REQUEST[name]);
+$_REQUEST[summary] = SQLite3::escapeString($_REQUEST[summary]);
+$_REQUEST[details] = SQLite3::escapeString($_REQUEST[details]);
+
+
+
 if ($_REQUEST['submit'] == "Add Artist") {
     
 	$sql = "INSERT INTO artists (name, summary, imageUrl, details, webpage, fax, phone, email, mobile, user, thumb) VALUES ('$_REQUEST[name]',
