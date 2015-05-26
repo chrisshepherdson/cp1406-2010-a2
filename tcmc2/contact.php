@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $subject = $_POST['contact_subject'];
 
@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $success = mail('admin@townsvillemusic.org.au', $subject, $message);
 }
 
-session_start();
+
 include("php/dbconnect.php");
 
 ?>
