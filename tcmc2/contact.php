@@ -91,7 +91,7 @@ require("php/header.php");
               <div class="form-row field_text">
                 <label for="contact_phone">Your Phone Number </label>
                 <em>(optional)</em><br>
-                <input id="contact_phone" class="input_text" type="tel" value="" name="contact_phone" placeholder="e.g. 0412345678 or 12345678" required>
+                <input id="contact_phone" class="input_text" type="tel" value="" name="contact_phone" placeholder="e.g. 0412345678" required>
               </div>
               <div class="form-row field_text">
                 <label for="contact_email">Your E-Mail Address </label>
