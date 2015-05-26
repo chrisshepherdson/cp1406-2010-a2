@@ -5,7 +5,7 @@ include("php/dbconnect.php");
 
 ?>
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Townsville Community Music Centre - Home</title>
