@@ -45,7 +45,7 @@ require("php/header.php");
         </div>
         <div class="about-intro-text">
             <h3>Townsville Community Music Centre</h3>
-            <p>Based in Townsville, North Qld, the Music Centre presents concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists.</p>
+            <p>Based in Townsville, <a href="townsville.php">North Queensland</a>, the Music Centre presents concerts and workshops throughout the year, in a diverse range of genres including classical, jazz, folk, blues, world and contemporary music, featuring touring artists and locally-based professional and emerging artists.</p>
 			<a href="contact.php" class="ui small button coloured">Contact Us</a>
 		</div>
     </section>
