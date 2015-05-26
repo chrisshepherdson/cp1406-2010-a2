@@ -19,7 +19,7 @@
           <div class="footer-facebook">
             <a href="https://www.facebook.com/pages/Townsville-Community-Music-Centre/159636880763534" target="_blank">
               <div class="fb-icon"></div>
-              <img src="images/fb2.png" style="display: none;" alt=""/>
+              <img src="images/fb2.png" style="display: none;" alt="Facebook Icon"/>
             </a>
           </div>
         </div>
