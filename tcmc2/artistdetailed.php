@@ -60,7 +60,7 @@ echo        "<img src='$row[imageUrl]' width='800' height='363' alt='$row[name]'
 echo    "</div>";
 echo    "<h2 class='artistdetailed-name'>$row[name]</h2>";
 echo    "<div class='artistdetailed-info'>";
-echo        "<p>$row[details]</p>";
+echo        "$row[details]";
 echo "<h3>Contact information:</h3>";
 echo "<table class='contact-table'>";
 if (isset($row[phone]))
@@ -109,7 +109,7 @@ $hits = $row[hits] + 1;
 
 <?php
 }
-echo "</fieldset>\n";
+
 
 //increments hits
 $sql = "UPDATE artists SET hits = '$hits' WHERE id = '$_REQUEST[rowid]'"; 
