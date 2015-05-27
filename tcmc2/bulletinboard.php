@@ -60,7 +60,7 @@ tinyMCE.init({
         <ul class="bulletinboard-list">
             
 <?php
-$sql = "SELECT * FROM bullitens ORDER BY date";
+$sql = "SELECT * FROM bullitens ORDER BY date DESC";
 foreach ($dbh->query($sql) as $row) {
     if (time() < $row['expire']) {
         $date = date('l jS \of F Y h:i:s A', $row['date']);

@@ -171,7 +171,7 @@ $date = date('l jS \of F Y h:i:s A', $event1[time]);
       <section class="events">
         <ul class="events-list">
             <?php
-$sql = "SELECT * FROM bullitens ORDER BY date LIMIT 1";
+$sql = "SELECT * FROM bullitens ORDER BY date DESC LIMIT 1";
 foreach ($dbh->query($sql) as $row) {
     if (time() < $row['expire']) {
         $date = date('l jS \of F Y h:i:s A', $row['date']);

@@ -28,6 +28,9 @@ require("php/header.php");
 <div class="page-innter">
 <div class="">
 <header class="page-header">
+<?php
+if (!isset($_SESSION[username])) {
+	?>
 <h1 class="page-title">Members - Registration</h1>
 </header>
 <section class="members-about">
@@ -76,7 +79,15 @@ if (!isset($_SESSION[username])) {
 <?php
 require("php/addUser.php");
 ?>
-    
+	<?php
+} else {
+	?>
+	<header>
+	<h1 class="page-title">You are already a member :)</h1>
+</header>
+    <?php
+}
+?>
 </div>
 </div>
 </div>
