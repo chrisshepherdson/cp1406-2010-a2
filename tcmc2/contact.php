@@ -79,7 +79,16 @@ require("php/header.php");
                 }
               ?>
             </div>
-            <br />
+            <h4>Office Hours:</h4>
+			<ul>
+			<li>Monday: 9.30am - 2.30pm</li>
+			<li>Tuesday: 9.30am - 2.30pm</li>
+			<li>Wednesday: 9.30am - 2.30pm</li>
+			<li>Thursday: CLOSED</li>
+			<li>Friday: CLOSED</li>
+			<li>Sat & Sun: CLOSED</li>
+			</ul>
+			<br>
             <h4>CONTACT US</h4>
             <p>We would love to hear from you! Please let us know how we can be of service.</p>
             <form id="contact_form" name="contact_form" method="post" action="#">
