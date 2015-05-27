@@ -188,14 +188,6 @@ body {
         list-style: none;
     }
 
-    .artist-image {
-        width: 180px;
-        height: 180px;
-        float: left;
-        border: solid 5px darkgray;
-        margin-right: 3em;
-    }
-
     .bulletin-info-title {
         margin-bottom: 0;
     }
