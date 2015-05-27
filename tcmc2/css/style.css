@@ -681,11 +681,21 @@ header nav {
 .about-contact-email a:hover {
 	color: #077cc1;
 }
-a.about-link {
-	color: #fff;
+/* unvisited link */
+a.about-link:link {
+    color: white;
 }
-a.about-link a:hover {
-	color: #077cc1;
+/* visited link */
+a.about-link:visited {
+    color: #white;
+}
+/* mouse over link */
+a.about-link:hover {
+    color: #077cc1;
+}
+/* selected link */
+a.about-link:active {
+    color: #077cc1;
 }
 .about-contact-info-1 {
 	width: 25em;
