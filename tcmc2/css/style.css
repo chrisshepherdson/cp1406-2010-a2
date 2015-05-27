@@ -189,7 +189,6 @@ body {
     }
 
     .artist-image {
-    	clear: both;
         width: 180px;
         height: 180px;
         float: left;
@@ -198,7 +197,6 @@ body {
     }
 
     .bulletin-info-title {
-    	clear: right;
         margin-bottom: 0;
     }
 
@@ -215,7 +213,7 @@ body {
 
     .bulletin-details-list {
         border-top: solid 1px white;
-        margin-bottom: 0.5em;
+        margin-bottom: 3em;
         margin-left: 0.1em;
     }
 
