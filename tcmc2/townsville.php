@@ -32,7 +32,7 @@ require("php/header.php");
 <div class="content">
 <section class="townsville-intro">
 <div class="townsville-intro-image">
-<img src="images/Dusk_at_Rowes_Bay,_Townsville250-188.jpg" width="250" height="188" alt="image">
+<img src="images/Dusk_at_Rowes_Bay,_Townsville250-188.jpg" width="250" height="188" alt="An image of Rowes Bay, Townsville.">
 </div>
 <div class="townsville-intro-text">
 <h3>About Townsville</h3>
@@ -65,10 +65,10 @@ require("php/header.php");
 <br>
 <h3>Important Links</h3>
 <ul>
-<li><a href="http://www.townsvillenorthqueensland.com.au/">Tourism North Queensland</a></li>
-<li><a href="http://www.tripadvisor.com.au/Tourism-g255073-Townsville_Queensland-Vacations.html">Trip Advisor Townsville</a></li>
-<li><a href="http://www.greatbarrierreef.org/">Great Barrier Reef</a></li>
-<li><a href="http://www.destinationdaintree.com//">Destination Daintree</a></li>
+<li><a href="http://www.townsvillenorthqueensland.com.au/" target="_blank">Tourism North Queensland</a></li>
+<li><a href="http://www.tripadvisor.com.au/Tourism-g255073-Townsville_Queensland-Vacations.html" target="_blank">Trip Advisor Townsville</a></li>
+<li><a href="http://www.greatbarrierreef.org/" target="_blank">Great Barrier Reef</a></li>
+<li><a href="http://www.destinationdaintree.com/" target="_blank">Destination Daintree</a></li>
 </ul>
 </div>
 </section>
