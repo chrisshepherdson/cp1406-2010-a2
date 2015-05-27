@@ -681,6 +681,9 @@ header nav {
 .about-contact-email a:hover {
 	color: #077cc1;
 }
+.about-link a{
+	color: #fff;
+}
 .about-link a:hover {
 	color: #077cc1;
 }
