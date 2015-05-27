@@ -189,6 +189,7 @@ body {
     }
 
     .bulletin-image {
+    	clear: both;
         width: 180px;
         height: 180px;
         float: left;
@@ -197,6 +198,7 @@ body {
     }
 
     .bulletin-info-title {
+    	clear: right;
         margin-bottom: 0;
     }
 
