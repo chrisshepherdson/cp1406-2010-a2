@@ -86,7 +86,7 @@ require("php/header.php");
 			<li>Wednesday: 9.30am - 2.30pm</li>
 			<li>Thursday: CLOSED</li>
 			<li>Friday: CLOSED</li>
-			<li>Sat & Sun: CLOSED</li>
+			<li>Saturday & Sunday: CLOSED</li>
 			</ul>
 			<br>
             <h4>CONTACT US</h4>

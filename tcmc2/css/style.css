@@ -681,10 +681,10 @@ header nav {
 .about-contact-email a:hover {
 	color: #077cc1;
 }
-.about-link a{
+a.about-link {
 	color: #fff;
 }
-.about-link a:hover {
+a.about-link a:hover {
 	color: #077cc1;
 }
 .about-contact-info-1 {
