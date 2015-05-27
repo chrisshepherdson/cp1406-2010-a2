@@ -88,7 +88,7 @@ foreach ($dbh->query($sql) as $row) {
                                 <div class="event-button"><a href="mailto:<?php echo "$row[email]"; ?>" class="ui small button colored">Email</a></div></li><?php } if ($row[number] != "") { ?>
                             <li>
                                 <div class="event-button"><?php echo "$row[number]"; ?></div></li><?php } 
-        if ($row[user] == $_SESSION[username]) { ?>
+        if ($row[user] == $_SESSION[username] || $_SESSION == "Administrator") { ?>
                             <li>
                                 <div class="event-button"><a href="?name=<?php echo"$row[name]"; ?>#editbulletin" class="ui small button colored">user edit</a></div></li> <?php 
                     include("php/editbullet.php");
