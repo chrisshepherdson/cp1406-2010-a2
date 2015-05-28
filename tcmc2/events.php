@@ -82,8 +82,15 @@ foreach ($dbh->query($sql) as $row) {
                     <div class="event-info-details"> 
                         <span class="event-time"><strong><?php echo "$date"; ?></strong></span>  
                         <span class="event-location"> at the <?php echo "$row[location]"; ?></span>                         </div>
-                    <div class="artist-info-bio"><?php echo "$row[details]"; ?></div>
+                    <div class="artist-info-bio"><?php echo "$row[details]"; ?><br><?php  
+        if ($_SESSION[username] == "Administrator") { ?>
+                            
+                                <div class="event-button"><a href="?name=<?php echo"$row[name]"; ?>#editEvent" class="ui small button colored">user edit</a></div> <?php 
+                    include("php/editeventdialog.php");
+                                               } 
+                            ?></div>
                     <br>
+					
                     
                 </div> 
             </div>
