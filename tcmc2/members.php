@@ -80,10 +80,44 @@ if (!isset($_SESSION[username])) {
 require("php/addUser.php");
 ?>
 	<?php
+} else if ($_SESSION[username] == "Administrator") {
+	?>
+	<h1 class="page-title">You are the Administrator</h1>
+	<h3 Class="page-title">you can edit users here</h3>
+	</div>
+	</div>
+	<br><br>
+	<ul class="events-list">
+	<?php 
+	$sql = "SELECT * FROM users";
+foreach ($dbh->query($sql) as $rowu) {
+	if ($rowu[username] != "Administrator") {
+	?>
+		<li>
+	<a class="white" href="?name=<?php echo"$rowu[Id]"; ?>#edituser"><?php echo "$rowu[username]"; ?></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<?php
+	 require("php/edituser.php"); ?> </li> <?php
+	}
+} ?>
+		</ul>
+	<?php
 } else {
 	?>
 	<header>
-	<h1 class="page-title">You are already a member :)</h1>
+	<h1 class="page-title">You are already a member </h1>
 </header>
     <?php
 }

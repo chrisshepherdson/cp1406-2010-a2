@@ -27,7 +27,7 @@ catch(PDOException $e)
         </tr>
         <tr>
             <td class="label-right"><label for="address">*Postal Address: </label></td>
-            <td class="label-left"><textarea name="address" id="address" cols="40" rows="4" form="registration" required></textarea></td>
+            <td class="label-left"><textarea name="address" id="address" cols="40" rows="4" form="registration" ></textarea></td>
         </tr>
         <tr>
             <td class="label-right"><label for="number">*Phone Number: </label></td>

@@ -10,14 +10,6 @@
             <li><a href="members.php">Members</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
-              <?php
-if ($_SESSION[username] == "Administrator") {
-    ?>
-
-            <li><a href="adminpage.php">Administrator Page</a></li>
-              <?php
-}
-?>
           </ul>
           <ul class="footer-contact">
             <li class="footer-contact-address">41 Boundary Street, Townsville</li>
