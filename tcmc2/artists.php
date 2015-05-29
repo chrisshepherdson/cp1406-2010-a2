@@ -31,38 +31,42 @@ tinyMCE.init({
 </head>
 <!-- START Logo -->
 <body>
+    
 <?php
     require("php/header.php");
 ?>
 
 <!-- WEBSITE LAYOUT Box -->
 <div id="boxed_content" class="boxed_content">
-  <div class="inner">
-    <div class="content">
-      <div class="page-innter">
-        <div class="">
-          <header class="page-header">
-            <h1 class="page-title">Artists</h1>
-          </header>
-          <div class="content">
-            <div class="artists-intro">
-              <p><strong>Free listing for Music Centre members! Publicise yourself, your band or organisation here!</strong></p>
-              <?php
+    <div class="inner">
+        <div class="content">
+            <div class="page-innter">
+                <div class="">
+                    <header class="page-header">
+                        <h1 class="page-title">Artists</h1>
+                    </header>
+                    <div class="content">
+                        <div class="artists-intro">
+                            <p><strong>Free listing for Music Centre members! Publicise yourself, your band or organisation here!</strong></p>
+<?php
                     if (isset($_SESSION['username']) and $_SESSION['paid'] == '1') {
                     echo    "<div class='artist-button'><a href='#openModal2' class='ui small button colored'>Add new artist</a></div>";
                         include("php/addArtist.php");                   
 }
-?>
-            </div>
-            <ul class="artist-list">
-              <?php
+?> 
+               
+            
+                        </div>
+                        <ul class="artist-list">
+<?php
 
 // Display what's in the database at the moment.
 $sql = "SELECT * FROM artists WHERE hidden=0";
 foreach ($dbh->query($sql) as $row)
 {
 ?>
-              <?php            
+
+<?php            
 echo              "<li>";
 echo                   "<div class='artist-container'>";
 echo                      "<div class='artist-image'><img src='$row[thumb]' alt='$row[name]' /></div>";
@@ -78,22 +82,25 @@ echo                        "</div>";
 echo                    "</div>";
 echo                "</li>";
 ?>
-              <?php
+
+<?php
 }
 
 // close the database connection
 $dbh = null;
-?>
-            </ul>
-          </div>
+?> 
+            </ul>   
         </div>
-      </div>
     </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 <?php
 require("php/footer.php");
 ?>
+    
+    
 </body>
 </html>
