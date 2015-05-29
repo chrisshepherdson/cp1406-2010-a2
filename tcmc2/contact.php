@@ -79,12 +79,8 @@ require("php/header.php");
         </div>
         <h4>Office Hours:</h4>
         <ul>
-          <li>Monday: 9.30am - 2.30pm</li>
-          <li>Tuesday: 9.30am - 2.30pm</li>
-          <li>Wednesday: 9.30am - 2.30pm</li>
-          <li>Thursday: CLOSED</li>
-          <li>Friday: CLOSED</li>
-          <li>Saturday & Sunday: CLOSED</li>
+          <li>Monday - Wednesday: 9.30am - 2.30pm</li>
+          <li>Thursday - Sunday: CLOSED</li>
         </ul>
         <br>
         <h4>CONTACT US</h4>
