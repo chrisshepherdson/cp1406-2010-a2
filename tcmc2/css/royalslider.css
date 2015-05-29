@@ -7,14 +7,27 @@
 .royalSlider > * {
 	float: left;
 }
+
 .rsWebkit3d .rsSlide {
 	-webkit-transform: translateZ(0);
 }
-.rsWebkit3d .rsSlide, .rsWebkit3d .rsContainer, .rsWebkit3d .rsThumbs, .rsWebkit3d .rsPreloader, .rsWebkit3d img, .rsWebkit3d .rsOverflow, .rsWebkit3d .rsBtnCenterer, .rsWebkit3d .rsAbsoluteEl, .rsWebkit3d .rsABlock, .rsWebkit3d .rsLink {
+
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl,
+.rsWebkit3d .rsABlock,
+.rsWebkit3d .rsLink {
 	-webkit-backface-visibility: hidden;
 }
-.rsFade.rsWebkit3d .rsSlide, .rsFade.rsWebkit3d img, .rsFade.rsWebkit3d .rsContainer {
-	-webkit-transform: none;
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+    -webkit-transform: none;
 }
 .rsOverflow {
 	width: 100%;
@@ -22,7 +35,7 @@
 	position: relative;
 	overflow: hidden;
 	float: left;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 .rsVisibleNearbyWrap {
 	width: 100%;
@@ -31,46 +44,57 @@
 	overflow: hidden;
 	left: 0;
 	top: 0;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 .rsVisibleNearbyWrap .rsOverflow {
 	position: absolute;
 	left: 0;
 	top: 0;
+
 }
 .rsContainer {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
-.rsArrow, .rsThumbsArrow {
+
+.rsArrow,
+.rsThumbsArrow {
 	cursor: pointer;
 }
+
 .rsThumb {
 	float: left;
 	position: relative;
 }
-.rsArrow, .rsNav, .rsThumbsArrow {
+
+
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
 	opacity: 1;
-	-webkit-transition: opacity 0.3s linear;
-	-moz-transition: opacity 0.3s linear;
-	-o-transition: opacity 0.3s linear;
-	transition: opacity 0.3s linear;
+	-webkit-transition:opacity 0.3s linear;
+	-moz-transition:opacity 0.3s linear;
+	-o-transition:opacity 0.3s linear;
+	transition:opacity 0.3s linear;
 }
 .rsHidden {
 	opacity: 0;
 	visibility: hidden;
-	-webkit-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
-	-moz-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
-	-o-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
-	transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+	-webkit-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+	-moz-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+	-o-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+	transition:visibility 0s linear 0.3s,opacity 0.3s linear;
 }
+
+
 .rsGCaption {
 	width: 100%;
 	float: left;
 	text-align: center;
 }
+
 /* Fullscreen options */
 .royalSlider.rsFullscreen {
 	position: fixed !important;
@@ -84,43 +108,52 @@
 	bottom: 0 !important;
 	right: 0 !important;
 }
+
 .royalSlider .rsSlide.rsFakePreloader {
 	opacity: 1 !important;
 	-webkit-transition: 0s;
 	-moz-transition: 0s;
-	-o-transition: 0s;
-	transition: 0s;
+	-o-transition:  0s;
+	transition:  0s;
 	display: none;
 }
+
 .rsSlide {
 	position: absolute;
 	left: 0;
 	top: 0;
 	display: block;
 	overflow: hidden;
+	
 	height: 100%;
 	width: 100%;
 }
-.royalSlider.rsAutoHeight, .rsAutoHeight .rsSlide {
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
 	height: auto;
 }
+
 .rsContent {
 	width: 100%;
 	height: 100%;
 	position: relative;
 }
+
 .rsPreloader {
-	position: absolute;
-	z-index: 0;
+	position:absolute;
+	z-index: 0;	
 }
+
 .rsNav {
 	-moz-user-select: -moz-none;
 	-webkit-user-select: none;
 	user-select: none;
 }
 .rsNavItem {
-	-webkit-tap-highlight-color: rgba(0,0,0,0.25);
+	-webkit-tap-highlight-color:rgba(0,0,0,0.25);
 }
+
 .rsThumbs {
 	cursor: pointer;
 	position: relative;
@@ -132,10 +165,13 @@
 	float: left;
 	background: none !important;
 }
-.rsTabs, .rsThumbs {
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+.rsTabs,
+.rsThumbs {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
+
+
 .rsVideoContainer {
 	/*left: 0;
 	top: 0;
@@ -162,7 +198,10 @@
 .rsVideoFrameHolder.rsVideoActive {
 	opacity: 1;
 }
-.rsVideoContainer iframe, .rsVideoContainer video, .rsVideoContainer embed, .rsVideoContainer .rsVideoObj {
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
 	position: absolute;
 	z-index: 50;
 	left: 0;
@@ -171,40 +210,53 @@
 	height: 100%;
 }
 /* ios controls over video bug, shifting video */
-.rsVideoContainer.rsIOSVideo iframe, .rsVideoContainer.rsIOSVideo video, .rsVideoContainer.rsIOSVideo embed {
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-right: 44px;
 }
+
 .rsABlock {
 	left: 0;
 	top: 0;
 	position: absolute;
 	z-index: 15;
+	
 }
+
 img.rsImg {
 	max-width: none;
 }
+
 .grab-cursor {
-	cursor: url(../images/grab.png) 8 8, move;
+	cursor:url(../images/grab.png) 8 8, move; 
 }
-.grabbing-cursor {
-	cursor: url(../images/grabbing.png) 8 8, move;
+
+.grabbing-cursor{ 
+	cursor:url(../images/grabbing.png) 8 8, move;
 }
+
 .rsNoDrag {
 	cursor: auto;
 }
+
 .rsLink {
-	left: 0;
-	top: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	display: block;
+	left:0;
+	top:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	display:block;	
 	z-index: 20;
 	background: url(../images/blank.gif);
 }
+
+
+
+
 /******************************
 *
 *  RoyalSlider White Controls Skin
@@ -226,10 +278,16 @@ img.rsImg {
 
 
 /* Background */
-.rsMinW, .rsMinW .rsOverflow, .rsMinW .rsSlide, .rsMinW .rsVideoFrameHolder, .rsMinW .rsThumbs {
+.rsMinW,
+.rsMinW .rsOverflow,
+.rsMinW .rsSlide,
+.rsMinW .rsVideoFrameHolder,
+.rsMinW .rsThumbs {
 	background: #000;
 	color: #FFF;
 }
+
+
 /***************
 *
 *  1. Arrows
@@ -244,43 +302,35 @@ img.rsImg {
 	cursor: pointer;
 	z-index: 21;
 }
-.rsMinW .rsArrowLeft {
-	right: 37px;
-	bottom: 7px;
-}
-.rsMinW .rsArrowRight {
-	right: 7px;
-	bottom: 7px;
-}
-.rsMinW .rsArrowIcn {
+
+.rsMinW .rsArrowLeft { right: 37px; bottom: 7px; }
+.rsMinW .rsArrowRight { right: 7px; bottom: 7px; }
+
+.rsMinW .rsArrowIcn {		
 	width: 24px;
 	height: 24px;
 	margin-top: 3px;
 	margin-left: 3px;
 	position: absolute;
-	cursor: pointer;
+	cursor: pointer;	
 	background: url('../images/rs-minimal-white.png') transparent;
+	
 	border-radius: 2px;
 }
 .rsMinW .rsArrowIcn:hover {
+
 }
-.rsMinW.rsHor .rsArrowLeft .rsArrowIcn {
-	background-position: -68px -36px;
-}
-.rsMinW.rsHor .rsArrowRight .rsArrowIcn {
-	background-position: -68px -68px;
-}
-.rsMinW.rsVer .rsArrowLeft .rsArrowIcn {
-	background-position: -100px -36px;
-}
-.rsMinW.rsVer .rsArrowRight .rsArrowIcn {
-	background-position: -100px -68px;
-}
-.rsMinW .rsArrowDisabled .rsArrowIcn {
-	opacity: .3 !important;
-	filter: alpha(opacity=30);
-*display: none;
-}
+
+
+.rsMinW.rsHor .rsArrowLeft .rsArrowIcn { background-position: -68px -36px; }
+.rsMinW.rsHor .rsArrowRight .rsArrowIcn { background-position: -68px -68px; }
+
+.rsMinW.rsVer .rsArrowLeft .rsArrowIcn { background-position: -100px -36px; }
+.rsMinW.rsVer .rsArrowRight .rsArrowIcn { background-position: -100px -68px; }
+
+.rsMinW .rsArrowDisabled .rsArrowIcn { opacity: .3 !important; filter: alpha(opacity=30);  *display: none; }
+
+
 /***************
 *
 *  2. Bullets
@@ -294,6 +344,7 @@ img.rsImg {
 	z-index: 35;
 	padding-top: 4px;
 	height: auto;
+
 	text-align: center;
 	line-height: 6px;
 	overflow: hidden;
@@ -302,8 +353,8 @@ img.rsImg {
 	width: 6px;
 	height: 6px;
 	display: inline-block;
- *display:inline;
- *zoom:1;
+	*display:inline; 
+	*zoom:1;
 	padding: 6px 5px 6px 4px;
 }
 .rsMinW .rsBullet span {
@@ -318,6 +369,11 @@ img.rsImg {
 .rsMinW .rsBullet.rsNavSelected span {
 	background: #FFF;
 }
+
+
+
+
+
 /***************
 *
 *  3. Thumbnails
@@ -369,79 +425,70 @@ img.rsImg {
 	border: 2px solid #FFF;
 	border: 2px solid rgba(255,255,255,0.9);
 	-webkit-backface-visibility: hidden;
-}
+} 
 .rsMinW .rsTmb {
 	display: block;
 }
+
+
+
+
 /* Thumbnails arrow icons */
 .rsMinW .rsThumbsArrow {
 	height: 100%;
 	width: 20px;
 	position: absolute;
 	display: block;
-	cursor: pointer;
-	z-index: 21;
+	cursor: pointer;	
+	z-index: 21;	
 }
 .rsMinW.rsWithThumbsVer .rsThumbsArrow {
 	width: 100%;
 	height: 20px;
 }
-.rsMinW.rsWithThumbsVer .rsThumbsArrowLeft {
-	top: 0;
-	left: 0;
-}
-.rsMinW.rsWithThumbsVer .rsThumbsArrowRight {
-	bottom: 0;
-	left: 0;
-}
-.rsMinW.rsWithThumbsHor .rsThumbsArrowLeft {
-	left: 0;
-	top: 0;
-}
-.rsMinW.rsWithThumbsHor .rsThumbsArrowRight {
-	right: 0;
-	top: 0;
-}
-.rsMinW .rsThumbsArrowIcn {
+.rsMinW.rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
+.rsMinW.rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
+
+.rsMinW.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+.rsMinW.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+
+.rsMinW .rsThumbsArrowIcn {		
 	width: 16px;
 	height: 16px;
 	top: 50%;
 	left: 50%;
-	margin-top: -8px;
+	margin-top:-8px;	
 	margin-left: -8px;
-	position: absolute;
-	cursor: pointer;
+	position: absolute;	
+	cursor: pointer;	
 	background: url('../images/rs-minimal-white.png');
 }
-.rsMinW.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
-	background-position: -128px -32px;
-}
-.rsMinW.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn {
-	background-position: -128px -48px;
-}
-.rsMinW.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn {
-	background-position: -144px -32px;
-}
-.rsMinW.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn {
-	background-position: -144px -48px;
-}
-.rsMinW .rsThumbsArrowDisabled {
-	display: none !important;
-}
+
+.rsMinW.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
+.rsMinW.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -128px -48px; }
+
+.rsMinW.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -144px -32px; }
+.rsMinW.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -144px -48px; }
+
+.rsMinW .rsThumbsArrowDisabled { display: none !important; }
 
 /* Thumbnails resizing on smaller screens */
 @media screen and (min-width: 0px) and (max-width: 800px) {
-.rsMinW .rsThumb {
-	width: 59px;
-	height: 44px;
+	.rsMinW .rsThumb {
+		width: 59px;
+		height: 44px;
+	}
+	.rsMinW .rsThumbsHor {
+		height: 44px;
+	}
+	.rsMinW .rsThumbsVer {
+		width: 59px;
+	}
 }
-.rsMinW .rsThumbsHor {
-	height: 44px;
-}
-.rsMinW .rsThumbsVer {
-	width: 59px;
-}
-}
+
+
+
+
 /***************
 *
 *  4. Tabs
@@ -452,10 +499,8 @@ img.rsImg {
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	text-align: center;
-	overflow: hidden;
-	padding-top: 12px;
-	position: relative;
+	text-align:center;
+	overflow: hidden; padding-top: 12px; position: relative;
 }
 .rsMinW .rsTab {
 	display: inline-block;
@@ -469,12 +514,14 @@ img.rsImg {
 	border: 1px solid #D9D9DD;
 	border-right: 1px solid #f5f5f5;
 	text-decoration: none;
+
 	background-color: #000;
-	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4);
-	background-image: -moz-linear-gradient(top, #fefefe, #f4f4f4);
-	background-image: linear-gradient(to bottom, #fefefe, #f4f4f4);
- *display:inline;
- *zoom:1;
+	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4); 
+	background-image:    -moz-linear-gradient(top, #fefefe, #f4f4f4);
+	background-image:         linear-gradient(to bottom, #fefefe, #f4f4f4);
+
+	*display:inline; 
+	*zoom:1;
 }
 .rsMinW .rsTab:first-child {
 	-webkit-border-top-left-radius: 4px;
@@ -482,19 +529,20 @@ img.rsImg {
 	-webkit-border-bottom-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
-.rsMinW .rsTab:last-child {
+.rsMinW .rsTab:last-child { 
 	-webkit-border-top-right-radius: 4px;
 	border-top-right-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-	border-right: 1px solid #cfcfcf;
+
+	border-right:  1px solid #cfcfcf;
 }
-.rsMinW .rsTab:active {
-	border: 1px solid #D9D9DD;
+.rsMinW .rsTab:active { 
+	border: 1px solid #D9D9DD;   
 	background-color: #f4f4f4;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+	box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2) inset;
 }
-.rsMinW .rsTab.rsNavSelected {
+.rsMinW .rsTab.rsNavSelected { 
 	color: #000;
 	border: 1px solid #999;
 	text-shadow: 1px 1px #838383;
@@ -504,6 +552,11 @@ img.rsImg {
 	background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
 	background-image: linear-gradient(to bottom, #ACACAC, #BBB);
 }
+
+
+
+
+
 /***************
 *
 *  5. Fullscreen button
@@ -519,12 +572,14 @@ img.rsImg {
 	display: block;
 	position: absolute;
 	cursor: pointer;
+	
 }
 .rsMinW .rsFullscreenIcn {
 	display: block;
 	margin: 6px;
 	width: 32px;
 	height: 32px;
+
 	background: url('../images/rs-minimal-white.png') 0 0 transparent;
 }
 .rsMinW .rsFullscreenIcn:hover {
@@ -533,6 +588,11 @@ img.rsImg {
 .rsMinW.rsFullscreen .rsFullscreenIcn {
 	background-position: -32px 0;
 }
+
+
+
+
+
 /***************
 *
 *  6. Play/close video button
@@ -540,34 +600,36 @@ img.rsImg {
 ****************/
 
 .rsMinW .rsPlayBtn {
-	-webkit-tap-highlight-color: rgba(0,0,0,0.3);
-	width: 64px;
-	height: 64px;
-	margin-left: -32px;
-	margin-top: -32px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0.3);
+	width:64px;
+	height:64px;
+	margin-left:-32px;
+	margin-top:-32px;
 	cursor: pointer;
 }
 .rsMinW .rsPlayBtnIcon {
-	width: 64px;
-	display: block;
-	height: 64px;
+	width:64px;
+	display:block;
+	height:64px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
+	
 	-webkit-transition: .3s;
 	-moz-transition: .3s;
 	transition: .3s;
-	background: url(../images/rs-minimal-white.png) no-repeat 0 -32px;
+
+	background:url(../images/rs-minimal-white.png) no-repeat 0 -32px;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
- *background-color: #000;
+	*background-color: #000;
 }
 .rsMinW .rsPlayBtn:hover .rsPlayBtnIcon {
 	background-color: rgba(0,0,0,0.9);
 }
 .rsMinW .rsBtnCenterer {
-	position: absolute;
-	left: 50%;
-	top: 50%;
+	position:absolute;
+	left:50%;
+	top:50%;
 	width: 20px;
 	height: 20px;
 }
@@ -581,11 +643,13 @@ img.rsImg {
 	cursor: pointer;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateZ(0);
+	
 }
 .rsMinW .rsCloseVideoBtn.rsiOSBtn {
 	top: -38px;
 	right: -6px;
 }
+
 .rsMinW .rsCloseVideoIcn {
 	margin: 6px;
 	width: 32px;
@@ -593,11 +657,14 @@ img.rsImg {
 	background: url('../images/rs-minimal-white.png') -64px 0;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
- *background-color: #000;
+	*background-color: #000;
 }
 .rsMinW .rsCloseVideoIcn:hover {
 	background-color: rgba(0,0,0,0.9);
 }
+
+
+
 /***************
 *
 *  7. Preloader
@@ -605,14 +672,19 @@ img.rsImg {
 ****************/
 
 .rsMinW .rsPreloader {
-	width: 20px;
-	height: 20px;
-	background-image: url(../images/preloader-white.gif);
-	left: 50%;
-	top: 50%;
-	margin-left: -10px;
-	margin-top: -10px;
+	width:20px;
+	height:20px;
+	background-image:url(../images/preloader-white.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
 }
+
+
+
+
 /***************
 *
 *  8. Global caption
@@ -624,14 +696,19 @@ img.rsImg {
 	bottom: 6px;
 	left: 6px;
 	text-align: left;
+
 	background: #000;
-	background: rgba(0,0,0, 0.75);
+    background: rgba(0,0,0, 0.75);
+
 	color: #FFF;
 	padding: 2px 8px;
 	width: auto;
 	font-size: 12px;
 	border-radius: 2px;
 }
+
+
+
 /******************************
 *
 *  RoyalSlider Default Skin 
@@ -653,10 +730,16 @@ img.rsImg {
 
 
 /* Background */
-.rsDefault, .rsDefault .rsOverflow, .rsDefault .rsSlide, .rsDefault .rsVideoFrameHolder, .rsDefault .rsThumbs {
+.rsDefault,
+.rsDefault .rsOverflow,
+.rsDefault .rsSlide,
+.rsDefault .rsVideoFrameHolder,
+.rsDefault .rsThumbs {
 	background: #151515;
 	color: #FFF;
 }
+
+
 /***************
 *
 *  1. Arrows
@@ -674,58 +757,45 @@ img.rsImg {
 .rsDefault.rsVer .rsArrow {
 	width: 100%;
 	height: 44px;
+	
 }
-.rsDefault.rsVer .rsArrowLeft {
-	top: 0;
-	left: 0;
-}
-.rsDefault.rsVer .rsArrowRight {
-	bottom: 0;
-	left: 0;
-}
-.rsDefault.rsHor .rsArrowLeft {
-	left: 0;
-	top: 0;
-}
-.rsDefault.rsHor .rsArrowRight {
-	right: 0;
-	top: 0;
-}
-.rsDefault .rsArrowIcn {
+.rsDefault.rsVer .rsArrowLeft { top: 0; left: 0; }
+.rsDefault.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.rsDefault.rsHor .rsArrowLeft { left: 0; top: 0; }
+.rsDefault.rsHor .rsArrowRight { right: 0; top:0; }
+
+.rsDefault .rsArrowIcn {		
 	width: 32px;
 	height: 32px;
 	top: 50%;
 	left: 50%;
-	margin-top: -16px;
+	margin-top:-16px;	
 	margin-left: -16px;
-	position: absolute;
-	cursor: pointer;
+
+	position: absolute;	
+	cursor: pointer;	
 	background: url('../images/rs-default.png');
+
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
- *background-color: #000;
+	*background-color: #000;
+	
 	border-radius: 2px;
 }
 .rsDefault .rsArrowIcn:hover {
 	background-color: rgba(0,0,0,0.9);
 }
-.rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
-	background-position: -64px -32px;
-}
-.rsDefault.rsHor .rsArrowRight .rsArrowIcn {
-	background-position: -64px -64px;
-}
-.rsDefault.rsVer .rsArrowLeft .rsArrowIcn {
-	background-position: -96px -32px;
-}
-.rsDefault.rsVer .rsArrowRight .rsArrowIcn {
-	background-position: -96px -64px;
-}
-.rsDefault .rsArrowDisabled .rsArrowIcn {
-	opacity: .2;
-	filter: alpha(opacity=20);
-*display: none;
-}
+
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: -64px -32px; }
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn { background-position: -64px -64px; }
+
+.rsDefault.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.rsDefault.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.rsDefault .rsArrowDisabled .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+
+
 /***************
 *
 *  2. Bullets
@@ -739,9 +809,11 @@ img.rsImg {
 	bottom: 0;
 	width: 100%;
 	height: auto;
-	margin: 0 auto;
+	margin: 0 auto; 
+
 	background: #000;
 	background: rgba(0,0,0,0.75);
+
 	text-align: center;
 	line-height: 8px;
 	overflow: hidden;
@@ -750,8 +822,8 @@ img.rsImg {
 	width: 8px;
 	height: 8px;
 	display: inline-block;
- *display:inline;
- *zoom:1;
+	*display:inline; 
+	*zoom:1;
 	padding: 6px 5px 6px;
 }
 .rsDefault .rsBullet span {
@@ -765,6 +837,11 @@ img.rsImg {
 .rsDefault .rsBullet.rsNavSelected span {
 	background-color: #FFF;
 }
+
+
+
+
+
 /***************
 *
 *  3. Thumbnails
@@ -810,6 +887,7 @@ img.rsImg {
 .rsDefault .rsTmb {
 	display: block;
 }
+
 /* Thumbnails with text */
 .rsDefault .rsTmb h5 {
 	font-size: 16px;
@@ -825,14 +903,17 @@ img.rsImg {
 	font-size: 13px;
 	line-height: 18px;
 }
+
+
+
 /* Thumbnails arrow icons */
 .rsDefault .rsThumbsArrow {
 	height: 100%;
 	width: 20px;
 	position: absolute;
 	display: block;
-	cursor: pointer;
-	z-index: 21;
+	cursor: pointer;	
+	z-index: 21;	
 	background: #000;
 	background: rgba(0,0,0,0.75);
 }
@@ -843,62 +924,49 @@ img.rsImg {
 	width: 100%;
 	height: 20px;
 }
-.rsDefault.rsWithThumbsVer .rsThumbsArrowLeft {
-	top: 0;
-	left: 0;
-}
-.rsDefault.rsWithThumbsVer .rsThumbsArrowRight {
-	bottom: 0;
-	left: 0;
-}
-.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft {
-	left: 0;
-	top: 0;
-}
-.rsDefault.rsWithThumbsHor .rsThumbsArrowRight {
-	right: 0;
-	top: 0;
-}
-.rsDefault .rsThumbsArrowIcn {
+.rsDefault.rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
+.rsDefault.rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
+
+.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+.rsDefault.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+
+.rsDefault .rsThumbsArrowIcn {		
 	width: 16px;
 	height: 16px;
 	top: 50%;
 	left: 50%;
-	margin-top: -8px;
+	margin-top:-8px;	
 	margin-left: -8px;
-	position: absolute;
-	cursor: pointer;
+	position: absolute;	
+	cursor: pointer;	
 	background: url('../images/rs-default.png');
 }
-.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
-	background-position: -128px -32px;
-}
-.rsDefault.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn {
-	background-position: -128px -48px;
-}
-.rsDefault.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn {
-	background-position: -144px -32px;
-}
-.rsDefault.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn {
-	background-position: -144px -48px;
-}
-.rsDefault .rsThumbsArrowDisabled {
-	display: none !important;
-}
+
+.rsDefault.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
+.rsDefault.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -128px -48px; }
+
+.rsDefault.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -144px -32px; }
+.rsDefault.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -144px -48px; }
+
+.rsDefault .rsThumbsArrowDisabled { display: none !important; }
 
 /* Thumbnails resizing on smaller screens */
 @media screen and (min-width: 0px) and (max-width: 800px) {
-.rsDefault .rsThumb {
-	width: 59px;
-	height: 44px;
+	.rsDefault .rsThumb {
+		width: 59px;
+		height: 44px;
+	}
+	.rsDefault .rsThumbsHor {
+		height: 44px;
+	}
+	.rsDefault .rsThumbsVer {
+		width: 59px;
+	}
 }
-.rsDefault .rsThumbsHor {
-	height: 44px;
-}
-.rsDefault .rsThumbsVer {
-	width: 59px;
-}
-}
+
+
+
+
 /***************
 *
 *  4. Tabs
@@ -909,10 +977,8 @@ img.rsImg {
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-	text-align: center;
-	overflow: hidden;
-	padding-top: 12px;
-	position: relative;
+	text-align:center;
+	overflow: hidden; padding-top: 12px; position: relative;
 }
 .rsDefault .rsTab {
 	display: inline-block;
@@ -926,14 +992,17 @@ img.rsImg {
 	border: 1px solid #D9D9DD;
 	border-right: 1px solid #f5f5f5;
 	text-decoration: none;
+
 	background-color: #FFF;
-	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4);
-	background-image: -moz-linear-gradient(top, #fefefe, #f4f4f4);
-	background-image: linear-gradient(to bottom, #fefefe, #f4f4f4);
+	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4); 
+	background-image:    -moz-linear-gradient(top, #fefefe, #f4f4f4);
+	background-image:         linear-gradient(to bottom, #fefefe, #f4f4f4);
+
 	-webkit-box-shadow: inset 1px 0 0 #fff;
 	box-shadow: inset 1px 0 0 #fff;
- *display:inline;
- *zoom:1;
+
+	*display:inline; 
+	*zoom:1;
 }
 .rsDefault .rsTab:first-child {
 	-webkit-border-top-left-radius: 4px;
@@ -941,19 +1010,20 @@ img.rsImg {
 	-webkit-border-bottom-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
-.rsDefault .rsTab:last-child {
+.rsDefault .rsTab:last-child { 
 	-webkit-border-top-right-radius: 4px;
 	border-top-right-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-	border-right: 1px solid #cfcfcf;
+
+	border-right:  1px solid #cfcfcf;
 }
-.rsDefault .rsTab:active {
-	border: 1px solid #D9D9DD;
+.rsDefault .rsTab:active { 
+	border: 1px solid #D9D9DD;   
 	background-color: #f4f4f4;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+	box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2) inset;
 }
-.rsDefault .rsTab.rsNavSelected {
+.rsDefault .rsTab.rsNavSelected { 
 	color: #FFF;
 	border: 1px solid #999;
 	text-shadow: 1px 1px #838383;
@@ -963,6 +1033,11 @@ img.rsImg {
 	background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
 	background-image: linear-gradient(to bottom, #ACACAC, #BBB);
 }
+
+
+
+
+
 /***************
 *
 *  5. Fullscreen button
@@ -978,17 +1053,20 @@ img.rsImg {
 	display: block;
 	position: absolute;
 	cursor: pointer;
+	
 }
 .rsDefault .rsFullscreenIcn {
 	display: block;
 	margin: 6px;
 	width: 32px;
 	height: 32px;
+
 	background: url('../images/rs-default.png') 0 0;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
- *background-color: #000;
+	*background-color: #000;
 	border-radius: 2px;
+
 }
 .rsDefault .rsFullscreenIcn:hover {
 	background-color: rgba(0,0,0,0.9);
@@ -996,6 +1074,11 @@ img.rsImg {
 .rsDefault.rsFullscreen .rsFullscreenIcn {
 	background-position: -32px 0;
 }
+
+
+
+
+
 /***************
 *
 *  6. Play/close video button
@@ -1003,34 +1086,36 @@ img.rsImg {
 ****************/
 
 .rsDefault .rsPlayBtn {
-	-webkit-tap-highlight-color: rgba(0,0,0,0.3);
-	width: 64px;
-	height: 64px;
-	margin-left: -32px;
-	margin-top: -32px;
+	-webkit-tap-highlight-color:rgba(0,0,0,0.3);
+	width:64px;
+	height:64px;
+	margin-left:-32px;
+	margin-top:-32px;
 	cursor: pointer;
 }
 .rsDefault .rsPlayBtnIcon {
-	width: 64px;
-	display: block;
-	height: 64px;
+	width:64px;
+	display:block;
+	height:64px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
+	
 	-webkit-transition: .3s;
 	-moz-transition: .3s;
 	transition: .3s;
-	background: url(../images/rs-default.png) no-repeat 0 -32px;
+
+	background:url(../images/rs-default.png) no-repeat 0 -32px;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
- *background-color: #000;
+	*background-color: #000;
 }
 .rsDefault .rsPlayBtn:hover .rsPlayBtnIcon {
 	background-color: rgba(0,0,0,0.9);
 }
 .rsDefault .rsBtnCenterer {
-	position: absolute;
-	left: 50%;
-	top: 50%;
+	position:absolute;
+	left:50%;
+	top:50%;
 }
 .rsDefault .rsCloseVideoBtn {
 	right: 0;
@@ -1042,11 +1127,13 @@ img.rsImg {
 	cursor: pointer;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateZ(0);
+	
 }
 .rsDefault .rsCloseVideoBtn.rsiOSBtn {
 	top: -38px;
 	right: -6px;
 }
+
 .rsDefault .rsCloseVideoIcn {
 	margin: 6px;
 	width: 32px;
@@ -1054,11 +1141,14 @@ img.rsImg {
 	background: url('rs-default.html') -64px 0;
 	background-color: #000;
 	background-color: rgba(0,0,0,0.75);
- *background-color: #000;
+	*background-color: #000;
 }
 .rsDefault .rsCloseVideoIcn:hover {
 	background-color: rgba(0,0,0,0.9);
 }
+
+
+
 /***************
 *
 *  7. Preloader
@@ -1066,14 +1156,19 @@ img.rsImg {
 ****************/
 
 .rsDefault .rsPreloader {
-	width: 20px;
-	height: 20px;
-	background-image: url(../images/preloader-white.gif);
-	left: 50%;
-	top: 50%;
-	margin-left: -10px;
-	margin-top: -10px;
+	width:20px;
+	height:20px;
+	background-image:url(../images/preloader-white.gif);
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
 }
+
+
+
+
 /***************
 *
 *  8. Global caption
@@ -1085,11 +1180,14 @@ img.rsImg {
 	bottom: 6px;
 	left: 6px;
 	text-align: left;
+
 	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.75);
+
 	color: #FFF;
 	padding: 2px 8px;
 	width: auto;
 	font-size: 12px;
 	border-radius: 2px;
 }
+
