@@ -27,32 +27,25 @@ tinyMCE.init({
     
 });
 </script>
-
 </head>
 <!-- START Logo -->
 <body>
 <?php
     require("php/header.php");
 ?>
-    
 <div id="boxed_content" class="boxed_content">
-<div class="inner"> 
-  
-  <div id="content" class="site-content">
-    <div class="page-inner">
-      <div class="">
-        
-        
-      <div class="content">
-    
-<?php
+  <div class="inner">
+    <div id="content" class="site-content">
+      <div class="page-inner">
+        <div class="">
+          <div class="content">
+            <?php
 // Display what's in the database at the moment.
 $sql = "SELECT * FROM artists WHERE id = '$_REQUEST[rowid]'";
 foreach ($dbh->query($sql) as $row)
 {
 ?>
-
-<?php   
+            <?php   
 echo "<section class='artistdetailed'>";
 echo     "<div class='artistdetailed-image'>";
     echo    "<h2 class='artistdetailed-name'>$row[name]</h2>";
@@ -106,8 +99,7 @@ echo    "</div> ";
 echo "</section>";
 $hits = $row[hits] + 1;
 ?>
-
-<?php
+            <?php
 }
 
 
@@ -118,19 +110,16 @@ $dbh->exec($sql);
 
 // close the database connection
 $dbh = null;
-?> 
-    
+?>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
+  </div>
+</div>
 <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow30.js"></script>
 <?php
 require("php/footer.php");
 ?>
-    
-    
 </body>
 </html>
